@@ -1,0 +1,169 @@
+﻿@model ViewModel.ViewModels.IndexCompanyVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+
+
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Company Profile</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new District form -->
+            <div class="row center" style="float: none; margin: 0 auto;">
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Index</h3>
+                        </div>
+                        <div class="card-body">
+                            <a asp-action="Create" class="btn btn-sm btn-warning"> Create New Data</a>
+                            &nbsp;
+                            <a asp-action="Upload" class="btn btn-sm btn-info">Import Data</a>
+                            &nbsp;
+                            <a asp-action="DownloadExcelDocument" class="btn btn-sm btn-success"> <i class="fa fa-file-excel"></i> Export to Excel</a>
+                            <br /><br />
+
+
+
+                            <table id="demoGrid" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Comp Code</th>
+                                        <th>Comp Name</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new District form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+@section myScripts{
+        <script src="~/plugins/jquery/jquery.min.js"></script>
+        <script>
+             $(function () {
+
+                    $("#example1").DataTable({
+                        "responsive": true,
+                        "autoWidth": false,
+                        "searching": true,
+                    });
+            });
+
+            function FilterData() {
+                $('#demoGrid').DataTable().ajax.reload(null, false)
+            }
+
+
+            function DeleteData(itemid) {
+                swal({
+                    title: "Are sure want to delete data?",
+                    text: "",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Yes",
+                    closeOnConfirm: false
+
+                }, function (isConfirm) {
+                    if (isConfirm) {
+                        $.ajax({
+
+                            url: '/Master/Company/DeleteData',
+                            type: 'POST',
+                            data: { "id": itemid },
+                            success: function (data) {
+                                swal
+                                    ({
+                                        title: "Deleted!",
+                                        text: "Tanggal Merah has been deleted!",
+                                        type: "success"
+                                    },
+                                        function () {
+                                            location.reload();
+                                        });
+                            }
+
+                        });
+                    }
+                });
+
+            };
+
+            $(document).ready(function () {
+
+        @if (TempData["notification"] != null)
+        {
+            @Html.Raw(TempData["notification"])
+        }
+
+
+                $('#demoGrid').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": true, // for process server side
+                    "filter": true,
+                    "pageLength": 20,
+                    "responsive": true,
+                    "autoWidth": false,
+                    "searching": true,
+
+                    "ajax": {
+                        "url": "@Url.Action("LoadData", "Company", new { area ="Master" })",
+                        "type": "POST",
+                        "datatype": "json",
+                        "data": function (d) {
+                            //d.tglDari = $('#FilterFromString').val();
+                            //d.tglSampai = $('#FilterToString').val();
+                        },
+                    },
+
+                    //dom: 'Bfrtip',
+                    //buttons: [
+                    //    'copy', 'csv', 'excel', 'pdf', 'print'
+                    //],
+
+                    "columns": [
+                        { "data": "code", "name": "Code", "width": "20px" },
+                        { "data": "name", "name": "Name", "width": "120px" },
+
+                          {
+                            data: null, render: function (data, type, row) {
+
+                                  return '<a class="btn btn-info btn-sm" href="@Url.Action("Edit", "Company", new { Area = "Master" })?ID=' + row.id + '">Edit</a>  ' + '<a class="btn btn-danger btn-sm" href="#" onclick=DeleteData(' + row.id+')>Delete</a>';
+
+                            }, "width": "13%", "sorting": "false"
+                        },
+
+                    ]
+
+                });
+            });
+        </script>
+
+}

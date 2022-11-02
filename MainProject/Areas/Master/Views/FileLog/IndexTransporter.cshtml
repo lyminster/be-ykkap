@@ -1,0 +1,210 @@
+﻿@model ViewModel.ViewModels.IndexFileLogVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Transporter Job Logs</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new District form -->
+            <div class="row center" style="float: none; margin: 0 auto;">
+                <div class="col-md-12">
+                    <div class="card card-info">
+
+
+                        <div class="card-body">
+                            <a asp-action="Index" asp-controller="FileLog" class="btn btn-sm btn-info">
+                                File Logs
+                            </a>
+
+                            &nbsp;
+
+                            <a href="#" class="btn btn-sm btn-outline-info">
+                                Transporter Job Logs
+                            </a>
+
+                            <hr />
+
+                            <form asp-controller="FileLog" asp-action="DownloadExcelDocument" id="formDelete" enctype="multipart/form-data">
+
+
+                                <div class="col-md-12 row">
+
+
+                                    <div class="col-md-9 row">
+                                        <div class="col-md-12 row">
+                                            <div class="form-group">
+
+
+                                                <label class="control-label">Filter By Created By </label>
+
+                                                &nbsp;
+
+                                                <select asp-for="FilterJenis" asp-items="@(new SelectList(Model.ListFilterJenis,"CreatedBy","CreatedBy"))" onchange="ChangeVal()" class="form-control">
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="input-group date" data-date-format="DD-MMM-YYYY" id="reservationdate1" data-target-input="nearest">
+                                                <input type="text" asp-for="@Model.FilterFromString" class="form-control datetimepicker-input" data-target="#reservationdate1" />
+                                                <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                            </div>
+                                            <span asp-validation-for="FilterFromString" class="text-danger"></span>
+                                        </div>
+                                        &nbsp;
+                                        <div class="form-group">
+
+                                            <div class="input-group date" data-date-format="DD-MMM-YYYY" id="reservationdate2" data-target-input="nearest">
+                                                <input type="text" asp-for="@Model.FilterToString" class="form-control datetimepicker-input" data-target="#reservationdate2" />
+                                                <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                            </div>
+                                            <span asp-validation-for="FilterToString" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-md-12 row">
+
+                                    <div class="form-group">
+                                        <a onclick="FilterData()" class="btn btn-warning"><i class="fa fa-search"></i> Filter Data</a>
+                                        &nbsp;
+                                        <button type="submit" value="DownloadExcelDocument" class="btn btn-success" name="submit">
+                                            <i class="fa fa-print"></i> Export to Excel
+                                        </button>
+                                    </div>
+
+                                </div>
+
+
+                                <table id="demoGrid" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Remarks</th>
+                                            @*<th>FileName</th>*@
+                                            <th>CreatedBy</th>
+                                            <th>Code Data</th>
+                                            <th>CreatedTime</th>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new District form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+                $("#example1").DataTable({
+                    "responsive": true,
+                    "autoWidth": false,
+                    "searching": true,
+                });
+        });
+
+        function FilterData() {
+
+            if ($('#FilterJenis').val() == '' || $('#FilterFromString').val() == '' || $('#FilterToString').val() == '') {
+
+                //"swal('" + notificationType.ToString().ToUpper() + "', '" + message + "','" + notificationType + "')" + "";
+
+                swal('warning', 'please fill all filter parameter for searching..', 'warning');
+            }
+            else {
+                $('#demoGrid').DataTable().ajax.reload(null, false);
+
+            }
+        }
+
+
+        $(document).ready(function () {
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+
+
+            $('#demoGrid').DataTable({
+                "processing": true, // for show progress bar
+                "serverSide": true, // for process server side
+                "filter": true,
+                "pageLength": 20,
+                "responsive": true,
+                "autoWidth": false,
+                "searching": true,
+
+                "ajax": {
+                    "url": "@Url.Action("LoadDataTransporterLog", "FileLog", new { area ="Master" })",
+                    "type": "POST",
+                    "datatype": "json",
+                    "data": function (d) {
+                        d.tglDari = $('#FilterFromString').val();
+                        d.tglSampai = $('#FilterToString').val();
+                        d.filter = $('#FilterJenis').val();
+                    },
+                },
+
+                //dom: 'Bfrtip',
+                //buttons: [
+                //    'copy', 'csv', 'excel', 'pdf', 'print'
+                //],
+
+                "columns": [
+
+                    { "data": "remarks", "name": "remarks", "width": "70px" },
+                    /*{ "data": "fileName", "name": "fileName", "width": "40px" },*/
+
+                    { "data": "createdBy", "name": "createdBy", "width": "20px" },
+                    { "data": "codeData", "name": "codeData", "width": "20px" },
+                    {
+                        "data": "createdTime", "name": "createdTime", "width": "20px", "render": function (value) {
+                            if (value === null) return "";
+                            return moment(value).format('DD-MM-YYYY');
+                        }
+                    },
+                ]
+
+            });
+        });
+    </script>
+
+}

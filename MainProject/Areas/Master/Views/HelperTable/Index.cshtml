@@ -1,0 +1,127 @@
+﻿@model ViewModel.ViewModels.IndexHelperTableVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+
+
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HelperTable </h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new District form -->
+            <div class="row center" style="float: none; margin: 0 auto;">
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Index</h3>
+                        </div>
+                        <div class="card-body">
+                            <a asp-action="Create" class="btn btn-sm btn-warning"> Create New Data</a>
+                            <br /><br />
+
+                            <table id="example1" class="display nowrap table table-bordered table-striped" cellspacing="0"  width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Code</th>
+                                        <th>Name</th>
+                                        <th>Value</th>
+                                        <th>Description</th>
+                                        <th> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        @foreach (var item in Model.listIndex)
+                                        {
+                                    <tr>
+                                        <td width="20px">
+                                            @Html.DisplayFor(modelItem => item.ID)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Code)
+                                        </td>
+                                        <td width="20px">
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </td>
+                                        <td width="20px">
+                                            @Html.DisplayFor(modelItem => item.Value)
+                                        </td>
+                                        <td width="20px">
+                                            @Html.DisplayFor(modelItem => item.Description)
+                                        </td>
+                                        <td>
+                                            <a asp-action="Edit" asp-route-formID="@item.ID" class="btn btn-xs btn-warning">
+                                                Edit
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new District form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+                $("#example1").DataTable({
+                    "responsive": true,
+                    "autoWidth": true,
+                });
+                $('#example2').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": false,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                });
+        });
+
+        $(document).ready(function () {
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+
+
+
+        });
+    </script>
+
+}

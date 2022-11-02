@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+
+
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <p>
+                <a href="@Url.Action("ReloadJob", "Home")"> <input type="button" value="Reload Job" class="btn btn-success" /></a> &nbsp;
+                <a href="@Url.Action("Index","hangfire")"> <input type="button" value="View Job" class="btn btn-success" /></a>
+                <a href="@Url.Action("GenerateTestingData","Home")"> <input type="button" value="Generate Data Testing" class="btn btn-success" /></a>
+            </p>
+        }
+
+    </div>

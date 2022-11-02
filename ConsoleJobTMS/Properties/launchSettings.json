@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConsoleJobTMS": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "DEVELOPMENT"
+      }
+    }
+  }
+}

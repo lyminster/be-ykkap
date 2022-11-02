@@ -1,0 +1,221 @@
+﻿@model ViewModel.ViewModels.UserTypeVM
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Role Priviledge</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new vendor form -->
+            
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row center" style="float: none; margin: 0 auto;">
+                    <div class="col-md-12">
+                        <div class="card card-warning">
+                            <div class="card-header">
+                                <h3 class="card-title">Edit</h3>
+                            </div>
+                            <div class="card-body row">
+
+
+                                @Html.HiddenFor(model => model.ID)
+
+                                <div class="col-md-6">
+                                   
+                                    @*<div class="form-group">
+                                        <label class="control-label">Name</label>
+                                        <input type="text" asp-for="UserTypeName" class="form-control" />
+                                        <span asp-validation-for="UserTypeName" class="text-danger"></span>*@
+
+                                    </div>
+                                      
+
+                                </div>
+
+                                <div class="col-md-12">
+
+
+                                    @using (Html.BeginForm("Privilege", "UserGroup", FormMethod.Post, new { id = "newReqForm", name = "newReqForm" }))
+                                    {
+
+                                        <div class="row">
+                                            <div class="col-sm-6 col-xs-12">
+                                                @Html.HiddenFor(model => model.ID)
+                                                <input type="button" onclick="SelectAll()" class="btn btn-sm btn-warning" value="Select All" />
+                                                <input type="hidden" id="checkALL" value="0" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+
+                                            <div class="col-sm-12 col-xs-12 form-group">
+                                                <div class="table-responsive ">
+                                                    <table id="gridDetail" class="display nowrap table table-hover table-striped table-bordered table-colored table-primary" cellspacing="0" width="100%">
+
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th> </th>
+                                                                <th>Group Modul</th>
+                                                                <th>Nama Modul</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            @*<p style="color:red">@Html.ValidationMessageFor(model => model.ErrorMessage)</p>*@
+                                           
+                                            <button type="button" class="btn btn-success waves-effect waves-light m-r-10" onclick="GetAllChecked()">Submit</button>
+                                            <button type="button" class="btn btn-danger waves-effect waves-light" onclick="window.location='@Url.Action("Index", "UserGroup", new { area="Master" })'">Cancel</button>
+                                        </div>
+
+
+                                    }
+
+                                </div>
+                                 
+
+                            </div>
+                            @*<div class="card-footer row">
+
+                                <input type="submit" value="Submit" class="btn btn-success" />
+                                &nbsp;
+                                <a asp-action="Index" class="btn btn-danger">Cancel</a>*@
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- new vendor form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+
+        function SelectAll() {
+            var checkALL = $("#checkALL").val();
+
+            if (checkALL == "0") {
+                $("input:checkbox.chkbx").prop('checked', true);
+                $("#checkALL").val("1");
+            } else {
+                $("input:checkbox.chkbx").prop('checked', false);
+                $("#checkALL").val("0");
+            }
+
+        }
+
+        function GetAllChecked() {
+            var oTable = $('#gridDetail').dataTable();
+            var rowcollection = oTable.$(".chkbx:checked", { "page": "all" });
+            var myArray = [];
+            var i = 0;
+
+            rowcollection.each(function (index, elem) {
+                var checkbox_value = $(elem).val();
+                var data = $(this).parents('tr:eq(0)');
+
+                console.log(checkbox_value);
+                console.log($(data).find('td:eq(2)').text());
+                myArray[i] = checkbox_value;
+                i++;
+            });
+
+            var DataID = $("#ID").val();
+
+            $.ajax({
+                url: '@Url.Action("PrivilegeSave", "UserGroup", new { area = "Master" })',
+                type: 'POST',
+                data: { ListPrivilege: myArray, IDUserGroup: DataID },
+                success: function (result) {
+                    if (result.status === "success") {
+                        window.location.href = result.redirectUrl;
+                    }
+                }
+            });
+
+        }
+
+        $(document).ready(function () {
+
+            $("form").submit(function () {
+
+                ShowLoading();
+
+            });
+
+
+             var DataID = $("#ID").val();
+        var table = $('#gridDetail').DataTable({
+
+            "processing": true, // for show progress bar
+            "serverSide": true, // for process server side
+            "searching": false,
+            "lengthMenu": [[50, 100], [50, 100]],
+
+            "ajax": {
+                "url": "@Url.Action("LoadDataPrivilegeGroup","UserGroup",new { area ="Master" })",
+                "data": { IDUserGroup: DataID },
+                "type": "POST",
+                "datatype": "json"
+            },
+
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+            ],
+
+            "columns": [
+                { "data": "ID", "name": "ID", "autoWidth": true, "visible": false },
+                {
+                    data: "Allow", render: function (data, type, row) {
+                        if (String(row.Allow) === 'true') {
+                            return "<input class='chkbx' type='checkbox' value=" + row.ID + " checked />";
+                        }
+                        else {
+                            return "<input class='chkbx' type='checkbox' value=" + row.ID + " />";
+                        }
+
+                    }, "width": "10%"
+                },
+                { "data": "GroupModul", "title": "Group Modul", "width": "30px" },
+                { "data": "NamaModul", "title": "Nama Modul", "width": "30px" },
+            ],
+
+        });
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+        });
+
+
+    </script>
+
+}

@@ -1,0 +1,104 @@
+﻿@model IEnumerable<ViewModel.ViewModels.UserTypeVM>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Role Priviledge</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new vendor form -->
+            <div class="row center" style="float: none; margin: 0 auto;">
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Data</h3>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <a style="float:right" hidden asp-action="AddOrEdit" class="btn btn-primary col-md-2">Create New User</a>
+
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Role
+                                        </th>
+  
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.UserTypeName)
+                                            </td>
+  
+                                            <td align="center">
+                                                @*<a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-xs btn-warning">Edit Priviledge</a>*@
+                                               
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new vendor form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+
+</div>
+
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+            });
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+        $(document).ready(function () {
+            @*swal('SUCCESS', 'Success Delete', 'success')*@
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+        });
+
+
+
+    </script>
+
+}

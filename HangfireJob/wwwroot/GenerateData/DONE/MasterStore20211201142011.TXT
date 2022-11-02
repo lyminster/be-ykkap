@@ -1,0 +1,1246 @@
+AF01;TAF MDS ARION PLAZA JAKARTA;;Jakarta Timur;0888;JL.Pemuda Kav.3 Rawamangun;5746622;map62@centrin.net.id;Wholesale;0120;;CS
+AF02;TAF ATRIUM SENEN JAKARTA;;Jakarta Pusat;0888;JL.Segi Tiga Atrium;2314605;map67@centrin.net.id;Wholesale;0110;;CS
+AF03;TAF MDS DUTA PLAZA BALI;;Bali;0888;Jl. Dewi Sartika # 46;0361- 247442;bdf0@dps.centrin.net.id;Wholesale;0120;;CS
+AF04;TAF MDS BALI GALERIA;;Bali;0888;Jl By Pass Ngurah Rai;0361-758198;bgf0@dps.centrin.net.id;Wholesale;0120;;CS
+AF05;TAF BANDUNG INDAH PLAZA;;Bandung;0888;Jl Merdeka no. 56;022 4234257;bdgAF05@map.co.id;Wholesale;0120;;CS
+AF08;TAF METROPOLITAN MAL BEKASI;;Bekasi;0888;JL.Raya Ujung Kalimalang 135;8848556;map49@centrin.net.id;Wholesale;0110;;CS
+AF09;TAF CITRALAND JAKARTA;;Jakarta Barat;0888;JL.S Parman;5681503;map43@centrin.net.id;Wholesale;0120;;CS
+AF11;TAF CITRALAND SEMARANG;;Semarang;0888;JL.Simpang Lima no 1;024-415457;csf@idola.net.id;Wholesale;0110;;CS
+AF12;TAF KELAPA GADING MALL JKT;;Jakarta Utara;0888;JL.Kelapa Gading Boulevard;4533430;map44@centrin.net.id;Wholesale;0110;;CS
+AF13;ATHLETES FOOT MDS KUTA SQ;;Bali;0888;Jl Bakung Sari # 1;0361-757597;ksf0@dps.centrin.net.id;Wholesale;0120;;CS
+AF14;TAF MDS MEDAN MALL;;Medan;0888;Jl M.T. Haryono 8/9;064-54055;mmf@mdn.centrin.net.id;Wholesale;0120;;CS
+AF15;TAF MALIOBORO JOGJA;;Yogyakarta;0888;Jl Malioboro No..52-56;0274-520351;Ygkaf15@map.co.id;Wholesale;0110;;CS
+AF23;TAF GALAXY MALL SURABAYA;;Surabaya;0888;Jl Dharmahusada Timur no 37;031-5937323;sgf@sby.centrin.net.id;Wholesale;0110;;CS
+AF24;TAF MDS LEMBUSWANA SMD;;Samarinda;0888;Jl Letjen S Parman;0541 206634;slf@samarinda.org;Wholesale;0120;;CS
+AF26;TAF TAMAN ANGGREK MALL JAKARTA;;Jakarta Barat;0888;Jl.S Parman;021 5639310;Jakaf26@MAP.CO.ID;Wholesale;0110;;CS
+AF28;TAF GALERIA YOGYAKARTA;;Yogyakarta;0888;Jl Jend Sudirman No 99/101;0274-584681;ygf@ygy.centrin.net.id;Wholesale;0110;;CS
+FG03;FOOT GEAR MDS CILANDAK;;Jakarta Selatan;0888;Jl. TB Simatupang - Cilandak;75920359;map174@centrin.net.id;Wholesale;0120;;CS
+GH09;GOLFHOUSE MALIOBORO PLAZA;;Yogyakarta;0888;Jl.Malioboro;0274-589471;mpg@ygy.centrin.net.id;Wholesale;0110;;CS
+GP01;GOLF SEPINGGAN BALIKPAPAN;;Balikpapan;0888;Jl Jend Sudirman;0542-765108;bsg@indo.net.id;Wholesale;0110;;CS
+GP03;GOLF PROSHOP CITRALAND SBY;;Surabaya;0888;Jl Raya Made Lakarsantri;(031) 7414626;csg@sby.centrin.net.id;Wholesale;0110;;CS
+GP05;GOLF PROSHOP GADING RAYA;;Tangerang;0888;JL Boulevard Gading Golf;5467668 EXT 115;map23@centrin.net.id;Wholesale;0110;;CS
+GP06;GOLF PROSHOP KARAWANG INT'L;;Karawang;0888;;0267-406182;map114@centrin.net.id;Wholesale;0120;;CS
+GP07;GOLF PROSHOP  KAPUK;;Jakarta Utara;0888;PERUMAHAN PANTAI INDAH KAPUK;021 5882054;map28@centrin.net.id;Wholesale;0110;;CS
+GP08;GOLF PROSHOP MATOA CIGANJUR;;Jakarta Selatan;0888;DRIVING GOLF MATOA;7875435;map137@centrin.net.id;Wholesale;0110;;CS
+GP18;GOLF PROSHOP SERPONG;;Tangerang;0888;JL Bukit Golf 1/Sektor 6;5374868;map54@centrin.net.id;Wholesale;0110;;CS
+GP20;GOLF PROSHOP MODERLAND TGR;;Tangerang;0888;PERUMAHAN MODERNLAND;5529688;map57@centrin.net.id;Wholesale;0110;;CS
+HC01;DEPT. KIDZ BOYS TOYS (402-022);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav. 86;5745808;;Wholesale;0130;;CS
+HC03;DEPT. KIDZ GIRLS TOYS (404-022;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HC05;DEPT. FASHION/KIDZ A&P (406-02;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HC07;OFF.CHILDREN'S MARKETING (408-;;Jakarta Pusat;0888;Jl. Jend Sudirman kav.86;5745808;;Wholesale;0130;;CS
+HG01;RETAIL - GOLF (201-002);;Jakarta Pusat;0888;Jl. Jend Sudirman kav.86;5745808;;Wholesale;0130;;CS
+HG02;WHOLESALE GOLF (202-099);;Jakarta Pusat;0888;Jl. Jend Sudirman kav.86;5745808;;Wholesale;0130;;CS
+HS01;RACKET,ACC.,WS & WILSON (101-0;;Jakarta Pusat;0888;Jl.Jend. Sudirman Kav 86;5745808;;Wholesale;0130;;CS
+HS02;APP./BAGS & CARD  (102-001);;Jakarta Pusat;0888;Jl.Jend.Sudirman Kav 86;5745808;;Wholesale;0130;;CS
+HS03;FOOTWEAR & APP.  (103-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HS04;A & P - SPORTS (104-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HS05;OTHERS - SPORTS (105-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HS06;APPARELS  (106-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HS07;FOOTWEAR  (107-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HS08;SPEEDO  (108-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HS09;WATCHES & SUNGLASSES (109-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav.86;5745808;;Wholesale;0130;;CS
+HS10;REEBOK APPARELS (301-008);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;5745808;;Wholesale;0130;;CS
+HS13;CONVERSE (501-001);;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;5745808;;Wholesale;0130;;CS
+HS15;DIADORA - A & P HEAD OFFICE ST;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;5745808;;Wholesale;0130;;CS
+KS04;KS SUPERMAL BANDUNG;;Bandung;0888;Jl.Gatot Subroto 289;022-9101109;bsi@bdg.centrin.net.id;Wholesale;0110;;CS
+KS09;KS JAVA SUPERMAL SMG;;Semarang;0888;JAVA SUPERMALL;024-8410015;jsi0@indo.net.id;Wholesale;0110;;CS
+KS10;KS K.GADING JKT;;Jakarta Utara;0888;Jl.Boulevard Kelapa Gading;45842507/2328;map4@centrin.net.id;Wholesale;0110;;CS
+KS11;KIDZ STATION SOGO KLP GADING;;Jakarta Utara;0888;Jl. Boulevard;4533372;map171@centrin.net.id;Wholesale;0120;;CS
+KS13;KS SUPERMAL KARAWACI;;Tangerang;0888;Jl.Diponegoro Lippo Karawaci 1;5475048;map92@centrin.net.id;Wholesale;0110;;CS
+KS16;KIDZ STATION MEGAMAL MANADO;;Manado;0888;KAWASAN MEGA MAS LT 1 L19-21;0431-841566;mmimdo@indosat.net.id;Wholesale;0110;;CS
+KS17;KS MALIOBORO YOGYA;;Yogyakarta;0888;Jl. Malioboro No.58;0274-589473;mpi@ygy.centrin.net.id;Wholesale;0110;;CS
+KS19;KS MAL SKA PEKANBARU;;Pekanbaru;0888;Jl.SoekarnoHatta;0761-864303;;Wholesale;0110;;CS
+KS21;KS PLUIT VILLAGE;;Jakarta Utara;0888;JL.Pluit Indah Raya;66602168/51;map98@centrin.net.id;Wholesale;0110;;CS
+KS22;KIDZ STATION PASARAYA JKT;;Jakarta Selatan;0888;Jl.Iskandarsyah II/2;7396075/7227505;map84@centrin.net.id;Wholesale;0120;;CS
+KS23;KS GALAXY MAL SBY;;Surabaya;0888;Jl. Dharmahusada Indah Timur 3;031-5937283;sgi@sby.centrin.net.id;Wholesale;0110;;CS
+KS25;KIDZ STATION SOGO SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika;57900071;map72@centrin.net.id;Wholesale;0120;;CS
+KS28;KIDZ STATION SOGO TP4 SBY;;Surabaya;0888;Jl Embong Malang 7-21;031-5323767;tsi@sby.centrin.net.id;Wholesale;0120;;CS
+KS29;KS MAL PANAKKUKANG;;Makassar;0888;Jl. Boulevard,Komp. Panakkukan;0411-424221;upimks@indosat.net.id;Wholesale;0110;;CS
+OB10;OSHKOSH B'GOSH THAMRIN MEDAN;;Medan;0888;Jl Thamrin;061 7362935;mth@mdn.centrin.net.id;Wholesale;0110;;CS
+PR04;REEBOK CITRALAND JAKARTA;;Jakarta Barat;0888;"Jl. S. Parman,";56954867;map93@centrin.net.id;Wholesale;0110;;CS
+PR05;REEBOK CIPUTRA SEMARANG;;Semarang;0888;Jl. Simpang Lima no. 1;024-8449356;cso@idola.net.id;Wholesale;0110;;CS
+PR07;REEBOK KUTA SQUARE BALI;;Bali;0888;Jl. Bakung Sari;0361-755186;kso0@dps.centrin.net.id;Wholesale;0110;;CS
+PR08;REEBOK LIPPO SUPERMAL KARAWACI;;Tangerang;0888;Jl.Diponegoro 105;5473701;map86@centrin.net.id;Wholesale;0110;;CS
+PR10;REEBOK MALIOBORO YOGYA;;Yogyakarta;0888;Jl.Malioboro 52-58;0274-546833;mpo@ygy.centrin.net.id;Wholesale;0110;;CS
+PR16;REEBOK TP3 SBY;;Surabaya;0888;Jl. Basuki Rachmat 8-12;031-5326701;tso@sby.centrin.net.id;Wholesale;0110;;CS
+PS02;PLANET SPORTS BALI GALERIA;;Bali;0888;Jl. ByPass Ngurah Rai;0361-753442;bgs0@dps.centrin.net.id;Wholesale;0110;;CS
+PS03;PL. SPORTS ISTANA PLAZA BDG;;Bandung;0888;Jl. Pasir Kaliki no.121-123;022-6000229;bip2@bdg.centrin.net.id;Wholesale;0110;;CS
+PS06;PLANET SPORTS SOGO K. GADING M;;Jakarta Utara;0888;Jl. Boulevard;4533349;map26@centrin.net.id;Wholesale;0120;;CS
+PS07;PLANET SPORTS MALIOBORO MAL YO;;Yogyakarta;0888;Jl.Malioboro 52-5;0274 521067;;Wholesale;0110;;CS
+PS09;PLANET SPORTS PONDOK INDAH MAL;;Jakarta Selatan;0888;Jl.Metro Pondok Indah Kav.3/B;021 75906256;;Wholesale;0120;;CS
+PS12;PLANET SPORTS PASARAYA JAKARTA;;Jakarta Selatan;0888;Jl.Iskandarsyah II/2;021-72780387;;Wholesale;0120;;CS
+PS16;PLANET SPORTS SOGO TP4 SRBY;;Surabaya;0888;Jl Embong Malang 7-21;031-5323746;;Wholesale;0120;;CS
+PS17;PLANET SPORTS RATU INDAH MAKAS;;Makassar;0888;Jl. Dr.Sam Ratulangi no.35;0411-834614;urs@map.co.id;Wholesale;0110;;CS
+RO01;ROCKPORT PONDOK INDAH MAL;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;75901947;map161@centrin.net.id;Wholesale;0110;;CS
+RS01;RSH ATRIUM SENEN JAKARTA;;Jakarta Pusat;0888;Jl. Senen Raya No.135;3867951;map8@centrin.net.id;Wholesale;0110;;CS
+RS03;RSH TRUNOJOYO BANDUNG;;Bandung;0888;JL.Trunojoyo No.7;022-4241178;btr@bdg.centrin.net.id;Wholesale;0110;;CS
+SP02;SPEEDO PROSHOP PONDOK INDAH;;Jakarta Selatan;0888;Jl.Metro Pondok Indah;7507039;map30@centrin.net.id;Wholesale;0110;;CS
+SS03;SPORTS STATION BANDUNG INDAH P;;Bandung;0888;Jl.Merdeka no. 56;022-4215918;bhs@bdg.centrin.net.id;Wholesale;0110;;CS
+SS04;SPORTS STATION BANJARMASIN;;Banjarmasin;0888;Jl.MT.Haryono #992-994;0511-4366775;bjs-bjm@indo.net.id;Wholesale;0110;;CS
+SS06;SS RUKO BALIKPAPAN PERMAI;;Balikpapan;0888;"Jl. Jend.Sudirman Blok F1 no.;0542-440956;bms0@indo.net.id;Wholesale;0110;;CS
+SS07;SPORTS STATION BLOK M PLAZA;;Jakarta Selatan;0888;"Jl. Bulungan Raya No. 76,";7209071;map10@centrin.net.id;Wholesale;0110;;CS
+SS08;SPORTS STATION RAMAYANA BALI;;Bali;0888;Jl. Diponegoro no.103;0361 235226;brc@dps.centrin.net.id;Wholesale;0120;;CS
+SS09;SPORTS STATION SILIWANGI BANDU;;Bandung;0888;Jl. Aceh no. 66;022-4202164;bss@bdg.centrin.net.id;Wholesale;0110;;CS
+SS13;SPORTS STATION GRAGE MAL CIREB;;Cirebon;0888;Jl.Tentara Pelajar No 1;0231-222927;cgs@crb.elga.net.id;Wholesale;0110;;CS
+SS15;SPORTS STATION CITRA KLENDER J;;Jakarta Timur;0888;Jl.I Gusti Ngurah Rai No. 18-1;86605741;map120@centrin.net.id;Wholesale;0110;;CS
+SS20;SPORTS STATION TIARA DEWATA BA;;Bali;0888;JL.May Jend Sotoyo No.55;0361-235733;dts0@dps.centrin.net.id;Wholesale;0110;;CS
+SS23;SPORTS STATION GLDN TRULY G.SA;;Jakarta Pusat;0888;Jl. Gunung Sahari;4216985;map76@centrin.net.id;Wholesale;0120;;CS
+SS25;SPORTS STATION NOVOTEL JAMBI;;Jambi;0888;JLCamar I No.3 Komplek Novotel;0741-26773;jns@ja.mweb.co.id;Wholesale;0110;;CS
+SS26;SPORTS STATION RAMAYANA SIDOAR;;Sidoarjo;0888;Jl Diponegoro No 1;;;Wholesale;0120;;CS
+SS28;SPORTS STATION PROSHOP KLP GAD;;Jakarta Utara;0888;Jl.Boulevard Kelapa Gading;45841071;map117@centrin.net.id;Wholesale;0110;;CS
+SS29;SPORTS STATION K.GADING MAL;;Jakarta Utara;0888;Jl.Kelapa Gading Boulevard No.;4533431/32;map27@centrin.net.id;Wholesale;0110;;CS
+SS32;SPORTS STATION LIPPO CITY CIKA;;Bekasi;0888;Mall Lippo Cikarang Lt. Dasar;8972508;map50@centrin.net.id;Wholesale;0110;;CS
+SS35;SS SUPERMAL KARAWACI;;Tangerang;0888;Jl.Diponegoro Lippo Karawaci 1;5462266;map19@centrin.net.id;Wholesale;0110;;CS
+SS41;SPORTS STATION DIENG PLZ MALAN;;Malang;0888;Jl Raya Langsep #2 Unit202-204;0341-572278;mds@indo.net.id;Wholesale;0110;;CS
+SS43;SPORTS STATION MALIOBORO JOGJA;;Yogyakarta;0888;Jl.Malioboro Plaza  3-4;(0274)-586787;mpy@ygy.centrin.net.id;Wholesale;0110;;CS
+SS44;SPORTS STATION CITRALAND SEMAR;;Semarang;0888;Jl.Simpang Lima #1;024-8415134;;Wholesale;0110;;CS
+SS45;SPORTS STATION RAMAYANA MALANG;;Malang;0888;Jl. Merdeka Timur no.1;;;Wholesale;0120;;CS
+SS46;SPORTS STATION MEDAN MAL;;Medan;0888;Jl.MT.Haryono No.8-9;061-4520146;mss@mdn.centrin.net.id;Wholesale;0110;;CS
+KS01;KS GALERIA BALI;;Bali;0888;JL Simpang siur-By Pass Ngurah;0361-767003;bgi0@dps.centrin.net.id;Wholesale;0110;;CS
+KS41;KIDZ STATION SOGO PARIS VAN JA;;Bandung;0888;Jl Sukajadi No 137-139;;;Wholesale;0120;;CS
+SSD7;SPORTS STATION NAGOYA HILL BAT;;Batam;0888;Jl Imam Bonjol Komp Wijayakusu;0778-7493642;;Wholesale;0110;;CS
+KS42;KIDZ STATION DEBENHAMS SENAYAN;;Jakarta Pusat;0888;Jl Asia Afrika Lot 19;;;Wholesale;0120;;CS
+AD01;ADIDAS MAL KLP GADING JAKARTA;;Jakarta Utara;0888;Jl Boulevard Klp Gading;;;Wholesale;0120;;CS
+AD10;ADIDAS RUKO KUTA SQUARE BALI;;Bali;0888;"Jl Bakung Sari, kuta";0361 753997;;Wholesale;0110;;CS
+AD13;ADIDAS TP3 SBY;;Surabaya;0888;Jl Basuki Rahmat no 8-12A;031-5472039;;Wholesale;0110;;CS
+SSE0;SPORTS STATION / GH SUPERMAL B;;Bandung;0888;Jl.GatotSubroto 289;022 9101281;Bdgsse0@map.co.id;Wholesale;0110;;CS
+AD15;ADIDAS SENAYAN CITY JAKARTA;;Jakarta Pusat;0888;Jl Asia Afrika;;;Wholesale;0110;;CS
+SSD9;SPORTS STATION CINERE MALL;;Jakarta Selatan;0888;"Jl Raya Cinere,PangkalanJati";021 7531660;JAKSSD9@MAP.CO.ID;Wholesale;0110;;CS
+CV12;CONVERSE EX PLAZA INDONESIA;;Jakarta Pusat;0888;L4 # E14 Jl. M.H. Thamrin Kav;021 39838763;Jakcv12@map.co.id;Wholesale;0110;;CS
+FG18;FOOTGEAR MEN CDS PLZ AMBARUKMO;;Yogyakarta;0888;Jl Laksda Adisucipto;;;Wholesale;0120;;CS
+PU10;PUMA SENAYAN CITY JAKARTA;;Jakarta Pusat;0888;Jl Asia Afrika Lot 19;021 72781421;;Wholesale;0110;;CS
+SSE3;SPORTS STATION YOGYA CIHAMPELA;;Bandung;0888;Jl Cihampelas No 160;022 2061012;;Wholesale;0120;;CS
+SSE4;SPORTS STATION CENTRO PLZ AMBA;;Yogyakarta;0888;Jl Laksda Adisucipto;;;Wholesale;0120;;CS
+SSE5;SPORTS ST. GOLDEN TRULY BTM CI;;Batam;0888;Jl. Bunga Raya Seibaloy;;;Wholesale;0120;;CS
+SSE6;SPORTS STATION SOLO SQUARE;;Solo;0888;Jl Slamet Riyadi 451-455;;;Wholesale;0110;;CS
+SSE7;SPORTS STATION MDS SOLO SQUARE;;Solo;0888;Jl Slamet Riyadi 451-455;;;Wholesale;0120;;CS
+PU11;PUMA KELAPA GADING MAL 3 JAKAR;;Jakarta Utara;0888;Jl Boulevard Klp Gad;;;Wholesale;0110;;CS
+PS27;PLANET SPORTS SOGO GALAXY MALL;;Surabaya;0888;Jl Dharmahusada IndahTimur 35-;031 5472027 (...;;Wholesale;0120;;CS
+KS43;KIDZ STATION SOGO GALAXY MALL;;Surabaya;0888;Jl Dharmahusada IndahTimur 35-;;;Wholesale;0120;;CS
+PS28;PLANET SPORTS SOGO DISCOVERY M;;Bali;0888;Jl Kartika Plaza Kuta Bali;0361 769592;;Wholesale;0120;;CS
+SSE8;SPORTS STATION MDS NAGOYA HILL;;Batam;0888;Jl. Teuku Umar Superblock;0778 420320 TEMP;;Wholesale;0120;;CS
+AD17;ADIDAS MAL TAMAN ANGGREK JKT;;Jakarta Barat;0888;Jl Jend S Parman;021-5639298;;Wholesale;0110;;CS
+HC10;DEPT.KIDZ OUTRIGHT PURCHASE;;Jakarta Pusat;0888;Jl. Jend Sudirman kav.86;;;Wholesale;0110;;CS
+HS21;HO NEW BALANCE SAMPLE PRODUCTI;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;;;Wholesale;0110;;CS
+SSY5;SS GORONTALO MALL;;Gorontalo;0888;Jl. HOS. Cokroaminoto No. 1;;;Wholesale;0110;;CS
+SSY6;SS MALL KENDARI;;Kendari;0888;Jl. MT. Haryono No. 61-63, Ben;;;Wholesale;0110;;CS
+SSY7;SS MASPION SQUARE;;Surabaya;0888;Jl. Achmad Yani No. 73;;;Wholesale;0110;;CS
+GP38;GP SUKAJADI BATAM;;Batam;0888;Jl. Jend Sudirman Sukajadi;;;Wholesale;0110;;CS
+SSY8;SS KALIBATA CITY SQUARE JAKART;;Jakarta Selatan;0888;Jl. Kalibata Raya No. 1;;;Wholesale;0110;;CS
+LN10;LINEA LOTTE WORLD JAKARTA;;Jakarta Selatan;0510;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0110;;CS
+PY59;PY MEGAMALL MANADO;;Manado;0190;Jl. Pierre Tendean Boulevard M;;;Wholesale;0110;;CS
+SK24;SKECHERS BAYWALK PLUIT;;Jakarta Utara;0888;Jl. Pluit Karang Ayu B1 Utara;;;Wholesale;0110;;CS
+CV32;CONVERSE CIHAMPELAS WALK BANDU;;Bandung;0888;Jl. Cihampelas 160;;;Wholesale;0110;;CS
+CV33;CONVERSE LIPPO KUTA ICON BALI;;Bali;0888;Jl. Kartika Plaza Lingkar Sega;;;Wholesale;0110;;CS
+SS1G;SS BATAM CITY SQUARE;;Batam;0888;JL. BUNGA RAYA A7 NO. 01;;;Wholesale;0110;;CS
+SS1H;SS JATINANGOR TOWN SQ;;Bandung;0888;Jl. Raya Jatinangor No. 150;;;Wholesale;0110;;CS
+SS1I;SS CIBINONG CITY MALL;;Bogor;0888;Jl. Tegar Beriman No. 1;;;Wholesale;0110;;CS
+GH44;GH SUPERMAL KARAWACI;;Tangerang;0888;Jl. Diponegoro Lippo Karawaci;;;Wholesale;0110;;CS
+SK25;SKECHERS MANADO TOWN SQUARE;;Manado;0888;Jl. Pierre Tendean Boulevard M;;;Wholesale;0110;;CS
+CV34;CONVERSE MANADO TOWN SQUARE;;Manado;0888;Jl. Pierre Tendean Boulevard M;;;Wholesale;0110;;CS
+RO34;ROCKPORT ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+SK26;SKECHERS CIHAMPELAS WALK;;Bandung;0888;Jl. Cihampelas 160;;;Wholesale;0110;;CS
+NE03;NB LIPPO KUTA ICON;;Bali;0888;Jl. Kartika Plaza Lingkar Sega;;;Wholesale;0110;;CS
+PY60;PAYLESS CIBINONG CITY MALL;;Bogor;0190;Jl. Tegar Beriman No. 1;;;Wholesale;0110;;CS
+CV35;CONVERSE OLYMPIC GARDEN MALANG;;Malang;0888;Jl. Kawi No. 24;;;Wholesale;0110;;CS
+CV36;CONVERSE BAYWALK PLUIT;;Jakarta Utara;0888;Jl. Pluit Karang Ayu B1 Utara;;;Wholesale;0110;;CS
+SK27;SKECHERS OLYMPIC GARDEN MALANG;;Malang;0888;Jl. Kawi No. 24;;;Wholesale;0110;;CS
+PY61;PAYLESS OLYMPIC GARDEN MALANG;;Malang;0190;Jl. Kawi No. 24;;;Wholesale;0110;;CS
+PY62;PAYLESS JOGJA CITY MALL;;Yogyakarta;0190;Jl. Raya Magelang Km. 6;;;Wholesale;0110;;CS
+PY63;PAYLESS LIPPO CIKARANG;;Bekasi;0190;Jl. MH Thamrin Lippo Cikarang;;;Wholesale;0110;;CS
+SS1J;SS RUKO MARELAN MEDAN;;Medan;0888;Jl. Marelan Raya Mp. 250, Reng;;;Wholesale;0110;;CS
+KR96;KR METRO THE PARK SOLO;;Solo;0888;Jl. Raya Solo Baru Permai;;;Wholesale;0120;;CS
+PY64;PAYLESS MALL OF INDONESIA;;Jakarta Utara;0190;Jl. Raya Boulevard Barat;;;Wholesale;0110;;CS
+SA16;STACCATO GRAND METROPOLITAN;;Bekasi;0510;Jl. KH. Noer Ali;;;Wholesale;0110;;CS
+SK28;SKECHERS LIPPO KUTA ICON;;Bali;0888;Jl. Kartika Plaza Lingkar Sega;;;Wholesale;0110;;CS
+LV12;LEVI'S KIDZ METRO PIM;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;;;Wholesale;0120;;CS
+AL01;AL MENS DEBENHAMS SENCY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0120;;CS
+AL02;AL LADIES SOGO KLP GADING;;Jakarta Utara;0888;Jl. Boulevard Raya kelapa Gadi;;;Wholesale;0120;;CS
+SV03;STRIDE RITE SOGO SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No. 8;;;Wholesale;0120;;CS
+GL03;GOLF LEISURE SOGO SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No. 8;;;Wholesale;0120;;CS
+BZG1;BZR MALL PANAKKUKANG (1/10-15/;;Makassar;0888;Jl. Boulevard Komp.Panakukang;;;Wholesale;0110;;CS
+CI09;CLAIRE'S BAYWALK PLUIT;;Jakarta Utara;0888;Jl. Pluit Karang Ayu B1 Utara;;;Wholesale;0110;;CS
+CV37;CONVERSE GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+LV13;LEVI'S SOGO KELAPA GADING;;Jakarta Utara;0888;Jl. Boulevard Raya kelapa Gadi;;;Wholesale;0120;;CS
+HJ01;HEAD OFFICE - TRAVELOGUE;;Jakarta Pusat;0888;Jl. Jend.Sudirman Kav 86;;;Wholesale;0110;;CS
+KR97;KR GRAMEDIA GRAND MM BEKASI;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0120;;CS
+LV14;LEVI'S KIDZ METRO PACIFIC PLAC;;Jakarta Selatan;0888;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+LV15;LEVI'S KIDZ METRO TJ BUNGA;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0120;;CS
+KR98;KR GRAMEDIA KIDS CITRAGRAND CI;;Bekasi;0888;Jl. Alternatif Cibubur, Cileun;;;Wholesale;0120;;CS
+HJ02;HEAD OFFICE - CLAIRE'S;;Jakarta Pusat;0888;Jl. Jend.Sudirman Kav 86;;;Wholesale;0110;;CS
+AT01;ACTIVE SPORTS SOGO PLZ SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No. 8;;;Wholesale;0120;;CS
+SS1K;SS MEGA SORONG;;Sorong;0888;Jl. Basuki Rahmat KM 8,5;;;Wholesale;0110;;CS
+KSA9;KS PLAZA MEDAN FAIR;;Medan;0888;Jl. Jend. Gatot Subroto No. 30;;;Wholesale;0110;;CS
+LV16;LEVI'S SOGO PVJ BANDUNG;;Bandung;0888;Jl Sukajadi No 137-139;;;Wholesale;0120;;CS
+SS1L;SS SUZUYA BANDA ACEH MALL;;Banda Aceh;0888;Jl. Teuku Umar ex-Terminal Lam;;;Wholesale;0120;;CS
+SS1M;SS DUTA PERTIWI MALL;;Semarang;0888;Jl. Pemuda No. 150;;;Wholesale;0110;;CS
+SSC2;SPORTS STATION MDS MALANG TOWN;;Malang;0888;Jl Veteran No 2;0341 572278 (...;;Wholesale;0120;;CS
+SSC3;SPORTS ST. MDS CIPUTRA SERAYA;;Pekanbaru;0888;Jl. Riau No. 58;0761 - 868717;;Wholesale;0120;;CS
+PU04;PUMA TP3 SBY;;Surabaya;0888;Jl Basuki Rahmat 8-12;031 5474431;;Wholesale;0110;;CS
+PU05;PUMA BANDUNG SUPERMAL;;Bandung;0888;Jl.Gatot Subroto 209;022 9101544;;Wholesale;0110;;CS
+HS17;OAKLEY HEAD OFFICE;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;;;Wholesale;0110;;CS
+HS18;DIADORA - FOOTWEAR HEAD OFFICE;;Jakarta Pusat;0888;Jl.Jend.Sudirman Kav 1;;;Wholesale;0110;;CS
+OB33;OSHKOSH B'GOSH PONDOK INDAH MA;;Jakarta Selatan;0888;Jl Arteri Pondok Indah;021 75920636;;Wholesale;0110;;CS
+BA01;BARBIE BOUTIQUE PIM 2;;Jakarta Selatan;0888;Jl Arteri Pondok Indah;021 75920936;;Wholesale;0110;;CS
+HS19;NEW BALANCE HEAD OFFICE STORE;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;021 5750795;;Wholesale;0110;;CS
+PS24;PLANET SPORTS SOGO NUSA DUA BA;;Bali;0888;Kawasan Pariwisata Blok 5;0361 778928;;Wholesale;0120;;CS
+KS40;KIDZ STATION SOGO NUSA DUA BAL;;Bali;0888;Komp. Bali Tourism Dev. Corp.;0361 773806;bliks40@map.co.id;Wholesale;0120;;CS
+SSC5;SPORTS STATION RAMAYANA GRHA C;;Jakarta Timur;0888;Jl Raya Bogor Cijantung;;;Wholesale;0120;;CS
+SSC6;SPORTS STATION PLAZA CIBUBUR;;Jakarta Timur;0888;Jl Alternatif Transyogi;021 84597317;jakssc6@map.co.id;Wholesale;0110;;CS
+HS20;PUMA HEAD OFFICE STORE;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;021 5750795;;Wholesale;0110;;CS
+SSAA;SS MALL WTC MATAHARI SERPONG;;Tangerang;0888;Jl. Raya Serpong No.39, Pd. Ja;;;Wholesale;0110;;CS
+SSC8;SPORTS STATION PANAKUKANG MAL;;Makassar;0888;Jl Boulevard;0411 4661975;;Wholesale;0110;;CS
+SSD1;SPORTS STATION PLZ AMBARUKMO Y;;Yogyakarta;0888;Jl. Laksda Adisucipto;0274-4331031;;Wholesale;0110;;CS
+SSD2;SPORTS STATION DUTA MAL BANJAR;;Banjarmasin;0888;"2nd Fl, Unit B1-B3 & B10-B12";0511 4365477;;Wholesale;0110;;CS
+SSD4;SPORTS STATION CENTRO MARGOCIT;;Depok;0888;Jl Margonda Raya 358;021 77204259 ...;;Wholesale;0120;;CS
+PU09;PUMA MALL TAMAN ANGGREK;;Jakarta Barat;0888;Jl Letjen S Parman;021 5639291;JAKPU09@map.co.id;Wholesale;0110;;CS
+SSD5;SPORTS STATION/GH PLZ CITRA PK;;Pekanbaru;0888;Jl Pepaya no 78;0761 855723;;Wholesale;0110;;CS
+KS81;KIDZ STATION DUTA MALL BANJARM;;Bogor;0888;Jl. Akhmad Yani;;;Wholesale;0120;;CS
+PY13;PAYLESS LIVING WORLD;;Tangerang;0190;Jl. Alam Sutra Boulevard Kav.;;;Wholesale;0110;;CS
+PY14;PAYLESS DUTA MALL BANJARMASIN;;Banjarmasin;0190;Jl. Akhmad Yani;;;Wholesale;0110;;CS
+SSR1;SS LOTTE MART BINTARO;;Tangerang;0888;Jl MH Thamrin, Bintaro Jaya Se;;;Wholesale;0110;;CS
+KS82;KIDZ STATION LOTTE MART BINTAR;;Tangerang;0888;Jl MH Thamrin, Bintaro Jaya Se;;;Wholesale;0110;;CS
+PY15;PAYLESS LOTTE MART BINTARO;;Jakarta Selatan;0190;Jl. Lingkar Luar Selatan Kav.;;;Wholesale;0110;;CS
+SSR3;SPORTS STATION LIVING WORLD;;Tangerang;0888;Jl. Alam Sutra Boulevard Kav.;;;Wholesale;0110;;CS
+SA03;STACCATO TP4 SURABAYA;;Surabaya;0510;Jl. Basuki Rahmat No. 16-18;;;Wholesale;0110;;CS
+KS80;KS CIPUTRA SERAYA PKBR;;Pekanbaru;0888;Jl. Riau No.58;;;Wholesale;0110;;CS
+PY11;PAYLESS CIHAMPELAS WALK BDG;;Bandung;0190;Jl. Cihampelas No. 160;;;Wholesale;0110;;CS
+PY12;PAYLESS CIPUTRA WORLD SBY;;Surabaya;0190;Jalan Mayjend Sungkono 87;;;Wholesale;0110;;CS
+SSQ6;SS RAMAYANA GARUT;;Garut;0888;Jl. Guntur Kel. Pakuwon;;;Wholesale;0120;;CS
+SSQ7;SS RAMAYANA TATURA PALU;;Palu;0888;Jl. Emmi Saelan No. 1;;;Wholesale;0120;;CS
+SSQ8;SS MDS PLAZA SURABAYA;;Surabaya;0888;Jl. Pemuda 31-37;;;Wholesale;0120;;CS
+SSQ9;SS MDS BALIKPAPAN PLAZA;;Balikpapan;0888;Jl Jend Sudirman no 1;;;Wholesale;0120;;CS
+SSR0;SS MDS THAMRIN PLAZA  MEDAN;;Medan;0888;Jl Thamrin no 75R;;;Wholesale;0120;;CS
+RO17;ROCKPORT MENS SOGO SUN MDN;;Medan;0888;Jl. KH. Zainul Arifin #7;;;Wholesale;0120;;CS
+RO16;ROCKPORT BALI GALERIA;;Bali;0888;Jl. ByPass Ngurah Rai, Simpang;;;Wholesale;0110;;CS
+SSQ2;SS RUKO PASAR BARU JAKARTA;;Jakarta Pusat;0888;JL. Pasar Baru No.117;;;Wholesale;0110;;CS
+SSQ3;SS MALL PEKANBARU;;Pekanbaru;0888;Jl. Jend Sudirman No. 123;;;Wholesale;0110;;CS
+PY09;PAYLESS GRAGE CIREBON;;Cirebon;0190;Jl.Tentara Pelajar No 1;;;Wholesale;0110;;CS
+PY10;PAYLESS PEJATEN VILLAGE;;Jakarta Selatan;0190;Jl. Warung Jati Barat No.39;;;Wholesale;0110;;CS
+SSQ4;SS RAMAYANA KEDIRI;;Kediri;0888;Jl. Panglima Sudirman;;;Wholesale;0120;;CS
+KR80;TOYS CENTRO GALAXY SBY;;Surabaya;0888;Jl. Dharmahusada Indah Timur 3;;;Wholesale;0120;;CS
+SA01;STACCATO SENAYAN CITY;;Jakarta Pusat;0510;Jl. Asia Afrika Lot 19;;;Wholesale;0110;;CS
+SSQ5;SS RAMAYANA GRESIK;;Gresik;0888;Jl. Gub Suryo No. 24;;;Wholesale;0120;;CS
+SA02;STACCATO PACIFIC PLACE;;Jakarta Selatan;0510;Jl. Jend. Sudirman Kav. 52-53;;;Wholesale;0110;;CS
+PY08;PAYLESS DEBENHAMS KARAWACI;;Tangerang;0190;Jl.Diponegoro Lippo Karawaci 1;;;Wholesale;0120;;CS
+BA03;BARBIE TP3 SURABAYA;;Surabaya;0888;Jl. Basuki Rachmat 8-12;;;Wholesale;0110;;CS
+OB41;OSHKOSH TP3 SURABAYA;;Surabaya;0888;Jl. Basuki Rachmat 8-12;;;Wholesale;0110;;CS
+SSQ0;SS RUKO KUTA SUCI;;Bali;0888;Jl. Pantai Kuta;;;Wholesale;0110;;CS
+GP31;GOLF PROSHOP NIKE CENGKARENG;;Tangerang;0888;Soewarna Business Park, Block;;;Wholesale;0110;;CS
+KS79;KIDZ STATION PEJATEN VILLAGE;;Jakarta Selatan;0888;Jl. Warung Jati Barat No.39;;;Wholesale;0110;;CS
+GH31;GH CIPUTRA WORLD SURABAYA;;Surabaya;0888;Jalan Mayjend Sungkono 87;;;Wholesale;0110;;CS
+TV03;TRAVELOGUE PVJ BANDUNG;;Bandung;0888;Jl Sukajadi No. 137-139;;;Wholesale;0110;;CS
+SSQ1;SS PALEMBANG SQUARE MALL;;Palembang;0888;Jl. Angkatan 45 / POM IX;;;Wholesale;0110;;CS
+GP29;GOLF PROSHOP SRIXON CENGKARENG;;Tangerang;0888;Soewarna Business Park, Block;;;Wholesale;0110;;CS
+SSP8;SS ARMADA TOWN SQUARE;;Magelang;0888;Jl. Mayjend Bambang Soegeng No;;;Wholesale;0110;;CS
+SSP9;SS SOLO PARAGON;;Solo;0888;Jl. Yosodipuro No. 133;;;Wholesale;0110;;CS
+PU19;PUMA CIPUTRA WORLD SBY;;Surabaya;0888;Jl.  Mayjend Sungkono No. 87;;;Wholesale;0110;;CS
+KS78;KIDZ STATION SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0110;;CS
+KS95;KS KEDIRI TOWN SQUARE;;Kediri;0888;Jl. Hasanuddin 2, Bolowerti;;;Wholesale;0110;;CS
+SST4;SPORTS STATION KEDIRI TOWN SQU;;Kediri;0888;Jl. Hasanuddin 2, Bolowerti;;;Wholesale;0110;;CS
+SSS8;SS RAMAYANA CIBUBUR;;Jakarta Timur;0888;Jl. Lapangan Tembak Cibubur;;;Wholesale;0120;;CS
+SSS9;SS RAMAYANA PLERED CIREBON;;Cirebon;0888;Jl. Raya Plered;;;Wholesale;0120;;CS
+HS24;HO - SPERRY TOP SIDER;;Jakarta Pusat;0888;Jl. Jend. Sudirman Kav 86;;;Wholesale;0110;;CS
+HS25;HEAD OFFICE - ADIDAS BADMINTON;;Jakarta Pusat;0888;Jl. Jend. Sudirman Kav 86;;;Wholesale;0110;;CS
+SST0;SS RAMAYANA RAJABASA LAMPUNG;;Lampung;0888;Jl. ZA. Pagar Alam, Rajabasa;;;Wholesale;0120;;CS
+TV09;TRAVELOGUE KUNINGAN CITY;;Jakarta Selatan;0888;Jl. Prof DR. Satrio Kav 18;;;Wholesale;0110;;CS
+SSS4;SS FOODHALL KEBON JERUK;;Jakarta Barat;0888;Jl. Raya Perjuangan No. 11;;;Wholesale;0120;;CS
+PY25;PAYLESS PANAKKUKANG MAKASSAR;;Makassar;0190;Jl. Boulevard Panakkukang;;;Wholesale;0110;;CS
+SSS5;SS MTC MEGAMAS MANADO;;Manado;0888;Jl. Pierre Tendean;;;Wholesale;0110;;CS
+GP32;GP RAWAMANGUN DRIVING RANGE;;Jakarta Timur;0888;Jl. Rawamangun Muka Raya No. 1;;;Wholesale;0110;;CS
+GP33;GP SETIABUDI MEDAN;;Medan;0888;Komp. Taman Setiabudi Blok F,;;;Wholesale;0110;;CS
+GP34;GP PULOMAS JAKARTA;;Jakarta Timur;0888;Jl. Pulomas Jaya No. 1;;;Wholesale;0110;;CS
+SSS6;SS GALERIA YOGYAKARTA;;Yogyakarta;0888;Jl. Jend Sudirman No 99-101;;;Wholesale;0110;;CS
+RO21;ROCKPORT MALL RATU INDAH MKS;;Makassar;0888;Jl. Dr.Sam Ratulangi no.35;;;Wholesale;0110;;CS
+SSS7;SS KARAWANG CENTRAL PLAZA;;Karawang;0888;Jl. Raya Galuh Mas;;;Wholesale;0110;;CS
+TV08;TRAVELOGUE CIPUTRA WORLD SBY;;Surabaya;0888;Jl.  Mayjend Sungkono No. 87;;;Wholesale;0110;;CS
+SSS3;SS RUKO TATURA PALU;;Palu;0888;Jl. Emmi Saelan;;;Wholesale;0110;;CS
+KS92;KS OLYMPIC MALANG;;Malang;0888;Jl. Kawi No. 24;;;Wholesale;0110;;CS
+SA05;STACCATO GRAND CITY SURABAYA;;Surabaya;0510;Jl. Walikota Mustajab & Jl. Ku;;;Wholesale;0110;;CS
+SA06;STACCATO BEACHWALK BALI;;Bali;0510;Jl. Pantai Kuta;;;Wholesale;0110;;CS
+PY22;PAYLESS SUPERMALL PAKUWON;;Surabaya;0190;Jl. Puncak Bukit Lontar 2;;;Wholesale;0110;;CS
+PY23;PAYLESS PALEMBANG ICON;;Palembang;0190;Jl POM IX;;;Wholesale;0110;;CS
+PY24;PAYLESS BALE KOTA;;Tangerang;0190;Jl. Jend. Sudirman;;;Wholesale;0110;;CS
+KR85;OSHKOSH&CARTER METRO CIWORLD S;;Surabaya;0888;Jalan Mayjend Sungkono 87;;;Wholesale;0120;;CS
+KR86;TOYS KINGDOM MARGO CITY DPK;;Depok;0888;Jl Margonda Raya 358;;;Wholesale;0120;;CS
+PS52;PLANET SPORTS RUKO KUTA SQUARE;;Bali;0888;Komp Kuta Square Blok C No. 24;;;Wholesale;0110;;CS
+LN07;LINEA CIPUTRA WORLD SURABAYA;;Surabaya;0510;Jl. Mayjend Sungkono 87;;;Wholesale;0110;;CS
+TV05;TRAVELOGUE SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0110;;CS
+KS91;KS WILTOP TRADE CENTRE;;Jambi;0888;Jl. Sultan Thaha;;;Wholesale;0110;;CS
+PY21;PAYLESS SOLO PARAGON;;Solo;0190;Jl. Yosodipuro No. 133;;;Wholesale;0110;;CS
+GH35;GH PALEMBANG INDAH MALL;;Palembang;0888;Jl.Letkol Iskandar No.18;;;Wholesale;0110;;CS
+SSS2;SS RUKO PALANGKARAYA;;Palangkaraya;0888;Jl. Raya Dharmosugondo No. 56;;;Wholesale;0110;;CS
+GH36;GH PONDOK INDAH MALL;;Jakarta Selatan;0888;Jl. Metro Pondok Indah Kav.3/B;;;Wholesale;0110;;CS
+KR83;BARBIE METRO CIPUTRA WORLD;;Surabaya;0888;Jalan Mayjend Sungkono 87;;;Wholesale;0120;;CS
+HS23;HO WHOLESALE SPORT 1;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;;;Wholesale;0110;;CS
+KR84;TOYS METRO CIPUTRA WORLD;;Surabaya;0888;Jalan Mayjend Sungkono 87;;;Wholesale;0120;;CS
+CV22;CONVERSE CIPUTRA WORLD SBY;;Surabaya;0888;Jl.  Mayjend Sungkono No. 87;;;Wholesale;0110;;CS
+BG12;BZR DEMODAY PALEMBANG (20/1-30;;Palembang;0888;Jl. AKBP Cek Agus No. 23;;;Wholesale;0110;;CS
+SV01;STRIDE RITE GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+PY20;PAYLESS ALAM SUTERA;;Tangerang;0190;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+KS89;KS ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+GH34;GOLF HOUSE ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+SSS1;SPORTS STATION ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+SK11;SKECHERS TP3 SBY;;Surabaya;0888;Jl. Basuki Rachmat 8-12;;;Wholesale;0110;;CS
+SSR9;SS GRAND CITY SURABAYA;;Surabaya;0888;Jl. Walikota Mustajab & Jl. Ku;;;Wholesale;0110;;CS
+KS85;KS GRAND CITY SURABAYA;;Surabaya;0888;Jl. Walikota Mustajab & Jl. Ku;;;Wholesale;0110;;CS
+KS86;KS BASKO GRAND MALL PADANG;;Padang;0888;Jl.Prof.Dr.Hamka no.2A;;;Wholesale;0110;;CS
+PY18;PAYLESS MALUKU CITY MALL;;Ambon;0190;Jl. Jenderal Sudirman, Hative;;;Wholesale;0110;;CS
+SSS0;SS AMBON CITY CENTER;;Ambon;0888;Jl. Woltermongonsidi - Bangual;;;Wholesale;0110;;CS
+KS87;KS AMBON CITY CENTER;;Ambon;0888;Jl. Woltermongonsidi - Bangual;;;Wholesale;0110;;CS
+PY19;PAYLESS BANDUNG SUPERMALL;;Bandung;0190;Jl. Gatot Subroto 289;;;Wholesale;0110;;CS
+KS88;KS SOLO PARAGON;;Solo;0888;Jl. Yosodipuro No. 133;;;Wholesale;0110;;CS
+KR81;TOYS CITY PEJATEN VILLAGE;;Jakarta Selatan;0888;Jl. Warung Jati Barat No.39;;;Wholesale;0120;;CS
+PS50;PLANET SPORTS BANDUNG SUPERMAL;;Bandung;0888;Jl. Gatot Subroto 289;;;Wholesale;0110;;CS
+SA04;STACCATO PIM JAKARTA;;Jakarta Selatan;0510;Jl.Metro Pondok Indah Kav.3/B;;;Wholesale;0110;;CS
+SSR8;SS MALL OF SERANG;;Serang;0888;Jl. Raya Serang Timur;;;Wholesale;0110;;CS
+TV04;TRAVELOGUE BANDUNG SUPERMALL;;Bandung;0888;Jl. Gatot Subroto 289;;;Wholesale;0110;;CS
+PY17;PAYLESS SKA PEKANBARU;;Pekanbaru;0190;Jl. Soekarno - Hatta;;;Wholesale;0110;;CS
+CV21;CONVERSE BANDUNG SUPERMALL;;Bandung;0888;Jl. Gatot Subroto 289;;;Wholesale;0110;;CS
+KS83;KS BEACHWALK BALI;;Bali;0888;Jl. Pantai Kuta;;;Wholesale;0110;;CS
+PS49;PLANET SPORTS BEACHWALK BALI;;Bali;0888;Jl. Pantai Kuta;;;Wholesale;0110;;CS
+SSR4;SPORTS STATION BALE KOTA;;Tangerang;0888;Jl. Jend. Sudirman;;;Wholesale;0110;;CS
+HC11;HEAD OFFICE - CROCS SAMPLE;;Jakarta Pusat;0888;Jl. Jend Sudirman kav.86;;;Wholesale;0110;;CS
+PY16;PAYLESS SOLO SQUARE;;Solo;0190;Jl. Slamet Riyadi 451-455;;;Wholesale;0110;;CS
+SK09;SKECHERS BANDUNG SUPERMALL;;Bandung;0888;Jl. Gatot Subroto 289;;;Wholesale;0110;;CS
+SSR6;SS CIREBON SUPERBLOCK;;Cirebon;0888;Jl. Dr. Cipto Mangunkusumo;;;Wholesale;0110;;CS
+KS84;KS CIREBON SUPERBLOCK;;Cirebon;0888;Jl. Dr. Cipto Mangunkusumo;;;Wholesale;0110;;CS
+SSR7;SS RUKO SUDIRMAN LAMPUNG;;Lampung;0888;Jl. Jend. Sudirman No. 66;;;Wholesale;0110;;CS
+RO18;ROCKPORT BANDUNG SUPERMALL;;Bandung;0888;Jl. Gatot Subroto 289;;;Wholesale;0110;;CS
+SSM8;SS CAMBRIDGE CITY MEDAN;;Medan;0888;Jl. S. Parman 215;;;Wholesale;0110;;CS
+GH27;GH CIPUTRA SERAYA PEKANBARU;;Pekanbaru;0888;Jl. Jend. Sudirman No. 71;;;Wholesale;0110;;CS
+SSM9;SS RAMAYANA CIREBON;;Cirebon;0888;Jl. Syarief Abduhrrohman No. 1;;;Wholesale;0120;;CS
+SSN0;SS RAMAYANA DEPOK;;Depok;0888;Jl.Margonda Raya;;;Wholesale;0120;;CS
+SSN1;SS RAMAYANA PONTIANAK;;Pontianak;0888;Jl. Tanjung Pura;;;Wholesale;0120;;CS
+SSN2;SS PASARAYA SRI RATU SEMARANG;;Semarang;0888;Jl. Pemuda No. 29 - 33;;;Wholesale;0120;;CS
+SSN3;SS RAMAYANA CILEGON;;Cilegon;0888;Jl. Ahmad Yani No. 1, Sukmajay;;;Wholesale;0120;;CS
+SSN5;SS YOGYA DEPT STORE CIREBON;;Cirebon;0888;Jl. Bahagia No. 123;;;Wholesale;0120;;CS
+SSM2;SS YOGYA KEPATIHAN BANDUNG;;Bandung;0888;Jl Kepatihan # 18;;;Wholesale;0120;;CS
+SSM3;SS SIPIN UJUNG JAMBI;;Jambi;0888;Jl. Kol. Abun Jani No. 18 A;;;Wholesale;0110;;CS
+SSM4;SPORTS STATION RAMAYANA KUDUS;;Kudus;0888;Jl. Simpang 7 Demaan;;;Wholesale;0120;;CS
+SSM5;SPORTS STATION CHANDRA SIMPUR;;Lampung;0888;Jl. Katamso No. 55;;;Wholesale;0120;;CS
+SP06;SPEEDO PROSHOP GRAHA SILIWANGI;;Bandung;0888;Jl. Lombok No. 11;;;Wholesale;0110;;CS
+FG23;FOOTGEAR CENTRO MARGO CITY;;Depok;0888;Jl. Kemiri Muka No. 358;;;Wholesale;0120;;CS
+PU17;PUMA DISCOVERY MALL BALI;;Bali;0888;Jl. Kartika Plaza;;;Wholesale;0110;;CS
+KS73;KIDZ STATION SOGO CENTRAL PARK;;Jakarta Barat;0888;Jl. Let. Jend S. Parman Kav. 2;;;Wholesale;0120;;CS
+RO13;ROCKPORT SOGO PLAZA SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika;;;Wholesale;0120;;CS
+SK02;SKECHERS DISCOVERY MALL BALI;;Bali;0888;Jl. Kartika Plaza;;;Wholesale;0110;;CS
+SK03;SKECHERS GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+KR68;OSHKOSH METRO TJ. BUNGA MAKASS;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0120;;CS
+KR69;BARBIE METRO TJ. BUNGA MAKASSA;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0120;;CS
+KR70;TOYS METRO TJ. BUNGA MAKASSAR;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0120;;CS
+SSL7;SS RAMAYANA SAMARINDA BARU;;Samarinda;0888;Jl. M. Yamin;;;Wholesale;0120;;CS
+SSL8;SPORTS STATION RAMAYANA LAMPUN;;Lampung;0888;Jl. Raden Inten No. 1;;;Wholesale;0120;;CS
+SSM0;SPORTS STATION MDS TASIKMALAYA;;Tasikmalaya;0888;Jl. Veteran No. 10;;;Wholesale;0120;;CS
+SSM1;SS YOGYA TASIKMALAYA;;Tasikmalaya;0888;Jl. HZ. Mustofa No. 124;;;Wholesale;0120;;CS
+SK08;SKECHERS CIPUTRA WORLD SBY;;Surabaya;0888;Jl.  Mayjend Sungkono No. 87;;;Wholesale;0110;;CS
+CP04;CAMPER SEMINYAK BALI;;Bali;0510;Jl. Raya Seminyak No. 37;;;Wholesale;0110;;CS
+PY07;PAYLESS GANDARIA CITY;;Jakarta Selatan;0190;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+SSP5;SS MDS MTC MANADO;;Manado;0888;Jl. Pierre Tendean;;;Wholesale;0120;;CS
+SSP6;SS JATILAND MALL TERNATE;;Ternate;0888;Jl. Boulevard-Kawasan Jatiland;;;Wholesale;0110;;CS
+KS77;KS CIPUTRA WORLD SURABAYA;;Surabaya;0888;Jalan Mayjend Sungkono 87;;;Wholesale;0110;;CS
+SSP7;SS CIPUTRA WORLD SURABAYA;;Surabaya;0888;Jalan Mayjend Sungkono 87;;;Wholesale;0110;;CS
+SSP2;SS FESTIVAL CITYLINK BDG;;Bandung;0888;Jl. Peta No. 241;;;Wholesale;0110;;CS
+KR77;TOYS KINGDOM LIVING WORLD;;Tangerang;0888;Jl. Alam Sutra Boulevard Kav.;;;Wholesale;0120;;CS
+SSP3;SS RAMAYANA PERINGGAN MDN;;Medan;0888;Jl. Iskandar Muda;;;Wholesale;0120;;CS
+HY01;MGI - MERCHANDISING;;Jakarta Pusat;0510;Jl.Jend.Sudirman Kav 86;;;Wholesale;0110;;CS
+HY02;MGI - MARKETING;;Jakarta Pusat;0510;Jl.Jend.Sudirman Kav 86;;;Wholesale;0110;;CS
+PY06;PAYLESS MARGO CITY DEPOK;;Depok;0190;Jl Margonda Raya 358;;;Wholesale;0110;;CS
+SSP0;SS RAMAYANA SUKABUMI;;Sukabumi;0888;Jl. Tipar gede No. 17;;;Wholesale;0120;;CS
+SSP1;SS RAMAYANA PANBIL BATAM;;Batam;0888;Jl. Kawasan Komersial;;;Wholesale;0120;;CS
+TV02;TRAVELOGUE GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+PY05;PAYLESS PLAZA SEMANGGI;;Jakarta Selatan;0190;Jl Jend.Sudirman;;;Wholesale;0110;;CS
+PY02;PAYLESS CENTRAL PARK;;Jakarta Barat;0190;Jl. Letjend S. Parman Kav. 28;;;Wholesale;0110;;CS
+PY03;PAYLESS BLOK M PLAZA;;Jakarta Selatan;0190;Jl. Bulungan Raya No. 76;;;Wholesale;0110;;CS
+PY04;PAYLESS TRANS STUDIO MKS;;Makassar;0190;Jl. HM. Dg. Patomo;;;Wholesale;0110;;CS
+KR75;BARBIE METRO GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+KR76;TOYS METRO GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+GP28;GOLF PROSHOP DRIVING SENAYAN;;Jakarta Pusat;0888;Jl. Pintu Senayan 5, GBK;;;Wholesale;0110;;CS
+DC20;DC PAYLESS (Putra Agung Lestar;;Bekasi;0190;Jln. Imam Bonjol, KM 49;;;Wholesale;0100;;CS
+SK07;SKECHERS CENTRAL PARK;;Jakarta Barat;0888;Jl. Letjend S. Parman Kav. 28;;;Wholesale;0110;;CS
+PS48;PLANET SPORT TRANS STUDIO MKS;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0110;;CS
+KS76;KS TRANS STUDIO MKS;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0110;;CS
+TV01;TRAVELOGUE CENTRAL PARK;;Jakarta Barat;0888;Jl. Letjend S. Parman Kav. 28;;;Wholesale;0110;;CS
+SSO8;SS TRONA DEPT STORE JAMBI;;Jambi;0888;Jl. Kapten A. Bakarudin No. 88;;;Wholesale;0120;;CS
+PU18;PUMA PARIS VAN JAVA BANDUNG;;Bandung;0888;Jl Sukajadi No. 137-139;;;Wholesale;0110;;CS
+SSO9;SS RAMAYANA BLOK M MALL;;Jakarta Selatan;0888;Jl. Hasanudin, Terminal Blok M;;;Wholesale;0120;;CS
+PY01;PAYLESS PVJ BANDUNG;;Bandung;0190;Jl Sukajadi No 137-139;;;Wholesale;0110;;CS
+SSO0;SS CAHAYA BG JUNCTION SBY;;Surabaya;0888;Jl. Bubutan No. 1-7;;;Wholesale;0120;;CS
+SSO1;SS IMPERIAL KARAWACI;;Tangerang;0888;Jl. Pulau Golf;;;Wholesale;0110;;CS
+LN05;LINEA CENTRAL PARK;;Jakarta Barat;0510;Jl. LetJend S. Parman;;;Wholesale;0110;;CS
+LN06;LINEA KEMANG;;Jakarta Selatan;0510;Jl. Kemang Raya No. 72A;;;Wholesale;0110;;CS
+SSO2;SS RAMAYANA PANAM PEKANBARU;;Pekanbaru;0888;Jl. HR. Subrantas;;;Wholesale;0120;;CS
+KS74;KIDZ STATION FX SENAYAN;;Jakarta Pusat;0888;Jl. Jend.Sudirman Pintu 1 Sena;;;Wholesale;0110;;CS
+SSO3;SS RAMAYANA PANAKUKKANG;;Makassar;0888;Jl. Penganyoman;;;Wholesale;0120;;CS
+KS75;KS PVJ BANDUNG;;Bandung;0888;Jl Sukajadi No. 137-139;;;Wholesale;0110;;CS
+SSO5;SS PVJ BANDUNG;;Bandung;0888;Jl Sukajadi No 137-139;;;Wholesale;0110;;CS
+SSO6;SS MANADO TOWN SQUARE;;Manado;0888;Jl. Pierre Tendean Boulevard M;;;Wholesale;0110;;CS
+SK06;SKECHERS PVJ BANDUNG;;Bandung;0888;Jl Sukajadi No 137-139;;;Wholesale;0110;;CS
+SSO7;SS RAMAYANA SEI JODOH BATAM;;Batam;0888;Jl. SEI Jodoh Marina City;;;Wholesale;0120;;CS
+KR71;TOYS KINGDOM GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+DC19;PT. PUTRA AGUNG LESTARI;;;0190;;;;Wholesale;0100;;CS
+HO19;PT. PUTRA AGUNG LESTARI;;;0190;;;;Wholesale;0110;;CS
+SSN8;SS PEJATEN VILLAGE;;Jakarta Selatan;0888;Jl. Warung Jati Barat No.39;;;Wholesale;0110;;CS
+SSN9;SS MDS KEPRI MALL BATAM;;Batam;0888;Jl. Jend. Sudirman Simpang Muk;;;Wholesale;0120;;CS
+LN02;LINEA PLAZA INDONESIA;;Jakarta Pusat;0510;JL MH THAMRIN Kav 28-30;;;Wholesale;0110;;CS
+LN03;LINEA SENAYAN CITY;;Jakarta Pusat;0510;Jl Asia Afrika Lot 19;;;Wholesale;0110;;CS
+LN04;LINEA PIM 2;;Jakarta Selatan;0510;Jl.Metro Pondok Indah Blok III;;;Wholesale;0110;;CS
+CP02;CAMPER SENAYAN CITY;;Jakarta Pusat;0510;Jl Asia Afrika Lot 19;;;Wholesale;0110;;CS
+CP03;CAMPER BALI;;Bali;0510;Jl. Pantai Kuta 1;;;Wholesale;0110;;CS
+H051;DELETED;;;0510;;;;Wholesale;0110;;CS
+SSM6;SS SENTANI CITY SQUARE;;Sentani;0888;Jl. Kemiri No. 286;;;Wholesale;0110;;CS
+SSM7;SS BASKO GRANDMALL PADANG;;Padang Sidempuan;0888;Jl.Prof.Dr.Hamka no.2A;;;Wholesale;0110;;CS
+GH26;GOLF HOUSE GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+SSN6;SS CAHAYA BALCONY BALIKPAPAN;;Balikpapan;0888;Jl. Jend. Sudirman;;;Wholesale;0120;;CS
+SSN7;SS ROBINSON PASAR MINGGU;;Jakarta Selatan;0888;Jl. Raya Pasar Minggu;;;Wholesale;0120;;CS
+CP01;CAMPER PLAZA INDONESIA;;Jakarta Pusat;0510;JL MH THAMRIN 28-30;;;Wholesale;0110;;CS
+DC51;Distribution Center PT. MITRA;;Bogor;0510;21 Cicadas Gunung Putri;;;Wholesale;0100;;CS
+HO51;HO PT. Mitra Gaya Indah;;Bogor;0510;21 Cicadas Gunung Putri;;;Wholesale;0110;;CS
+LN01;LINEA PLAZA SENAYAN;;Jakarta Pusat;0510;Jl. Asia Afrika 8 Jakarta;;;Wholesale;0110;;CS
+M001;MEETOO PIM 1;;Jakarta Selatan;0510;JL Arteri Pondok Indah;;;Wholesale;0110;;CS
+SX01;SHOE BOX;;Jakarta Selatan;0510;Jl. Terogong Raya No. 26;;;Wholesale;0110;;CS
+PY31;PAYLESS MALL OF SERANG;;Serang;0190;Jl. Raya Serang Timur;;;Wholesale;0110;;CS
+PY32;PAYLESS SUN PLAZA MEDAN;;Medan;0190;Jl. KH Zainul Arifin no 7;;;Wholesale;0110;;CS
+TV11;TRAVELOGUE KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+PY33;PAYLESS KARAWANG CENTRAL PLAZA;;Karawang;0190;Jl. Raya Galuh Mas;;;Wholesale;0110;;CS
+BZE3;BZR DEPOK MALL (15/6-19/12/12);;Depok;0888;Jl. Margonda Raya 88;;;Wholesale;0110;;CS
+SSU1;SS RAMAYANA PARUNG;;Bogor;0888;Jl. Raya Ciputat,Parung;;;Wholesale;0120;;CS
+PY29;PAYLESS KEDIRI TOWN SQUARE;;Kediri;0190;Jl. Hasanuddin 2, Bolowerti;;;Wholesale;0110;;CS
+SSU0;SS LOTUS PLAZA CIBUBUR;;Jakarta Timur;0888;Jl Alternatif Transyogi (cibub;;;Wholesale;0120;;CS
+SA07;STACCATO KOTA KASABLANKA;;Jakarta Selatan;0510;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+KS98;KS SOGO KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0120;;CS
+KS99;KS DEBENHAMS KEMANG VILLAGE;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0120;;CS
+PY30;PAYLESS E-WALK BALIKPAPAN;;Balikpapan;0190;Jl. Jend.Sudirman 47;;;Wholesale;0110;;CS
+SST5;SS RAMAYANA KEBAYORAN LAMA;;Jakarta Selatan;0888;Jl. Pasar Kebayoran Lama;;;Wholesale;0120;;CS
+SP07;SPEEDO TP3 SBY;;Surabaya;0888;Jl. Basuki Rachmat 8-12;;;Wholesale;0110;;CS
+SST6;SS MAYASARI PLAZA;;Tasikmalaya;0888;Jl. Pasar Wetan;;;Wholesale;0110;;CS
+SK12;SKECHERS KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+PS56;PLANET SPORTS KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+CV23;CONVERSE DISCOVERY MALL BALI;;Bali;0888;Jl. Kartika Plaza;;;Wholesale;0110;;CS
+PU22;PUMA KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+SST7;SS MDS ANGSO DUO JAMBI;;Jambi;0888;Jl. Gatot Subroto No. 53;;;Wholesale;0120;;CS
+RO22;ROCKPORT KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+GH38;GOLF HOUSE KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+KS96;KS KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+SST8;SPORTS STATION KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+PY27;PAYLESS KOTA KASABLANKA;;Jakarta Selatan;0190;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+SST9;SPORTS STATION CIBUBUR JUNCTIO;;Jakarta Timur;0888;Jl. Raya Cibubur;;;Wholesale;0110;;CS
+PS57;PS PARIS VAN JAVA BANDUNG;;Bandung;0888;Jl Sukajadi No. 137-139;;;Wholesale;0110;;CS
+PY28;PAYLESS CIBUBUR JUNCTION;;Jakarta Timur;0190;Jl. Raya Cibubur;;;Wholesale;0110;;CS
+PY26;PAYLESS SIDOARJO TOWN SQUARE;;Sidoarjo;0190;Jl. Pahlawan, Simpang Susun;;;Wholesale;0110;;CS
+SST1;SS SIDOARJO TOWN SQUARE;;Sidoarjo;0888;Jl. Pahlawan, Simpang Susun;;;Wholesale;0110;;CS
+KS93;KS SIDOARJO TOWN SQUARE;;Sidoarjo;0888;Jl. Pahlawan, Simpang Susun;;;Wholesale;0110;;CS
+SST2;SS PALLADIUM MALL MEDAN;;Medan;0888;Jl. Kapten Maulana Lubis No. 8;;;Wholesale;0110;;CS
+PS55;PLANET SPORTS PLAZA BALIKPAPAN;;Balikpapan;0888;Jl Jend Sudirman no 1;;;Wholesale;0110;;CS
+SST3;SPORTS STATION BATU TOWN SQUAR;;Malang;0888;Jl. Diponegoro No. 1;;;Wholesale;0110;;CS
+SSV4;SS RUKO NANGKA PEKANBARU;;Pekanbaru;0888;Jl Tuanku Tambusai Nangka;;;Wholesale;0110;;CS
+SA09;STACCATO KEMANG VILLAGE;;Jakarta Selatan;0510;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+SSV5;SS RUKO RADEN INTEN LAMPUNG;;Lampung;0888;Jl. Raden Inten, Desa Pelita T;;;Wholesale;0110;;CS
+SSV6;SS RUKO PEMATANG SIANTAR;;Medan;0888;Jl. Pattimura No. 8;;;Wholesale;0110;;CS
+SSV7;SS RUKO KRAKATAU MEDAN;;Medan;0888;Jl. Gunung Krakatau No. 60;;;Wholesale;0110;;CS
+EC01;ECCO KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+KR87;KR LOTUS PLAZA CIBUBUR;;Jakarta Timur;0888;Jl Alternatif Transyogi (cibub;;;Wholesale;0120;;CS
+SSU8;SS RUKO GATOT SUBROTO MEDAN;;Medan;0888;Jl. Jend Gatot Subroto;;;Wholesale;0110;;CS
+PY37;PAYLESS CENTRE POINT MEDAN;;Medan;0190;Jl. Jawa;;;Wholesale;0110;;CS
+SSU3;SS MDS PLAZA CITRA PEKANBARU;;Pekanbaru;0888;Jl. Pepaya No. 78;;;Wholesale;0120;;CS
+SA08;STACCATO GRAND INDONESIA;;Jakarta Pusat;0510;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+KSA0;KS ARMADA TOWN SQUARE;;Magelang;0888;Jl. Mayjend Bambang Soegeng No;;;Wholesale;0110;;CS
+SSU4;SPORTS STATION RUKO PALOPO;;Palopo;0888;Jl. Rambutan No. 141, Dango Ra;;;Wholesale;0110;;CS
+SSU5;SPORTS STATION RUKO PARE PARE;;Pare Pare;0888;Jl. Bau Massepe Blok E No 468,;;;Wholesale;0110;;CS
+SSU6;SPORTS STATION RAMAYANA TARAKA;;Tarakan;0888;Jl. Gajah Mada Perikanan;;;Wholesale;0120;;CS
+SSU7;SS RUKO KOTAMOBAGU;;Kotamobagu;0888;Jl. Adampe Dolot No. 33, Mogol;;;Wholesale;0110;;CS
+GP35;GP ROYALE JAKARTA GOLF CLUB;;Jakarta Timur;0888;Jl. Raya Halim Tiga;;;Wholesale;0110;;CS
+PY36;PAYLESS ROYAL PLAZA SURABAYA;;Surabaya;0190;Jl. Achmad Yani No. 16-18;031-8271426;;Wholesale;0110;;CS
+PY34;PAYLESS ARMADA TOWN SQUARE;;Magelang;0190;Jl. Mayjend Bambang Soegeng No;;;Wholesale;0110;;CS
+PY35;PAYLESS SUPERMAL KARAWACI;;Tangerang;0190;Jl. Diponegoro Lippo Karawaci;;;Wholesale;0110;;CS
+RO25;ROCKPORT LDS METRO GANDARIA CI;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+RO26;ROCKPORT MENS METRO GANDARIA C;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+RO27;ROCKPORT MENS METRO TAM;;Jakarta Barat;0888;Jl. LetJend S. Parman Kav. 28;;;Wholesale;0120;;CS
+CV15;CONVERSE TUNJUNGAN PLAZA 3 SUR;;Surabaya;0888;Jl.Basuki Rahmat #8-12;;;Wholesale;0110;;CS
+PS34;PLANET SPORTS PACIFIC PLACE JA;;Jakarta Selatan;0888;Jl.Jend Sudirman #52-53;021-57973215;;Wholesale;0110;;CS
+GH22;GOLF HOUSE PACIFIC PLACE JAKAR;;Jakarta Selatan;0888;Jl.Jend Sudirman;021-57973215;;Wholesale;0110;;CS
+PS35;PLANET SPORTS SUMMARECON MAL S;;Tangerang;0888;Jl.Boulevard Gading Serpong;021-5464551;;Wholesale;0110;;CS
+SSF1;SPORTS STATION SUMMARECON MAL;;Tangerang;0888;Jl.Boulevard Gading Serpong;021 5464254;;Wholesale;0110;;CS
+PU14;PUMA GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;021 23580424;;Wholesale;0110;;CS
+CV16;CONVERSE PLAZA SEMANGGI;;Jakarta Selatan;0888;Jl. Jend.Sudirman;021 25536710;;Wholesale;0110;;CS
+PS36;PLANET SPORTS MEGAMAL BATAM;;Batam;0888;Jl Engku Putri;0778 470225;;Wholesale;0110;;CS
+BC33;BZR KIDZ PALLADIUM MDN (11/7-3;;Medan;0888;Jl. Kapten Maulana Lubis No. 8;;;Wholesale;0110;;CS
+SSF2;SS PALEMBANG INDAH MAL;;Palembang;0888;Jl. Letkol Iskandar No.18;;;Wholesale;0110;;CS
+CV17;CONVERSE SENAYAN CITY;;Jakarta Pusat;0888;Jl.Asia Afrika Lot 19;021 727 81422;;Wholesale;0110;;CS
+SSF3;SPORTS STATION MDS ATRIUM SENE;;Jakarta Pusat;0888;Jl Segi Tiga Senen;386 7951;;Wholesale;0120;;CS
+SSF4;SPORTS STATION RAMAYANA BANJAR;;Banjarmasin;0888;Jl Antasari no 1;0511 3274674;;Wholesale;0120;;CS
+SSF5;SPORTS STATION MDS GRANDMAL BE;;Bekasi;0888;Jl Jend Sudirman dpn Koramil 0;021 88951723;;Wholesale;0120;;CS
+SSF6;SPORTS STATION MDS LIPPO CIKAR;;Bekasi;0888;Jl Husni Thamrin;021 899 03306;;Wholesale;0120;;CS
+SSF7;SPORTS STATION RAMAYANA KLENDE;;Jakarta Timur;0888;Jl. I Gusti Ngurah Rai No. 18-;;;Wholesale;0120;;CS
+SSF8;SPORTS STATION RAMAYANA MAKASS;;Makassar;0888;Jl A.P.Pettarani, Kp.Panakukan;;;Wholesale;0120;;CS
+SSF9;SPORTS STATION CAHAYA TAMINI S;;Jakarta Timur;0888;Jl. Raya Pondok Gede;;;Wholesale;0120;;CS
+SSG0;SPORTS STATION MAKASSAR TOWN S;;Makassar;0888;Jl. Perintis Kemerdekaan;0411-581817;;Wholesale;0110;;CS
+SSG1;SPORTS STATION MAL OLYMPIC MAL;;Malang;0888;Jl. Kawi;;;Wholesale;0110;;CS
+AF33;TAF TP1 SBY;;Surabaya;0888;Jl. Basuki Rahmat 08-12;031-5459589;;Wholesale;0110;;CS
+RO05;ROCKPORT TP1 SBY;;Surabaya;0888;Jl. Basuki Rahmat #8-12;;;Wholesale;0110;;CS
+PS37;PLANET SPORTS MARGO CITY DEPOK;;Depok;0888;Jl Margonda Raya 358;;;Wholesale;0110;;CS
+SSG3;SPORTS STATION BINJAI SUPERMAL;;Binjai;0888;Jl.Soekarno Hatta #14;;;Wholesale;0110;;CS
+SSG4;SPORTS STATION CIHAMPELAS WALK;;Bandung;0888;Jl.Cihampelas #160;;;Wholesale;0110;;CS
+FG22;FOOTGEAR CENTRO BALI;;Bali;0888;Jl Kartika Plaza Kuta;0361 769634;;Wholesale;0120;;CS
+KS49;KS MAL SERPONG;;Tangerang;0888;Jl. Boulevard Gading Serpong;;;Wholesale;0110;;CS
+KS50;KS MAL PALEMBANG INDAH;;Palembang;0888;Jl. Letkol Iskandar No. 18;;;Wholesale;0110;;CS
+SSG7;SPORTS STATION PLAZA BUARAN KL;;Jakarta Timur;0888;Jl.Raden Inten No.1, Buaran;;;Wholesale;0110;;CS
+PS40;PLANET SPORTS MEDAN FAIR;;Medan;0888;Medan Fair, Jl Gatot Subroto;;;Wholesale;0110;;CS
+PS41;PLANET SPORTS PANAKKUKANG SQUA;;Makassar;0888;Lt.2, Jl. Adhiyaksa No.1;;;Wholesale;0110;;CS
+SSG8;SPORTS STATION BEKASI SQUARE;;Bekasi;0888;Unit GF 168-171Jl.Ahmad Yani;;;Wholesale;0110;;CS
+KS51;KS PLAZA AMBARRUKMO;;Yogyakarta;0888;Jl Laksda Adisucipto;;;Wholesale;0110;;CS
+KS52;KS PACIFIC PLACE;;Jakarta Selatan;0888;Jl.Jend.Sudirman Kav 52-53;021 57973634;;Wholesale;0110;;CS
+KS53;KIDZ STATION MAL OF INDONESIA;;Jakarta Utara;0888;Jl. Boulevard Barat Raya;;;Wholesale;0110;;CS
+OB39;OSHKOSH MAL TAMAN ANGGREK;;Jakarta Barat;0888;Jl. S.Parman Kav 21 Slipi;021 5639115;;Wholesale;0110;;CS
+GH23;GOLF HOUSE PLZ AMBARUKMO;;Yogyakarta;0888;2nd fl unit A8  Jl Laksda Adis;;;Wholesale;0110;;CS
+AF36;TAF BLOK M PLAZA;;Jakarta Selatan;0888;Jl. Bulungan Raya No. 76;;;Wholesale;0110;;CS
+KS54;KIDZ STATION JAVA BEKASI SQUAR;;Bekasi;0888;Jl. Ahmad Yani;;;Wholesale;0120;;CS
+KS55;KIDZ STATION DEBENHAMS KARAWAC;;Tangerang;0888;Jl. Boulevard Diponegoro;;;Wholesale;0120;;CS
+GH39;GOLF HOUSE PVJ BANDUNG;;Bandung;0888;Jl Sukajadi No 137-139;;;Wholesale;0110;;CS
+RO24;ROCKPORT MENS DEBENHAMS KV;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0120;;CS
+BZE9;BZR DEFECT PALLADIUM MDN (1-30;;Medan;0888;Jl. Kapten Maulana Lubis No. 8;;;Wholesale;0110;;CS
+SSX2;SS RUKO KUTA ALAM ACEH;;Banda Aceh;0888;Jl. Tengku Hasan Diek No 7/8,;;;Wholesale;0110;;CS
+SSX3;SS RAMAYANA CIBADAK;;Sukabumi;0888;Jl. Siliwangi, Desa Sekarwangi;;;Wholesale;0120;;CS
+CI03;CLAIRE'S MAL KELAPA GADING;;Jakarta Utara;0888;Jl. Boulevard Klp Gading Blok;;;Wholesale;0110;;CS
+KR89;KR CENTRO SOLO PARAGON;;Solo;0888;Jl. Yosodipuro No. 133;;;Wholesale;0120;;CS
+EC04;ECCO MEN'S SOGO TP4 SURABAYA;;Surabaya;0888;Jl Embong Malang 7-21;;;Wholesale;0120;;CS
+TX03;TIMEX METRO BANDUNG SUPERMALL;;Bandung;0888;Jl. Gatot Subroto 258;;;Wholesale;0120;;CS
+PU23;PUMA KEMANG VILLAGE;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+SSW6;SS RAMAYANA KUPANG;;Kupang;0888;Jl. WJ Lalamentik Oebufu;;;Wholesale;0120;;CS
+SSW7;SS RAMAYANA PULOGADUNG;;Jakarta Timur;0888;Jl. Raya Bekasi Km 21;;;Wholesale;0120;;CS
+SSW8;SS RAMAYANA DURI;;Duri;0888;Jl. Jend. Sudirman;;;Wholesale;0120;;CS
+SSW9;SS TRONA JAMBI PRIMA MALL;;Jambi;0888;Jl. Jend. Sudirman No. 9;;;Wholesale;0120;;CS
+EC03;ECCO GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+SSX0;SS RUKO HASANUDDIN PALU;;Palu;0888;Jl. Sultan Hasanuddin II / 23-;;;Wholesale;0110;;CS
+LN08;LINEA KEMANG VILLAGE;;Jakarta Selatan;0510;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+PY40;PAYLESS GRAND METROPOLITAN BEK;;Bekasi;0190;Jl. KH. Noer Ali;;;Wholesale;0110;;CS
+KSA5;KS GRAND METROPOLITAN BEKASI;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0110;;CS
+SSX1;SS GRAND METROPOLITAN BEKASI;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0110;;CS
+RO28;ROCKPORT MEN'S SOGO TP4 SURABA;;Surabaya;0888;Jl Embong Malang 7-21;;;Wholesale;0120;;CS
+FG25;FOOTGEAR MEN'S CENTRO PARAGON;;Solo;0888;Jl. Yosodipuro No. 133;;;Wholesale;0120;;CS
+EC02;ECCO KEMANG VILLAGE;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+CI01;CLAIRE'S KEMANG VILLAGE;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+SA10;STACCATO PURI INDAH MALL;;Jakarta Barat;0510;Jl. Puri Indah Raya;;;Wholesale;0110;;CS
+CI02;CLAIRE'S KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+SSV8;SPORTS STATION MDS JAYAPURA;;Jayapura;0888;Jl. Sam Ratulangi;;;Wholesale;0120;;CS
+SSV9;SPORTS STATION MDS KENDARI;;Kendari;0888;Jl. MT. Haryono;;;Wholesale;0120;;CS
+SSW1;SPORTS STATION RAMAYANA CIBINO;;Bogor;0888;Jl. Raya Cibinong Km 43;;;Wholesale;0120;;CS
+SSW2;SS RAMAYANA TANJUNG PINANG;;Tanjung Pinang;0888;Jl. Wiratno No. 1;;;Wholesale;0120;;CS
+SSW3;SS RAMAYANA BOGOR TRADE MALL;;Bogor;0888;Jl. Ir. Djuanda No. 58;;;Wholesale;0120;;CS
+SSW4;SS RAMAYANA PALEMBANG;;Palembang;0888;Jl. Letkol Iskandar-Radial kom;;;Wholesale;0120;;CS
+SSW5;SS RAMAYANA KLENDER 2;;Jakarta Timur;0888;Jl. Raya Teratai Putih;;;Wholesale;0120;;CS
+PS59;PS DEBENHAMS KARAWACI;;Tangerang;0888;Jl. Diponegoro Lippo Karawaci;;;Wholesale;0120;;CS
+PY39;PAYLESS TP1 SBY;;Surabaya;0190;Jl. Basuki Rachmat 8-12;;;Wholesale;0110;;CS
+BY01;BZR PY PASAR FESTIVAL (17/6-21;;Jakarta Selatan;0190;Jl. H.R. Rasuna Said Kav. C22;;;Wholesale;0110;;CS
+PY38;PAYLESS KEMANG VILLAGE;;Jakarta Selatan;0190;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+SK13;SKECHERS KEMANG VILLAGE;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+SSV0;SPORTS STATION KEMANG VILLAGE;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+SSV1;SPORTS STATION RAMAYANA SORONG;;Sorong;0888;Jl. Jend A. Yani;;;Wholesale;0120;;CS
+SSV2;SPORTS STATION RUKO SETIABUDI;;Medan;0888;Komp. Taman Setiabudi Blok F,;;;Wholesale;0110;;CS
+PS29;PLANET SPORTS SEIBU GRAND INDO;;Jakarta Pusat;0888;Jl. MH Thamrin;;;Wholesale;0120;;CS
+CV13;CONVERSE SOGO PARIS VAN JAVA B;;Bandung;0888;Jl Sukajadi # 137-139;022-82063487;;Wholesale;0120;;CS
+KS45;KIDZ STATION SEIBU GRAND INDON;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+KS46;KS METROPOLITAN MAL BKS;;Bekasi;0888;Jl.KH Boer Alie;;;Wholesale;0110;;CS
+AD19;ADIDAS SUPERMAL KARAWACI;;Tangerang;0888;Jl.Diponegoro 400;;;Wholesale;0110;;CS
+PS30;PLANET SPORTS TAMAN ANGGREK MA;;Jakarta Barat;0888;Jl.S.Parman Kav 21;021 563 9712;;Wholesale;0110;;CS
+CV14;CONVERSE MAL CIPUTRA JAKARTA;;Jakarta Barat;0888;Jl.S.Parman;021 5681525;;Wholesale;0110;;CS
+SS1P;SS THE PARK SOLO;;Solo;0888;Jl. Raya Solo Baru Permai;;;Wholesale;0110;;CS
+SS1Q;SS JOGJA CITY MALL;;Yogyakarta;0888;Jl. Raya Magelang Km. 6;;;Wholesale;0110;;CS
+SW25;SW MIKO MALL BANDUNG;;Bandung;0888;Jl. Kopo No. 599;;;Wholesale;0110;;CS
+EC26;ECCO TP5 SBY;;Surabaya;0888;Jl. Embong Malang No. 1, 3, 5;;;Wholesale;0110;;CS
+CV39;CONVERSE TRANS STUDIO MAKASSAR;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0110;;CS
+LV19;LEVI'S KIDZ CENTRO DISCOVERY B;;Bali;0888;Jl. Kartika Plaza;;;Wholesale;0120;;CS
+LV20;LEVI'S KIDZ CENTRO AMBARUKMO Y;;Yogyakarta;0888;Jl. Laksda Adisucipto;;;Wholesale;0120;;CS
+CV38;CONVERSE BINTARO LIFESTYLE MAL;;Tangerang;0888;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0110;;CS
+SX02;LINEA DHARMAWANGSA SQUARE (SX);;Jakarta Selatan;0510;Jl. Dharmawangsa VI No. 21;;;Wholesale;0110;;CS
+NE04;NEW BALANCE PONDOK INDAH MALL;;Jakarta Selatan;0888;Jl. Metro Pondok Indah Kav.3/B;;;Wholesale;0110;;CS
+ZI02;BZR STACCATO GANDARIA CITY (21;;Jakarta Selatan;0510;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+AL03;AL CENTRO BINTARO LIFESTYLE;;Tangerang;0888;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0120;;CS
+SS1N;SS CENTRO BINTARO LIFESTYLE;;Tangerang;0888;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0120;;CS
+LV17;LEVI'S CENTRO BINTARO LIFESTYL;;Tangerang;0888;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0120;;CS
+KSB0;KS KUALA NAMU AIRPORT;;Medan;0888;Bandara Kuala Namu, kabupaten;;;Wholesale;0110;;CS
+PS65;PS BAYWALK PLUIT;;Jakarta Utara;0888;Jl. Pluit Karang Ayu Blok B1 U;;;Wholesale;0110;;CS
+GH45;GH BAYWALK PLUIT;;Jakarta Utara;0888;Jl. Pluit Karang Ayu Blok B1 U;;;Wholesale;0110;;CS
+SS1O;SS BEKASI TRADE CENTER;;Bekasi;0888;Jl. HM Joyomartono, Bulak kapa;;;Wholesale;0110;;CS
+AL04;ACTIVE LEISURE METRO PACIFIC P;;Jakarta Selatan;0888;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+LN12;LINEA CLUB CULTURE KEMANG VILL;;Jakarta Selatan;0510;Jl. Pangeran Antasari No. 36;;;Wholesale;0120;;CS
+LV18;LEVI'S KIDZ CENTRO MARGO CITY;;Depok;0888;Jl. Margonda Raya 358;;;Wholesale;0120;;CS
+EC08;ECCO MEN'S METRO PACIFIC PLACE;;Jakarta Selatan;0888;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+EC10;ECCO LDS METRO PONDOK INDAH;;Jakarta Selatan;0888;Jl. Metro Pondok Indah Kav.3/B;;;Wholesale;0120;;CS
+EC11;ECCO LDS METRO PLAZA SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No. 8;;;Wholesale;0120;;CS
+EC12;ECCO LDS SOGO PLAZA SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No. 8;;;Wholesale;0120;;CS
+LN09;LINEA GRAND INDONESIA;;Jakarta Pusat;0510;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+PY45;PAYLESS BENCOOLEN MALL;;Bengkulu;0190;Jl. Pariwisata No. 1;;;Wholesale;0110;;CS
+EC16;ECCO MEN'S SOGO ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0120;;CS
+CI05;CLAIRE'S CENTRAL PARK;;Jakarta Barat;0888;Jl. Letjend S. Parman Kav. 28;;;Wholesale;0110;;CS
+SSY3;SS RUKO KARUNRUNG;;Makassar;0888;Jl. Karunrung No. 1 B7;;;Wholesale;0110;;CS
+KSA6;KS SOGO ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0120;;CS
+EC05;ECCO LDS SOGO ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0120;;CS
+CV26;CONVERSE E-WALK BALIKPAPAN;;Balikpapan;0888;Jl. Jend.Sudirman 47;;;Wholesale;0110;;CS
+SSX8;SS KUNINGAN CITY;;Jakarta Selatan;0888;Jl. Prof DR. Satrio Kav 18;;;Wholesale;0110;;CS
+PY43;PY THAMRIN PLAZA MEDAN;;Medan;0190;Jl.Thamrin No 75R;;;Wholesale;0110;;CS
+PY44;PY BIG MALL SAMARINDA;;Samarinda;0190;Jl. Untung Surapati No 8;;;Wholesale;0110;;CS
+CV27;CONVERSE BIG MALL SAMARINDA;;Samarinda;0888;Jl. Untung Surapati No 8;;;Wholesale;0110;;CS
+SSX9;SS RUKO BANJAR JAMBI;;Jambi;0888;Jl. Kol Polisi Muhammad Taher;;;Wholesale;0110;;CS
+SSY0;SS MANDAU CITY;;Duri;0888;Jl. Jend. Sudirman, Komp Duri;;;Wholesale;0110;;CS
+SSY1;SS BENCOOLEN MALL;;Bengkulu;0888;Jl. Pariwisata No. 1;;;Wholesale;0110;;CS
+SSY2;SS BIG MALL SAMARINDA;;Samarinda;0888;Jl. Untung Surapati No 8;;;Wholesale;0110;;CS
+RO29;ROCKPORT MENS METRO PP;;Jakarta Selatan;0888;Jl. Jend Sudirman Kav 52-53;;;Wholesale;0120;;CS
+RO30;ROCKPORT MENS METRO PIM1;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;;;Wholesale;0120;;CS
+RO31;ROCKPORT MENS SOGO ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0120;;CS
+CV24;CONVERSE KEMANG VILLAGE;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0110;;CS
+CV25;CONVERSE GALAXY MALL SURABAYA;;Surabaya;0888;Jl. Dharmahusada Indah Timur 3;;;Wholesale;0110;;CS
+PY41;PAYLESS KRAMAT JATI INDAH PLAZ;;Jakarta Timur;0190;Jl. Raya Bogor Km 19;;;Wholesale;0110;;CS
+PY42;PAYLESS MALUKU CITY MALL;;Ambon;0190;Jl. Sultan Hassanuddin-Tantui;;;Wholesale;0110;;CS
+SSX4;SS LIPPO PLAZA KRAMAT JATI;;Jakarta Timur;0888;Jl. Raya Bogor Km 19;;;Wholesale;0110;;CS
+SSX5;SS MALUKU CITY MALL;;Ambon;0888;Jl. Sultan Hassanuddin-Tantui;;;Wholesale;0110;;CS
+SSX6;SPORTS STATION MALL JAYAPURA;;Jayapura;0888;Jl. Sam Ratulangi;;;Wholesale;0110;;CS
+PC03;PLANET KIDS KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+SSX7;SS SOLO HARTONO MALL;;Solo;0888;Jl. Raya Solo Baru;;;Wholesale;0110;;CS
+GP36;GP SILIWANGI DRIVING RANGE;;Bandung;0888;Jl. Lombok No. 10;;;Wholesale;0110;;CS
+PS71;PS PENTACITY BALIKPAPAN;;Balikpapan;0888;Jl. Jend. Sudirman No. 47;;;Wholesale;0110;;CS
+HS78;HEAD OFFICE GILDAN;;Jakarta Pusat;0888;Jl. Jend. Sudirman Kav 86;;;Wholesale;0110;;CS
+DCE9;DC Ecomm MGI;;;0510;;;;Wholesale;0100;;CS
+DCEP;DC Ecomm PAL;;;0190;;;;Wholesale;0100;;CS
+XX14;test storeheri;;;0888;jakarta;;;Wholesale;0120;;CS
+XX20;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX36;test36;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+BCK8;BZR BRIX UNITY LEGO (8-20/8/17;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+AF49;TAF TP3 SURABAYA;;Surabaya;0888;Jl. Basuki Rachmat 8-12;;;Wholesale;0120;;CS
+E127;MAA SHOPEE FULFILLMENT AT AGIL;;Bekasi;0888;Jl. Raya Bekasi Km. 28 blok F;;;Wholesale;0110;;CS
+BZX8;BZR SP PLAZA LAWU MADIUN (1/5-;;Madiun;0888;Jl. Pahlawan, Kartoharjo;;;Wholesale;0110;;CS
+E125;MAA FULFILLMENT CENTER AT AGIL;;Bekasi;0888;Jl. Raya Bekasi Km. 28 blok F;;;Wholesale;0110;;CS
+LN17;LINEA SEIBU GRAND INDONESIA;;Jakarta Pusat;0510;Jl. MH Thamrin No. 1;;;Wholesale;0120;;CS
+E301;E-COMMERCE LAZADA;;Jakarta Selatan;0888;Jl. HR Rasuna Said Kav X-2;;;Wholesale;0120;;CS
+SSAB;SPORTS STATION DJAKARTA THEATE;;Jakarta Pusat;0888;Jl. MH Thamrin No. 9;;;Wholesale;0110;;CS
+PR30;PLANET REEBOK GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+E203;MGI FULFILLMENT CENTER AT AGIL;;Bekasi;0510;Jl. Raya Bekasi Km. 28 blok F;;;Wholesale;0110;;CS
+FO02;FOOTLOCKER PIM 3;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;;;Wholesale;0120;;CS
+XX06;TEST STORE 6;;;0888;JAKARTA;;;Wholesale;0120;;CS
+FXZ1;footlocker;;Jakarta Pusat;0510;FOOTLOCKER;;;Wholesale;0120;;CS
+XX10;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX12;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX17;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX31;Test store 30;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;45444;dasda@dadas;Wholesale;0120;;CS
+XX39;test36;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+XX40;test37;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+XX41;test38;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+PS70;PLANET SPORTS CENTRAL PARK;;Jakarta Barat;0888;Jl. Letjend S. Parman Kav. 28;;;Wholesale;0110;;CS
+DCH6;DC - MB DUMMY STORE;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav. 86;;;Wholesale;0110;;CS
+PY99;PAYLESS JAMBI TOWN SQUARE;;Jambi;0190;Jl. Kapten A. Bakaruddin No. 8;;;Wholesale;0110;;CS
+XX11;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX25;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX43;;;;0888;Streeet 1;;;Wholesale;0120;;CS
+DC81;DC Asia Astec Adiperkasa;;;0801;;;;Wholesale;0100;;CS
+HO81;HO Asia Astec Adiperkasa;;;0801;;;;Wholesale;0110;;CS
+DC39;DC Payless Surabaya;;;0190;Jl. Dumar Industri 18;;;Wholesale;0100;;CS
+DCMG;DC Ecomm MGI;;;0510;;;;Wholesale;0100;;CS
+XX07;TEST STORE 7;;;0888;;;;Wholesale;0120;;CS
+XX33;test33;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+AD96;test;;Jakarta Pusat;0888;Jl Asia Afrika;;;Wholesale;0110;;CS
+PS80;PLANET SPORTS DJAKARTA THEATER;;Jakarta Pusat;0888;Jl. MH Thamrin No. 9;;;Wholesale;0120;;CS
+FO03;FOOT LOCKER SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0120;;CS
+DCE3;DC E-Commerce MAA;;;0888;7 Komplek Pergudangan Metrofee;;;Wholesale;0100;;CS
+KE28;BIRKENSTOCK GRAND BATAM;;Batam;0510;Jl. Pembangunan, Lubuk Baja;;;Wholesale;0110;;CS
+XX42;test store reff beda company;;;0888;;;;Wholesale;0110;;CS
+E401;PAYLESS FULFILLMENT CENTER AT;;Bekasi;0190;Jl. Raya Bekasi Km. 28 blok F;;;Wholesale;0110;;CS
+FX01;FOOT LOCKER SENAYAN CITY;;Jakarta Pusat;0510;Jl. Asia Afrika Lot 19;;;Wholesale;0120;;CS
+XX03;TEST STORE 3;;;0888;JAKARTA;;;Wholesale;0120;;CS
+XX21;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX37;test37;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+XX38;test38;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+XX46;Name1 43;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0110;;CS
+AL08;AL MEN'S SOGO DISCOVERY BALI;;Bali;0888;Jl. Kartika Plaza, Kuta;;;Wholesale;0120;;CS
+RS11;RSH MDS AMBON;;Ambon;0888;Jl. Sam Ratulangi No. 126;;;Wholesale;0120;;CS
+SS2B;SS RITA SUPERMALL TEGAL;;Tegal;0888;Jl. Kolonel Sugiyono No. 155;;;Wholesale;0110;;CS
+SS2C;SS RUKO YOSODIPURO;;Solo;0888;Jl. Yosodipuro No. 140;;;Wholesale;0110;;CS
+OK20;OAKLEY VAULT LA PIAZZA MKG;;Jakarta Utara;0888;Jl. Boulevard Kelapa Gading Bl;;;Wholesale;0110;;CS
+SS2D;SS BOEMI KEDATON LAMPUNG;;Lampung;0888;Jl. Teuku umar - Sultan Agung;;;Wholesale;0110;;CS
+SK30;SKECHERS PALEMBANG ICON;;Palembang;0888;Jl POM IX;;;Wholesale;0110;;CS
+LV22;LEVI'S KIDZ CENTRO GRAGE2 CIRE;;Cirebon;0888;Jl. Pengeran Drajat Penggambir;;;Wholesale;0120;;CS
+LK01;LEISURE KIDS DEBENHAMS KV;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0120;;CS
+BZH9;BZR TSW BRAGA CITY WALK (1/5-3;;Bandung;0888;Jl. Braga No. 99-101;;;Wholesale;0110;;CS
+NE17;NEW BALANCE SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0110;;CS
+CV46;CONVERSE PALEMBANG SQUARE MALL;;Palembang;0888;Jl. Angkatan 45 / POM IX;;;Wholesale;0110;;CS
+E107;Planetsports.net - VIP PLAZA;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0120;;CS
+NE18;NEW BALANCE PLAZA INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin kav 28-30;;;Wholesale;0110;;CS
+SS2Q;SS PARK MALL TUBAN BALI;;Bali;0888;Jl. Kediri, Kuta;;;Wholesale;0110;;CS
+SS2R;SS MARVEL CITY SURABAYA;;Surabaya;0888;Jl. Ngagel No. 123;;;Wholesale;0110;;CS
+AL17;AL MEN'S SOGO BIG MALL SAMARIN;;Samarinda;0888;Jl. Untung Surapati No 8;;;Wholesale;0120;;CS
+PC07;PLANET KIDS SOGO BIG MALL SAMA;;Samarinda;0888;Jl. Untung Surapati No 8;;;Wholesale;0120;;CS
+SK33;SKECHERS JOGJA CITY MALL;;Yogyakarta;0888;Jl. Raya Magelang Km. 6;;;Wholesale;0110;;CS
+BZA6;BZR SPORTS MKG (1/10-31/3/14);;Jakarta Utara;0888;Jl. Kelapa Gading Boulevard;;;Wholesale;0110;;CS
+BZA7;BZR MEDAN MALL (1/10-31/12/14);;Medan;0888;Jl. MT. Haryono No. 8-9;;;Wholesale;0110;;CS
+AL09;AL PARKSON LIPPO PURI MALL;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+SD18;SD CARREFOUR LEBAK BULUS;;Jakarta Selatan;0888;Jl. Lebak Bulus Raya No. 8;;;Wholesale;0120;;CS
+LV23;LEVI'S KIDZ PARKSON LIPPO PURI;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+SS2E;SS PALEMBANG ICON;;Palembang;0888;Jl POM IX;;;Wholesale;0110;;CS
+BZJ3;BZR WC METRO TJ BUNGA (9/6-31/;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0120;;CS
+NE07;NEW BALANCE GALAXY SURABAYA;;Surabaya;0888;Jl. Dharmahusada Indah Timur 3;;;Wholesale;0110;;CS
+NE08;NEW BALANCE PARIS VAN JAVA BDG;;Bandung;0888;Jl Sukajadi No 137-139;;;Wholesale;0110;;CS
+BG30;BZR GOLF BINTARO EXCHANGE (1/2;;Tangerang;0888;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0110;;CS
+BZN3;BZR SP SUN PLAZA MEDAN (1/2-31;;Medan;0888;Jl. H. Zainul Arifin #7;;;Wholesale;0110;;CS
+BG31;BZR GOLF SUN PLZ MEDAN (1/2-31;;Medan;0888;Jl. H. Zainul Arifin #7;;;Wholesale;0110;;CS
+KRA6;KR GRAMEDIA KIDS CENTRAL PARK;;Jakarta Barat;0888;Jl. S. Parman;;;Wholesale;0120;;CS
+GL08;GOLF LEISURE SOGO TP4 SURABAYA;;Surabaya;0888;Jl. Embong Malang 7-21;;;Wholesale;0120;;CS
+AT07;ACTIVE SPORTS METRO BANDUNG SU;;Bandung;0888;Jl. Gatot Subroto 289;;;Wholesale;0120;;CS
+BC88;BZR KIDZ FOOD HALL (17/2-17/8/;;Jakarta Barat;0888;Jl. Raya Perjuangan No. 11;;;Wholesale;0120;;CS
+SW13;SPORTS WAREHOUSE POINS SQUARE;;Jakarta Selatan;0888;JL.RA Kartini No.1 Lebak Bulus;;;Wholesale;0110;;CS
+BY04;BZR PAYLESS PRJ KMRYN (6/6-7/7;;Jakarta Pusat;0190;Arena PRJ, Jl. Benyamin Sueb;;;Wholesale;0110;;CS
+E201;LINEA ONLINE STORE;;Jakarta Pusat;0510;Jl. Jend. Sudirman Kav1;;;Wholesale;0110;;CS
+RS12;RSH MDS ARTHA GADING;;Jakarta Utara;0888;Jl. Boulevard Artha Gad Sel. N;;;Wholesale;0120;;CS
+RS13;RSH MDS LIPPO MALL PURI;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Blok;;;Wholesale;0120;;CS
+RS14;RSH MDS CILANDAK TOWN SQ;;Jakarta Selatan;0888;Jl. TB Simatupang - Cilandak;;;Wholesale;0120;;CS
+AL18;AL LADIES SOGO BIG MALL SAMARI;;Samarinda;0888;Jl. Untung Surapati No 8;;;Wholesale;0120;;CS
+AF41;TAF SOGO BIG MALL SAMARINDA;;Samarinda;0888;Jl. Untung Surapati No 8;;;Wholesale;0120;;CS
+E108;Runner.id;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0110;;CS
+PY66;PAYLESS PLAZA ATRIUM SENEN;;Jakarta Pusat;0190;Jl. Senen Raya No.135;;;Wholesale;0110;;CS
+BL09;BZR CLAIRE'S GRAMEDIA PIM (6/3;;Jakarta Selatan;0888;Jl. Metro Pondok Indah Kav.3/B;;;Wholesale;0120;;CS
+BZA3;BZR SP PALLADIUM MDN (29/8-28/;;Medan;0888;Jl. Kapten Maulana Lubis No. 8;;;Wholesale;0110;;CS
+BZA4;BZR SPORT KEPRI MALL (8/6/12-3;;Batam;0888;Jl. Jend Sudirman, Simpang MK;;;Wholesale;0110;;CS
+KR37;NAGATOMI BABY & TOYS;;Semarang;0888;Jl. Pandanaran 114;;;Wholesale;0120;;CS
+KS63;KIDZ STATION SOGO EMPORIUM PLU;;Jakarta Utara;0888;Jl.Pluit Selatan Raya;;;Wholesale;0120;;CS
+SSH9;SS Plaza Indonesia;;Jakarta Pusat;0888;Jl.MH Thamrin kav 28-30;021-39838768;;Wholesale;0110;;CS
+KR34;TOYS CITY BINTARO PLAZA;;Jakarta Selatan;0888;Jl.Bintaro Utama III;;;Wholesale;0120;;CS
+KR43;TOYS CENTRO MALL OF INDONESIA;;Jakarta Utara;0888;Jl. Boulevard Kelapa Gading;;;Wholesale;0120;;CS
+RS15;RSH MDS PEJATEN VILLAGE;;Jakarta Selatan;0888;JL. Warung Jati Barang No.39;;;Wholesale;0120;;CS
+OK21;OAKLEY PARKSON LIPPO PURI MALL;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+AT02;ACTIVE SPORTS PARKSON LIPPO PU;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+GL04;GOLF LEISURE PARKSON LIPPO PUR;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+PC05;PLANET KIDS PARKSON LIPPO PURI;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+BZL1;BZR SP KAZA CITY MALL (01/6-14;;Surabaya;0888;Jl. Kapas Krampung 45;;;Wholesale;0110;;CS
+BC59;BZR SUMMER HOLIDAYS PKU (2-29/;;Pekanbaru;0888;Jl. Jend Sudirman No. 123;;;Wholesale;0110;;CS
+SS2F;SS/GH PARKSON LIPPO PURI MALL;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+SK31;SKECHERS PALEMBANG INDAH MALL;;Palembang;0888;Jl. Letkol Iskandar No.18;;;Wholesale;0110;;CS
+BZL5;BZR SPORTS KUNINGAN CITY (1/6-;;Jakarta Selatan;0888;Jl. Prof DR. Satrio Kav 18;;;Wholesale;0110;;CS
+SA18;STACCATO PALEMBANG ICON;;Palembang;0510;Jl POM IX;;;Wholesale;0110;;CS
+CV41;CONVERSE PALEMBANG INDAH MALL;;Palembang;0888;Jl. Letkol Iskandar No.18;;;Wholesale;0110;;CS
+KRA7;KR SOGO BIG MALL SAMARINDA;;Samarinda;0888;Jl. Untung Surapati No 8;;;Wholesale;0120;;CS
+BZN6;BZR SPORTS TERASKOTA (19/3-21/;;Tangerang;0888;Jl. Pahlawan Seribu, CBD Lot V;;;Wholesale;0110;;CS
+BG32;BZR GOLF TERASKOTA (19/3-21/6/;;Tangerang;0888;Jl. Pahlawan Seribu, CBD Lot V;;;Wholesale;0110;;CS
+AF42;ATHLETE'S FOOT SOGO PVJ BANDUN;;Bandung;0888;Jl. Sukajadi No 137-139;;;Wholesale;0120;;CS
+AT08;ACTIVE SPORTS METRO GANDARIA C;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+AT09;ACTIVE SPORTS METRO PLZ SENAYA;;Jakarta Pusat;0888;Jl. Asia Afrika No.8;;;Wholesale;0120;;CS
+SS2S;SS RAMAYANA MALANG DINOYO;;Malang;0888;Jl. MT. Haryono 160;;;Wholesale;0120;;CS
+PS45;PLANET SPORTS SOGO EMPORIUM PL;;Jakarta Utara;0888;Jl.Pluit Selatan Raya;;;Wholesale;0120;;CS
+SSH1;SS/GH EKALOKASARI BOGOR;;Bogor;0888;Jl. Siliwangi 123 Bogor;;;Wholesale;0110;;CS
+SSH2;SS/GH PARAGON CITY;;Semarang;0888;JL PEMUDA 118 LT 1 UNIT 29-30;024 86579094;;Wholesale;0110;;CS
+KS56;KS PLAZA INDONESIA;;Jakarta Pusat;0888;Jl. M.H. Thamrin Jakarta;;;Wholesale;0110;;CS
+SSH3;SPORTS STATION RAMAYANA SMG;;Semarang;0888;Jl. Simpang Lima No.1;;;Wholesale;0120;;CS
+SD19;SD C4 TRANSMALL CIKOKOL;;Tangerang;0888;Kompleks Mahkota Mas, Jl. MH T;;;Wholesale;0120;;CS
+KRA1;TOYS & BARBIE PARKSON LIPPO PU;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+BZL7;BZR Q MALL BANJARBARU (11/6-10;;Banjarbaru;0888;Jl. Ahmad Yani Km 36,8;;;Wholesale;0110;;CS
+BZM0;BZR LOTTE SHOPPING AVENUE (12/;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+SS2G;SS ROXY SQUARE JEMBER;;Jember;0888;Jl. Hayam Wuruk, Sempursari Ka;;;Wholesale;0110;;CS
+BZM2;BZR SPORTS CENTRAL PARK (25/6-;;Jakarta Barat;0888;Jl. S. Parman;;;Wholesale;0110;;CS
+SR05;SOCCER STATION CENTRO SOLO PAR;;Solo;0888;Jl. Yosodipuro No. 133;;;Wholesale;0120;;CS
+KRA2;VEGA TOYS DAGO BANDUNG;;Bandung;0888;Jl. Ciung Wanara No. 2;;;Wholesale;0120;;CS
+CI16;CLAIRE'S MDS MANADO TOWN SQUAR;;Manado;0888;Jl. Pierre Tendean Boulevard M;;;Wholesale;0120;;CS
+DC61;Distribution Center MAA - Pond;;Bogor;0888;Jl. Pancasila V No.86, Cicadas;;;Wholesale;0100;;CS
+DC62;PT. Agility International - OA;;;0888;Jl. Raya Protokol Halim Perdan;;;Wholesale;0100;;CS
+DC63;DC AGILITY - Pondok Ungu;;Jakarta Timur;0888;JL.RAYA BEKASI km. 28 blok F;;;Wholesale;0100;;CS
+DC64;ADIDAS DM;;;0888;;;;Wholesale;0100;;CS
+DC68;Distribution Center MAA - Gunu;;;0888;Jl. Pancasila V No.86, Cicadas;8672165;;Wholesale;0100;;CS
+DCH8;DCHO-CHILDREN, SPORT, & GOLF;;;0888;;;;Wholesale;0110;;CS
+HO68;PT. MAP AKTIF ADIPERKASA HO;;Jakarta Pusat;0888;Jl. Jend.Sudirman Kav. 86;5745808;;Wholesale;0100;;CS
+E109;PS.net;;;0888;;;;Wholesale;0110;;CS
+DC69;Distribution Center MAA - Gunu;;;0888;;;;Wholesale;0100;;CS
+AX01;ASICS GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+BZN9;BZR ECCO BAYWALK PLUIT (24/4-3;;Jakarta Utara;0888;Jl. Pluit Karang Ayu B1 Utara;;;Wholesale;0110;;CS
+E888;eMALL MAA;;Jakarta Selatan;0888;Jakarta;;;Wholesale;0120;;CS
+D763;Agility MAA;;;0888;;;;Wholesale;0100;;CS
+E802;eMALL MGI;;;0510;;;;Wholesale;0120;;CS
+DC65;NIKE DM;;;0888;;;;Wholesale;0100;;CS
+SSH4;SS EMPORIUM PLUIT MALL;;Jakarta Utara;0888;Jl. Pluit Selatan Raya;;;Wholesale;0110;;CS
+CV18;CONVERSE DEBENHAMS KARAWACI;;Tangerang;0888;Jl  Diponegoro 105;;;Wholesale;0120;;CS
+PS44;PS SUPERMALL PAKUWON;;Surabaya;0888;Jl. Perum Indah Pakuwon Suraba;;;Wholesale;0110;;CS
+KRA3;VEGA TOYS BANDA BANDUNG;;Bandung;0888;Jl. Banda No. 33;;;Wholesale;0120;;CS
+AL10;AL LDS CENTRO G. METROPOLITAN;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0120;;CS
+SR06;SOCCER STATION CENTRO MOI;;Jakarta Utara;0888;Jl. Raya Boulevard Barat;;;Wholesale;0120;;CS
+DC66;DC PAYLESS (Putra Agung Lestar;;Bekasi;0190;Jl. Wahab Affan;;;Wholesale;0100;;CS
+DC67;DC LINC - MAA;;;0888;;;;Wholesale;0100;;CS
+AD32;Adidas;;Jakarta Utara;0888;Kelapa Gading;;;Wholesale;0110;;CS
+SS3G;SS SUPERMAL KARAWACI;;Tangerang;0888;Jl. Diponegoro Lippo Karawaci;;;Wholesale;0110;;CS
+DCEM;DC E-commerce MAA - Footlocker;;Bekasi;0888;Komp Pergudangan Metrofeed No.;;;Wholesale;0100;;CS
+SS3H;SS LOTTE SHOPPING AVENUE;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0110;;CS
+SS3I;SS SUNRISE MOJOKERTO;;Mojokerto;0888;Jl. Benteng Pancasila No. 9;;;Wholesale;0110;;CS
+D863;DC AGILITY;;;0888;;;;Wholesale;0100;;CS
+SSH5;SS CHANDRA METRO LAMPUNG;;Lampung;0888;Kompleks Pertokoan Sumur B Met;;;Wholesale;0120;;CS
+GL06;GOLF LEISURE SEIBU GRAND INDON;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+GL07;GOLF LEISURE SOGO GALAXY SBY;;Surabaya;0888;Jl. Dharmahusada Indah Timur 3;;;Wholesale;0120;;CS
+E103;Planet Sports.net - Lazada;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0120;;CS
+SS2H;SS RUKO MT. HARYONO MALANG;;Malang;0888;Jl. MT. Haryono No 127;;;Wholesale;0110;;CS
+AL11;ACTIVE LEISURE LDS SEIBU GRAND;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+SS2I;SS PLAZA ASIA TASIKMALAYA;;Tasikmalaya;0888;Jl. HZ. Mustofa No. 326;;;Wholesale;0110;;CS
+NE09;NEW BALANCE LOTTE SHOPING AVEN;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0110;;CS
+SW30;SPORTS WAREHOUSE RUKO YOSODIPU;;Solo;0888;Jl. Yosodipuro No. 140;;;Wholesale;0110;;CS
+DCMF;Distribution Center MGI - Foot;;Bekasi;0510;Komp Pergudangan Metrofeed No.;;;Wholesale;0100;;CS
+XX01;;;;0888;;;;Wholesale;0120;;CS
+XX02;TEST STORE 2;;;0888;JAKARTA;;;Wholesale;0120;;CS
+DC23;GAC Gunung Putri;;Bogor;0510;Jl Pancasila V no 21;;;Wholesale;0100;;CS
+XX04;TEST STORE 4;;;0888;JKT;;;Wholesale;0120;;CS
+XX05;TEST STORE 5;;;0888;JKT;;;Wholesale;0120;;CS
+EF01;ECOMM FOOTLOCKER MAA;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;;;Wholesale;0120;;CS
+IM01;STADIUM GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+DC88;DC AGILITY - Pondok Ungu;;;0888;JL.RAYA BEKASI km. 28 blok F;;;Wholesale;0100;;CS
+RS16;RSH MDS PLUIT VILLAGE;;Jakarta Utara;0888;JL.Pluit Indah Raya;;;Wholesale;0120;;CS
+BZM7;BZR TOKO ANNA PADANG (15/7 - .;;Padang;0888;Jl. Batang Arau No.88;;;Wholesale;0110;;CS
+HS28;HS SHOPPING BAG (for Scrap);;Jakarta Pusat;0888;Jl. Jend. Sudirman Kav 86;;;Wholesale;0110;;CS
+NE10;NEW BALANCE GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+CV42;CONVERSE CENTRAL GRAND INDONES;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+LV24;LEVI'S KIDS CENTRAL GRAND INDO;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+KRA4;KIDZ RETAIL CENTRAL GRAND INDO;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+FG35;FOOTGEAR LOTTE SHOPPING AVENUE;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0110;;CS
+D178;DC GILDAN;;;0888;;;;Wholesale;0100;;CS
+KSG4;KS DJAKARTA THEATER;;Jakarta Pusat;0888;Jl. MH Thamrin No. 9;;;Wholesale;0110;;CS
+AD22;ADIDAS SENAYAN CITY;;Jakarta Pusat;0888;Jl Asia Afrika;;;Wholesale;0110;;CS
+DE10;STEVE MADDEN TRANS STUDIO CIBU;;Depok;0510;Jl. Alternatif Cibubur No.230,;;;Wholesale;0110;;CS
+SSL5;SPORTS STATION RAMAYANA BONTAN;;Bontang;0888;Jl Mulawarman;;;Wholesale;0120;;CS
+RO10;ROCKPORT SENAYAN CITY;;Jakarta Pusat;0888;Jl Asia Afrika Lot 19;;;Wholesale;0110;;CS
+KS72;KS GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0110;;CS
+SSL6;SPORTS STATION GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;021-29052919/20;;Wholesale;0110;;CS
+RO11;ROCKPORT KELAPA GADING MALL 2;;Jakarta Utara;0888;Jl. Kelapa Gading Boulevard;4533385;;Wholesale;0110;;CS
+KS68;KS PONDOK INDAH MAL 2;;Jakarta Selatan;0888;Jl Metro Pondok Indah;;;Wholesale;0110;;CS
+KS69;KS MALL PURI INDAH;;Jakarta Barat;0888;Jl Puri Indah Raya;;;Wholesale;0110;;CS
+KS57;KIDZ STATION EMPORIUM PLUIT;;Jakarta Utara;0888;Jl. Pluit Indah Raya;;;Wholesale;0110;;CS
+SSH7;SPORTS STATION MALL OF INDONES;;Jakarta Utara;0888;GF,Jl. Boulevard Kelapa Gading;;;Wholesale;0110;;CS
+AF38;TAF MAL SKA PEKANBARU;;Pekanbaru;0888;Lt.1,Jl. Soekarno - Hatta;0761-864011;;Wholesale;0110;;CS
+SA19;STACCATO LIPPO MALL PURI;;Jakarta Barat;0510;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0110;;CS
+HS29;HS SP3 HADDAD;;Jakarta Pusat;0888;Jl. Jend. Sudirman Kav 86;;;Wholesale;0110;;CS
+NE11;NEW BALANCE PALEMBANG INDAH MA;;Palembang;0888;Jl. Letkol Iskandar No.18;;;Wholesale;0110;;CS
+SR07;SOCCER STATION RAMAYANA JAMBU;;Bogor;0888;Jl. A.Yani;;;Wholesale;0120;;CS
+RS17;RSH MDS BIG MALL SAMARINDA;;Samarinda;0888;Jl. Untung Surapati No. 8;;;Wholesale;0120;;CS
+NE12;NEW BALANCE SUMMARECON BEKASI;;Bekasi;0888;Jl. Boulevard A. Yani Blok M;;;Wholesale;0110;;CS
+E104;Planet Sports.net - Berrybenka;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0120;;CS
+XX22;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX23;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX26;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+E126;MAA FULFILLMENT AT AGILITY (FF;;Bekasi;0888;Jl. Raya Bekasi Km. 28 blok F;;;Wholesale;0110;;CS
+LG01;SMIGGLE MALL BALI GALERIA;;Bali;0888;Jl. ByPass Ngurah Rai;;;Wholesale;0110;;CS
+FX03;;;;0510;;;;Wholesale;0120;;CS
+XX44;Name1 43;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+XX47;Name1 43;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+PS47;PLANET SPORTS MALL PURI INDAH;;Jakarta Barat;0888;Jl Puri Indah Raya;;;Wholesale;0110;;CS
+SSL3;SS BALIKPAPAN SUPERBLOCK;;Balikpapan;0888;Jl. Jend.Sudirman;;;Wholesale;0110;;CS
+GH25;GOLF HOUSE SOGO CENTRAL PARK;;Jakarta Barat;0888;Jl. Let.Jend.S.Parman Kav 28;;;Wholesale;0120;;CS
+KS70;KS BALIKPAPAN SUPERBLOCK;;Balikpapan;0888;Jl. Jend.Sudirman;;;Wholesale;0110;;CS
+SW21;TSW NGURAH RAI BALI;;Bali;0888;Jl. By Pass I Gusti ngurah Rai;;;Wholesale;0110;;CS
+SSL4;SS MALL PURI INDAH;;Jakarta Barat;0888;Jl.Puri Agung Mall #45A-48;;;Wholesale;0110;;CS
+KS71;KS CHANDRA LAMPUNG;;Lampung;0888;Jl. Pemuda Hayam Wuruk No.1;;;Wholesale;0120;;CS
+KS67;KIDZ STATION CENTRAL PARK;;Jakarta Barat;0888;Jl.S.Parman;;;Wholesale;0110;;CS
+SSL0;SS & SOCCER STATION CENTRAL PA;;Jakarta Barat;0888;Jl. S. Parman;021 56985631;;Wholesale;0110;;CS
+SSH8;SS YOGYA RIAU JUNCTION;;Bandung;0888;Jl.RE Martadinata No.17-21;;;Wholesale;0120;;CS
+LK02;LEISURE KIDS CENTRAL GRAND IND;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+AT03;ACTIVE SPORTS CENTRAL GRAND IN;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+AL12;ACTIVE LEISURE MEN'S CENTRAL G;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+AL13;ACTIVE LEISURE LDS CENTRAL GI;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+AT04;AS CENTRO SUMMARECON SERPONG;;Tangerang;0888;Jl. Boulevard Raya Gading Serp;;;Wholesale;0120;;CS
+SS2J;SS CENTRO SUMMARECON SERPONG;;Tangerang;0888;Jl. Boulevard Raya Gading Serp;;;Wholesale;0120;;CS
+SS2K;SS MALANG CITY POINT;;Malang;0888;Jl Raya Dieng 31;;;Wholesale;0110;;CS
+AT05;ACTIVE SPORTS CENTRO BINTARO L;;Tangerang;0888;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0120;;CS
+SW26;SPORTS WAREHOUSE PLAZA FESTIVA;;Jakarta Selatan;0888;Jl. H.R. Rasuna Said Kav C22;;;Wholesale;0110;;CS
+AL14;AL MEN'S CENTRO SUMMARECON SER;;Tangerang;0888;Jl. Boulevard Raya Gading Serp;;;Wholesale;0120;;CS
+BZM9;BZR SP MALL PEKANBARU (1/10-31;;Pekanbaru;0888;Jl. Jend Sudirman No. 123;;;Wholesale;0110;;CS
+BG20;BZR GOLF MKG (1/10/14-31/3/15);;Jakarta Utara;0888;Jl. Raya Boulevard Kepala Gadi;;;Wholesale;0110;;CS
+E105;LFC Online - eshop;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0110;;CS
+OK22;OAKLEY KUALA NAMU AIRPORT;;Medan;0888;Bandara Kuala Namu, kabupaten;;;Wholesale;0110;;CS
+NE13;NEW BALANCE MALL PANAKKUKANG;;Makassar;0888;Jl. Boulevard, Komp. Panakkuka;;;Wholesale;0110;;CS
+DCGI;DC Agility - Metrofeed MGI;;;0510;;;;Wholesale;0100;;CS
+DC72;DC MAA Surabaya;;;0888;Jl. Dumar Industri 18;;;Wholesale;0100;;CS
+PU16;PUMA CENTRAL PARK;;Jakarta Barat;0888;Jl. S. Parman;;;Wholesale;0110;;CS
+PS46;PLANET SPORTS PLAZA SENAYAN;;Jakarta Pusat;0888;Jl.Asia Afrika No.8 Gelora B.K;;;Wholesale;0110;;CS
+SSL1;SPORTS STATION PLAZA SENAYAN;;Jakarta Pusat;0888;Jl.Asia Afrika No.8 Gelora B.K;021-5725325;;Wholesale;0110;;CS
+KS65;KS MAL TAMAN ANGGREK;;Jakarta Barat;0888;Jl.Letjen S.Parman;;;Wholesale;0110;;CS
+SSJ6;SPORTS STATION LOTUS THAMRIN J;;Jakarta Pusat;0888;Jl. MH Thamrin no.9;;;Wholesale;0120;;CS
+BZ85;BZR GOLD'S GYM MOI(6/1-31/7/09;;Jakarta Utara;0888;Lt.2,Jl.Boulevard Kelapa Gadin;;;Wholesale;0110;;CS
+CI10;CLAIRE'S CENTRO SUMMARECON SER;;Tangerang;0888;Jl. Boulevard Raya Gading Serp;;;Wholesale;0120;;CS
+SW27;SPORTS WAREHOUSE PASAR ATOM MA;;Surabaya;0888;Jl. Bunguran No. 45;;;Wholesale;0110;;CS
+NE14;NEW BALANCE SUMMARECON SERPONG;;Tangerang;0888;Jl. Boulevard Raya Gading Serp;;;Wholesale;0110;;CS
+KE01;BIRKENSTOCK ALAM SUTERA;;Tangerang;0510;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+RO36;ROCKPORT LDS SOGO ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0120;;CS
+EC28;ECCO LDS METRO GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+EC29;ECCO MEN'S GALERIES LAFAYETTE;;Jakarta Selatan;0888;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+EC30;ECCO LADIES GALERIES LAFAYETTE;;Jakarta Selatan;0888;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+AD23;ADIDAS HC MALL KELAPA GADING;;Jakarta Utara;0888;Jl. Boulevard Klp Gading Blok;;;Wholesale;0110;;CS
+AD24;ADIDAS HC MALL TAMAN ANGGREK;;Jakarta Barat;0888;Jl. Jend S Parman;;;Wholesale;0110;;CS
+SSJ8;SPORTS STATION MDS KARAWANG;;Karawang;0888;Jl. A. Yani No. 1;;;Wholesale;0120;;CS
+SSJ9;SPORTS STATION MDS MAYOFIELD C;;Cilegon;0888;Jl.SA Tirtayasa Simpang Tiga;;;Wholesale;0120;;CS
+SW20;SPORTS WAREHOUSE BSD PLAZA;;Tangerang;0888;Lt.1,JL.Raya Serpong Sektor IV;;;Wholesale;0110;;CS
+KS66;KS PARAGON SEMARANG;;Semarang;0888;Jl. Simpang Lima;;;Wholesale;0110;;CS
+SSK0;SPORTS STATION RAMAYANA KODIM;;Tangerang;0888;Jl.Daan Mogot Raya No.5 Kodim;;;Wholesale;0120;;CS
+SSK1;SPORTS STATION RAMAYANA CENGKA;;Jakarta Barat;0888;Jl.Lingkar Luar Cengkareng;;;Wholesale;0120;;CS
+SSK3;SPORTS STATION RAMAYANA CILEUN;;Jakarta Timur;0888;Jl.Alternatif Cileungsi Cibubu;;;Wholesale;0120;;CS
+SSK4;SPORTS STATION RAMAYANA CILEDU;;Tangerang;0888;Jl. HOS Cokroaminoto No.7;;;Wholesale;0120;;CS
+SSK5;SS RAMAYANA PADANG;;Padang;0888;Jl. Pemuda Plaza Andalas;;;Wholesale;0120;;CS
+SSK6;SPORTS STATION RAMAYANA KARAWA;;Karawang;0888;Jl.Tuparev No. 1;;;Wholesale;0120;;CS
+SSK8;SPORTS STATION RAMAYANA BSD;;Tangerang;0888;Jl.Pahlawan Seribu ITC BSD;;;Wholesale;0120;;CS
+SSK9;SPORTS STATION RAMAYANA ABEPUR;;Abepura;0888;Jl.Raya Abepura Kel.Viu;;;Wholesale;0120;;CS
+BG09;BZR GOLF KUNINGAN CITY (15/4-1;;Jakarta Selatan;0888;Jl. Prof DR. Satrio Kav 18;;;Wholesale;0110;;CS
+PR19;PLANET REEBOK EX PLZ INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin;(021) 39838243;;Wholesale;0110;;CS
+KR01;TOYS METRO TAM;;Jakarta Barat;0888;Jl Jend S Parman;;;Wholesale;0120;;CS
+KR02;OSHKOSH METRO TAMAN ANGGREK;;Jakarta Barat;0888;Jl Jend S Parman;;;Wholesale;0120;;CS
+KR03;OSHKOSH METRO PONDOK INDAH MAL;;Jakarta Selatan;0888;JL Metro Pondok Indah;;;Wholesale;0120;;CS
+KR04;TOYS METRO PONDOK INDAH MAL;;Jakarta Selatan;0888;JL Metro Pondok Indah;;;Wholesale;0120;;CS
+KR05;TOYS METRO SENAYAN;;Jakarta Pusat;0888;Jl Asia Afrika,Unit 303A-305S;;;Wholesale;0120;;CS
+KR06;OSHKOSH METRO SENAYAN;;Jakarta Pusat;0888;Jl Asia Afrika,Unit 303A-305S;;;Wholesale;0120;;CS
+KR07;TOYS METRO BANDUNG SUPERMAL;;Bandung;0888;Jl.Gatot Subroto 258;;;Wholesale;0120;;CS
+KR08;OSHKOSH METRO BANDUNG SUPERMAL;;Bandung;0888;Jl.Gatot Subroto 258;;;Wholesale;0120;;CS
+KR09;BARBIE METRO TAMAN ANGGREK;;Jakarta Barat;0888;Jl Jend S Parman;;;Wholesale;0120;;CS
+KR10;BARBIE METRO PONDOK INDAH;;Jakarta Selatan;0888;JL Metro Pondok Indah;;;Wholesale;0120;;CS
+KR11;BARBIE METRO SENAYAN;;Jakarta Pusat;0888;Jl Asia Afrika,Unit 303A-305S;;;Wholesale;0120;;CS
+KR12;BARBIE METRO BANDUNG SUPERMAL;;Bandung;0888;Jl.Gatot Subroto 258;;;Wholesale;0120;;CS
+KR16;TOYS CENTRO SEMANGGI;;Jakarta Selatan;0888;Jl. Jend Sudirman Kav 50;;;Wholesale;0120;;CS
+KR17;TOYS CENTRO BALI;;Bali;0888;Jl Kartika Plaza Kuta;;;Wholesale;0120;;CS
+PY65;PAYLESS GALERIA MALL YOGYAKART;;Yogyakarta;0190;Jl. Jend Sudirman No 99-101;;;Wholesale;0110;;CS
+SS2L;SS MALANG TOWN SQUARE;;Malang;0888;Jl. Veteran No. 2;;;Wholesale;0110;;CS
+BZN0;BZR DEFECT THAMRIN CITY (10/11;;Jakarta Pusat;0888;Jl. Kebon Kacang Raya (Waduk M;;;Wholesale;0110;;CS
+BY05;BZR PAYLESS THAMRIN CITY(10/11;;Jakarta Pusat;0190;Jl. Kebon Kacang Raya (Waduk M;;;Wholesale;0110;;CS
+AL15;AL MEN'S CENTRO DISCOVERY BALI;;Bali;0888;Jl. Kartika Plaza, Kuta;;;Wholesale;0120;;CS
+CV43;CONVERSE CENTRO DISCOVERY BALI;;Bali;0888;Jl. Kartika Plaza, Kuta;;;Wholesale;0120;;CS
+ZI03;BZR CAMPER KUNINGAN (1/11/14-3;;Jakarta Selatan;0510;Jl. Prof DR. Satrio Kav 18;;;Wholesale;0110;;CS
+E106;Planetsports.net - Zalora;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0120;;CS
+SS2M;SS CITY MARKET PALOPO;;Palopo;0888;Jl. Sam Ratulangi No. 78;;;Wholesale;0110;;CS
+NE15;NEW BALANCE JOGJA CITY MALL;;Yogyakarta;0888;Jl. Raya Magelang Km. 6;;;Wholesale;0110;;CS
+OK23;OAKLEY PONDOK INDAH MALL;;Jakarta Selatan;0888;Jl. Metro Pondok Indah Kav.3/B;;;Wholesale;0110;;CS
+TO01;TOMS CENTRAL GRAND INDONESIA;;Jakarta Pusat;0510;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+AD25;ADIDAS TP3 SURABAYA;;Surabaya;0888;Jl Basuki Rahmat no 8-12A;;;Wholesale;0110;;CS
+AD26;ADIDAS MALL OF INDONESIA;;Jakarta Utara;0888;Jl. Boulevard Barat Raya;;;Wholesale;0110;;CS
+AF43;TAF HARTONO MALL JOGJAKARTA;;Yogyakarta;0888;Jl. Jend Sudirman;;;Wholesale;0120;;CS
+AF44;TAF SOGO CENTRAL PARK;;Jakarta Barat;0888;Jl. Letjend S. Parman Kav. 28;;;Wholesale;0120;;CS
+AF45;TAF SOGO SUN PLAZA MEDAN;;Medan;0888;Jl KH Zainul Arifin no 7;;;Wholesale;0120;;CS
+AF46;TAF SOGO LIPPO PURI MALL;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0120;;CS
+AF47;TAF SOGO TP4 SURABAYA;;Surabaya;0888;Jl. Embong Malang 7-21;;;Wholesale;0120;;CS
+AF48;TAF SOGO DISCOVERY MALL BALI;;Bali;0888;Jl. Kartika Plaza, Kuta;;;Wholesale;0120;;CS
+AF50;TAF TAMAN ANGGREK MALL;;Jakarta Barat;0888;Jl. Letjen S. Parman Kav. 21;;;Wholesale;0120;;CS
+AF51;TAF SOGO PIM 2 JAKARTA;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;;;Wholesale;0120;;CS
+AF52;TAF TRANS STUDIO MALL BANDUNG;;Bandung;0888;Jl. Gatot Subroto 289;;;Wholesale;0120;;CS
+AF53;TAF SUPERMAL PAKUWON SURABAYA;;Surabaya;0888;Jl. Puncak Indah Lontar No 2;;;Wholesale;0120;;CS
+CV19;CONVERSE SUPERMAL KARAWACI;;Tangerang;0888;Jl  Diponegoro 105;;;Wholesale;0110;;CS
+RO06;ROCKPORT SUPERMAL KARAWACI;;Tangerang;0888;Jl  Diponegoro 105;;;Wholesale;0110;;CS
+SK01;SKECHERS SUPERMAL KARAWACI;;Tangerang;0888;Jl  Diponegoro 105;;;Wholesale;0110;;CS
+SSI4;SPORTS STATION DISCOVERY MAL B;;Bali;0888;Jl. Kartika Plaza, Kuta;;;Wholesale;0110;;CS
+SSI5;SPORTS STATION HYPERMAL BEKASI;;Bekasi;0888;Jl.Jend.A.Yani No.1;;;Wholesale;0110;;CS
+SSI7;SPORTS STATION CIPUTRA JAKARTA;;Jakarta Barat;0888;Jl.S.Parman;;;Wholesale;0110;;CS
+SSI8;SS RAMAYANA JAMBU DUA BOGOR;;Bogor;0888;Jl.A.Yani;;;Wholesale;0120;;CS
+SSI9;SS RAMAYANA MAL SERANG;;Serang;0888;Jl. Veteran;;;Wholesale;0120;;CS
+SSJ0;SS RAMAYANA DUMAI PLAZA;;Dumai;0888;Jl. Jend. Sudirman;;;Wholesale;0120;;CS
+SSJ1;SS RAMAYANA MAKASSAR TOWN SQUA;;Makassar;0888;Jl. Perintis Kemerdekaan;;;Wholesale;0120;;CS
+SSJ3;SS RAMAYANA SESETAN BALI;;Bali;0888;Jl. Raya Sesetan No.11;;;Wholesale;0120;;CS
+SSJ4;SS RAMAYANA NU DEWATA BALI;;Bali;0888;Jl. PB Sudirman No. 20;;;Wholesale;0120;;CS
+KR21;TOYS CENTRO MARGO MARGO CITY D;;Depok;0888;Jl Margonda Raya 358;;;Wholesale;0120;;CS
+KR23;TOYS CENTRO AMBARUKMO YOGYA;;Yogyakarta;0888;Jl Laksda Adisucipto;;;Wholesale;0120;;CS
+KR26;TOYS CITY PONDOK INDAH MAL;;Jakarta Selatan;0888;JL Metro Pondok Indah;;;Wholesale;0120;;CS
+KR28;TOYS CITY DELTA PLAZA SURABAYA;;Surabaya;0888;Delta Plaza;;;Wholesale;0120;;CS
+KR29;TOYS CITY BOTANI SQUARE BOGOR;;Bogor;0888;Jl.Raya Pajajaran;;;Wholesale;0120;;CS
+KR30;TOYS CITY GALAXY 2 SURABAYA;;Surabaya;0888;Jl Dharmahusada Timur no 37;;;Wholesale;0120;;CS
+KR31;TOYS CITY PURI INDAH MAL;;Jakarta Barat;0888;Jl Puri Indah Raya;;;Wholesale;0120;;CS
+PR20;PLANET REEBOK ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+SS1R;SS ARTHA GADING MALL;;Jakarta Utara;0888;Jl. Boulevard Artha Gad Sel. n;;;Wholesale;0110;;CS
+BY03;BZR PY POINT SQUARE (1/1-31/3/;;Jakarta Selatan;0190;JL.RA Kartini No.1 Lebak Bulus;;;Wholesale;0110;;CS
+SS1T;SS PLZ BANGKINANG RIAU;;Pekanbaru;0888;Jl. Sisingamangaraja, Bangkina;;;Wholesale;0110;;CS
+SA20;STACCATO CENTRAL GRAND INDONES;;Jakarta Pusat;0510;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+SA21;STACCATO SUN PLAZA MEDAN;;Medan;0510;Jl KH Zainul Arifin no 7;;;Wholesale;0110;;CS
+SA22;STACCATO MALL KELAPA GADING;;Jakarta Utara;0510;Jl. Boulevard Kelapa Gading Bl;;;Wholesale;0110;;CS
+RS18;RSH MDS PADANG SPR;;Padang;0888;Jl. Moh. Yamin Gd. SPR Kel. Kp;;;Wholesale;0120;;CS
+LV25;LEVI'S KIDZ METRO TAMAN ANGGRE;;Jakarta Barat;0888;Jl. Letjen S.Parman Kav 21;;;Wholesale;0120;;CS
+AF39;TAF GOLD GALERIES LAFAYETTE;;Jakarta Selatan;0888;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+SK32;SKECHERS EKALOKASARI BOGOR;;Bogor;0888;Jl. Siliwangi 123 Bogor;;;Wholesale;0110;;CS
+SS2N;SS GIANT MT. HARYONO BALIKPAPA;;Balikpapan;0888;Jl. MT Haryono 38A;;;Wholesale;0110;;CS
+AT06;ACTIVE SPORTS SOGO PIM2;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;;;Wholesale;0120;;CS
+AX02;ASICS PONDOK INDAH MALL 2;;Jakarta Selatan;0888;Jl Metro Pondok Indah;;;Wholesale;0110;;CS
+PS66;PS SUN PLAZA MEDAN;;Medan;0888;Jl. H.Zainul Arifin #7;;;Wholesale;0110;;CS
+KSB1;KS ARTHA GADING MALL;;Jakarta Utara;0888;Jl. Boulevard Artha Gad Sel. n;;;Wholesale;0110;;CS
+NE05;NEW BALANCE GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+SS1U;SS LOTTEMART GANDARIA;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+AL05;AL LDS SOGO PIM2;;Jakarta Selatan;0888;Jl. Arteri Pondok Indah;;;Wholesale;0120;;CS
+SS1V;SS GRAMEDIA MANADO;;Manado;0888;Jl. Sam Ratulangi No. 45;;;Wholesale;0120;;CS
+RS08;RSH MDS KARAWACI;;Tangerang;0888;105 Diponegoro,Lippo Krwc G18;;;Wholesale;0120;;CS
+BZG5;BZR PLZ MEDAN FAIR (8/2-7/8/14;;Medan;0888;Jl Gatot Subroto No. 30;;;Wholesale;0110;;CS
+KRA0;KR LOTUS THAMRIN;;Jakarta Pusat;0888;Jl. MH Thamrin no.9;;;Wholesale;0120;;CS
+AL06;AL LDS SOGO BALI COLLECTION;;Bali;0888;Komplek BTDC Blok B10, Nusa Du;;;Wholesale;0120;;CS
+AL07;AL LDS SOGO SUN PLAZA MEDAN;;Medan;0888;Jl KH Zainul Arifin no 7;;;Wholesale;0120;;CS
+SS1W;SS MDS KLATEN;;Klaten;0888;Jl. Pemuda Tengah No. 75;;;Wholesale;0120;;CS
+KE02;BIRKENSTOCK GALAXY MALL SURABA;;Surabaya;0510;Jl. Dharmahusada Indah Timur 3;;;Wholesale;0110;;CS
+CI11;CLAIRE'S MDS PEJATEN VILLAGE;;Jakarta Selatan;0888;Jl. Warung Jati Barat No.39;;;Wholesale;0120;;CS
+CI12;CLAIRE'S MDS CILANDAK TOWN SQU;;Jakarta Selatan;0888;Jl. TB Simatupang - Cilandak;;;Wholesale;0120;;CS
+PC06;PLANET KIDS SOGO CENTRAL PARK;;Jakarta Barat;0888;Jl. Let. Jend S. Parman Kav. 2;;;Wholesale;0120;;CS
+CI13;CLAIRE'S MDS PANAKKUKANG MAL;;Makassar;0888;Jl. Boulevard, komp Panakkukan;;;Wholesale;0120;;CS
+ZI04;BZR LINEA KUNINGAN CITY(1/12/1;;Jakarta Selatan;0510;Jl. Prof DR. Satrio Kav 18;;;Wholesale;0110;;CS
+CV44;CONVERSE SUN PLAZA MEDAN;;Medan;0888;Jl. H.Zainul Arifin No. 7;;;Wholesale;0110;;CS
+NE16;NEW BALANCE SUN PLAZA MEDAN;;Medan;0888;Jl. H.Zainul Arifin No. 7;;;Wholesale;0110;;CS
+CI14;CLAIRE'S MDS TAMAN ANGGREK;;Jakarta Barat;0888;Jl. Letjend S.Parman Kav 21;;;Wholesale;0120;;CS
+CI15;CLAIRE'S MDS TP3 SURABAYA;;Surabaya;0888;Jl. Basuki Rachmat 8-12;;;Wholesale;0120;;CS
+AF40;TAF SOGO PLAZA SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No.8;;;Wholesale;0120;;CS
+DM02;DOC MARTEN SUN PLAZA MEDAN;;Medan;0510;Jl. H.Zainul Arifin No. 7;;;Wholesale;0110;;CS
+EC27;ECCO PONDOK INDAH MALL;;Jakarta Selatan;0888;Jl. Metro Pondok Indah Kav.3/B;;;Wholesale;0110;;CS
+RS09;RSH MDS TUNJUNGAN PLAZA;;Surabaya;0888;Jl. Basuki Rahmat 8-12;;;Wholesale;0120;;CS
+SK29;SKECHERS GALAXY SURABAYA;;Surabaya;0888;Jl. Dharmahusada Indah Timur 3;;;Wholesale;0110;;CS
+HS26;HO - REEBOK SCRAP;;Jakarta Pusat;0888;Jl. Jend. Sudirman Kav 86;;;Wholesale;0110;;CS
+CP06;CAMPER GRAND INDONESIA;;Jakarta Pusat;0510;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+SA17;STACCATO BAYWALK PLUIT;;Jakarta Utara;0510;Jl. Pluit Karang Ayu Blok B1 U;;;Wholesale;0110;;CS
+LV21;LEVI'S KIDS CENTRO SUMMARECON;;Tangerang;0888;Jl. Boulevard Raya Gading Serp;;;Wholesale;0120;;CS
+PR21;PLANET REEBOK GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+RO35;ROCKPORT MEN'S CENTRO GRAGE CI;;Cirebon;0888;Jl. Pengeran Drajat Penggambir;;;Wholesale;0120;;CS
+SS2O;SS TOSERBA YOGYA PEMALANG;;Pemalang;0888;Jl. Jend. Sudirman No. 94;;;Wholesale;0120;;CS
+SS2P;SS GRAMEDIA JAYAPURA;;Jayapura;0888;Jl. Sam Ratulangi;;;Wholesale;0120;;CS
+KRA5;KR LOTTE SHOPPING AVENUE;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+SW29;SPORTS WAREHOUSE KAZA CITY MAL;;Surabaya;0888;Jl. Kapas Krampung 45;;;Wholesale;0110;;CS
+SW28;SW LOTUS GRAND GALAXY BEKASI;;Bekasi;0888;Jl. Grand Galaxy Boulevard No.;;;Wholesale;0120;;CS
+CV45;CONVERSE DEBENHAMS KEMANG VILL;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0120;;CS
+AL16;AL MEN SOGO PIM2;;Jakarta Selatan;0888;Jl. Arteri Pondok Indah;;;Wholesale;0120;;CS
+BZB3;BZR TSW DETOS DEPOK (22/5-30/0;;Depok;0888;Jl Margonda Raya;;;Wholesale;0110;;CS
+KS64;KS SOLO SQUARE;;Solo;0888;Jl Slamet Riyadi 451-455;;;Wholesale;0110;;CS
+SW15;SPORT WAREHOUSE ROYAL PLZ SBY;;Surabaya;0888;Jl.A.Yani No.16-18;;;Wholesale;0110;;CS
+SS1X;SS GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+RS10;RSH MDS TAMAN ANGGREK;;Jakarta Barat;0888;Jl. S.Parman Kav 21;;;Wholesale;0120;;CS
+GP43;GOLF PROSHOP JABABEKA;;Bekasi;0888;Jl. Raya Lemahabang, Cikarang;;;Wholesale;0110;;CS
+E102;SportsWarehouse.net;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0110;;CS
+SS1Y;SS RAMAYANA SUDIRMAN PEKANBARU;;Pekanbaru;0888;JL. Jend Sudirman;;;Wholesale;0120;;CS
+SS1Z;SS RAMAYANA PANGKAL PINANG;;Pangkal Pinang;0888;Jl. Pasar Pangkal Pinang;;;Wholesale;0120;;CS
+NE06;NEW BALANCE DISCOVERY BALI;;Bali;0888;Jl. Kartika Plaza, Kuta;;;Wholesale;0110;;CS
+CV40;CONVERSE PALEMBANG ICON;;Palembang;0888;Jl POM IX;;;Wholesale;0110;;CS
+SS2A;SS LOTUS SUN CITY MADIUN;;Madiun;0888;Jl Letjend S. Parman No. 08;;;Wholesale;0120;;CS
+BG29;BZR GOLF BAYWALK PLUIT (12/1-1;;Jakarta Utara;0888;Jl. Pluit Karang Ayu B1 Utara;;;Wholesale;0110;;CS
+BZU8;BZR SP SPAZIO MALL SBY (1/4-30;;Surabaya;0888;Jl. Mayjend Yono Soewoyo Kav.;;;Wholesale;0110;;CS
+XX48;Name1 43;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0110;;CS
+SS51;SPORTS STATION MDS INT'L PLZ;;Palembang;0888;Jl Letkol Iskandar No 18;0711-368207;pisplg@palembang.indo.net.id;Wholesale;0120;;CS
+SS53;SS RUKO PALEMBANG ILIR PERMAI;;Palembang;0888;Jl. Letkol Iskandar;0711-312981;ppsplg@indo.net.id;Wholesale;0110;;CS
+SS57;SPORTS STATION RAMAYANA MEDAN;;Medan;0888;Jl. Sisingamangaraja Medan Tel;061-7332269;;Wholesale;0120;;CS
+SS58;SPORTS STATION CENTRAL PL.SAMA;;Samarinda;0888;Jl.Irian no.1;0541-741679;scs-smd@samarinda.org;Wholesale;0110;;CS
+SS61;SPORTS STATION LB.SUANA SAMARI;;Samarinda;0888;Jl.Letjend.S.Parman No.29;0541-206634;;Wholesale;0110;;CS
+SS62;SPORTS STATION PLAZA SURABAYA;;Surabaya;0888;Jl.Pemuda 31-37;031-5315088;sps@sby.centrin.net.id;Wholesale;0110;;CS
+SS63;SS PASARAYA MANGGARAI;;Jakarta Selatan;0888;Jl. Sultan Agung No.1;83792853;map38@centrin.net.id;Wholesale;0120;;CS
+SS65;SPORT STATION SERPONG;;Tangerang;0888;Damai Indah Golf & Swimming Po;5386834;map63@centrin.net.id;Wholesale;0110;;CS
+SS66;SPORTS STATION RAMAYANA SALATI;;Salatiga;0888;Jl. Pemuda no. 1;0298 315745;;Wholesale;0120;;CS
+SS67;SPORTS STATION MDS SINGOSAREN;;Solo;0888;Jl.Gatot Subroto 27-28;0271-666848;;Wholesale;0120;;CS
+SS68;SPORTS STATION SUNTER MAL JKT;;Jakarta Utara;0888;Jl.Danau Sunter Utara Blk G7;021-65832596;Jakss68@map.co.id;Wholesale;0110;;CS
+SS69;SPORTS STATION SOLO SRIWEDARI;;Solo;0888;Jl.Kebangkitan Nasional no. 33;0271-742955;e21@indo.net.id;Wholesale;0110;;CS
+SS76;SPORT STATION MAKASAR;;Makassar;0888;JL.A.Yani No. 25 Bok A7;0411-328034;upsupg@indosat.net.id;Wholesale;0110;;CS
+SS79;SPORTS STATION WISMA BNI 46;;Jakarta Pusat;0888;Jl.Sudirman Lot 16;5746622;map143@centrin.net.id;Wholesale;0110;;CS
+SS80;SPORTS STATION RAMAYANA YOGYAK;;Yogyakarta;0888;Jl Ahmad Yani No 66;0274 586787;;Wholesale;0120;;CS
+SS1A;SS LOTTE MART MEDAN;;Medan;0888;Jl. Jawa No. 1;061-80501304;;Wholesale;0120;;CS
+SS87;SPORTS STATION PLAZA BINTARO;;Tangerang;0888;Jl.Bintaro Utama III;;;Wholesale;0110;;CS
+GP39;GP PALEMBANG GOLF CLUB;;Palembang;0888;Jl. AKBP Cek Agus No. 23;;;Wholesale;0110;;CS
+SSY9;SS RUKO UBUD BALI;;Bali;0888;Lingkar Ubud Kelod, Gianyar-Ub;;;Wholesale;0110;;CS
+SA12;STACCATO PARIS VAN JAVA BANDUN;;Bandung;0510;Jl. Sukajadi No. 137-139;;;Wholesale;0110;;CS
+SS89;SPORTS STATION MEGAMAL MANADO;;Manado;0888; MEGAMA "MEGAMALL MANADO, 1ST;;;Wholesale;0110;;CS
+OB22;OSHKOSH B'GGOSH SUPERMAL KARAW;;Tangerang;0888;Jl. Diponegoro 105;;;Wholesale;0110;;CS
+SS92;SPORTS STATION MDS BLOK M PLAZ;;Jakarta Selatan;0888;Jl. Bulungan Raya No. 76;;;Wholesale;0120;;CS
+PY46;CANCELLED;;Jakarta Selatan;0190;Jl. Iskandarsyah II/2;;;Wholesale;0120;;CS
+SSZ2;SS SUMMARECON BEKASI;;Bekasi;0888;Jl. Boulevard A. Yani Blok M;;;Wholesale;0110;;CS
+PY47;PAYLESS DISCOVERY BALI;;Bali;0190;Jl. Kartika Plaza;;;Wholesale;0110;;CS
+PY48;PY SUMMARECON BEKASI;;Bekasi;0190;Jl. Boulevard A. Yani Blok M;;;Wholesale;0110;;CS
+PY49;PY PASARAYA GRANDE;;Jakarta Selatan;0190;Jl. Iskandarsyah II/2;;;Wholesale;0110;;CS
+SSZ3;SS RAMAYANA CIBINONG 2;;Bogor;0888;Jl. HR Lukman Link. Kayu Manis;;;Wholesale;0120;;CS
+SSZ4;SS RAMAYANA CIBITUNG;;Bekasi;0888;Jl. Raya Teuku Umar Km 44, Cib;;;Wholesale;0120;;CS
+PC04;PLANET KIDS DEBENHAMS SENCY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0120;;CS
+PS61;PLANET SPORTS TP3 SBY;;Surabaya;0888;Jl. Basuki Rachmat 8-12;;;Wholesale;0110;;CS
+PG01;PLANET GIRL DEBENHAMS SENCY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0120;;CS
+OK02;OAKLEY VAULT GALAXY MALL;;Surabaya;0888;Jl. Dharmahusada Indah Timur 3;031-5915257;;Wholesale;0110;;CS
+PS22;PLANET SPORTS GALAXY MAL SURAB;;Surabaya;0888;Jl.Dharmahusada Indh Tmr 37;031-5937279;sgs@sby.centrin.net.id;Wholesale;0110;;CS
+SS90;SPORTS STATION JAVA SUPERMAL S;;Semarang;0888;Jl.MT.Haryono #992-994;024-8410016;;Wholesale;0110;;CS
+GH15;GOLF HOUSE SOGO SUN PL. MEDAN;;Medan;0888;Jl. H.Zainul Arifin #7;;;Wholesale;0120;;CS
+KS33;KIDZ STATION SOGO SUN PL MEDAN;;Medan;0888;Jl. H.Zainul Arifin #7;;mdnks33@map.co.id;Wholesale;0120;;CS
+OK03;OAKLEY STORE GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;021-23580337;;Wholesale;0110;;CS
+OK05;O STORE SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;021-72781728;;Wholesale;0110;;CS
+OK06;OAKLEY LIFE MAKASSAR AIRPORT;;Makassar;0888;Jl. Bandar udara Hasanuddin;0411-3656121;;Wholesale;0110;;CS
+OK07;OAKLEY ET TERM 2E BANDARA SOET;;Tangerang;0888;Airport International Soekarno;021-55910957;;Wholesale;0110;;CS
+OK08;OAKLEY ET TERM 2F BANDARA SOET;;Tangerang;0888;Airport International Soekarno;021-5504758;;Wholesale;0110;;CS
+OK10;OAKLEY SOGO PONDOK INDAH MALL;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;021-75920675;;Wholesale;0120;;CS
+OK11;OAKLEY SOGO PLAZA SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika;021-57900055;;Wholesale;0120;;CS
+OK12;OAKLEY SOGO PARIS VAN JAVA;;Bandung;0888;Jl Sukajadi 137-139;022-82063475;;Wholesale;0120;;CS
+OK13;OAKLEY SOGO SUN PLAZA;;Medan;0888;Jl. H.Zainul Arifin No. 7;061-4501155;;Wholesale;0120;;CS
+OK14;OAKLEY SOGO EMPORIUM PLUIT;;Jakarta Utara;0888;Jl. Pluit Selatan Raya;021-66676555;;Wholesale;0120;;CS
+OK15;OAKLEY SOGO CENTRAL PARK;;Jakarta Barat;0888;Jl. Let.Jend.S.Parman Kav 28;021-56985756;;Wholesale;0120;;CS
+OK16;OAKLEY SOGO TUNJUNGAN PLAZA;;Surabaya;0888;Jl. Basuki Rahmat No. 8-12;031-5324555;;Wholesale;0120;;CS
+OK17;OAKLEY SOGO DISCOVERY MALL;;Bali;0888;Jl. Kartika Plaza;0361-769555;;Wholesale;0120;;CS
+OK18;OAKLEY SOGO BALI COLLECTION;;Bali;0888;Komplek BTDC Blok B10, Nusa Du;0361-772655;;Wholesale;0120;;CS
+OK19;OAKLEY SOGO KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;02129465055;;Wholesale;0120;;CS
+GP40;GP MERAPI GOLF YOGYAKARTA;;Yogyakarta;0888;Jl. Golf No. 1, Kepuharjo;;;Wholesale;0110;;CS
+SK14;SKECHERS ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+CV28;CONVERSE ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+PU24;PUMA ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+EC18;ECCO ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+CV29;CONVERSE PASARAYA GRANDE;;Jakarta Selatan;0888;Jl. Iskandarsyah II/2;;;Wholesale;0110;;CS
+LV01;LEVI'S SOGO PIM2;;Jakarta Selatan;0888;Jl. Metro Pondok Indah I;;;Wholesale;0120;;CS
+LV02;LEVI'S SOGO CENTRAL PARK;;Jakarta Barat;0888;Jl. Let.Jend.S.Parman Kav 28;;;Wholesale;0120;;CS
+LV03;LEVI'S METRO PLAZA SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No. 8;;;Wholesale;0120;;CS
+LV04;LEVI'S METRO BANDUNG SUPERMALL;;Bandung;0888;Jl. Gatot Subroto No. 289;;;Wholesale;0120;;CS
+LV05;LEVI'S METRO CIPUTRA SBY;;Surabaya;0888;Jl.  Mayjend Sungkono No. 87;;;Wholesale;0120;;CS
+SK20;SKECHERS SENAYAN CITY;;Jakarta Pusat;0888;Jl Asia Afrika Lot 19;;;Wholesale;0110;;CS
+PS19;PLANET SPORTS SOGO SUN PLAZA M;;Medan;0888;Jl. H.Zainul Arifin #7;;;Wholesale;0120;;CS
+KR95;KR CENTRO GM BEKASI;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0120;;CS
+LV06;LEVI'S METRO GANDARIA CITY;;Jakarta Selatan;0888;Jl. KHM. Syafi'I Hadzami No. 8;;;Wholesale;0120;;CS
+NE01;NB KOTA KASABLANKA;;Jakarta Selatan;0888;Jl. Kasablanka Raya Kav. 88;;;Wholesale;0110;;CS
+NE02;NB ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+SSZ5;SS RAMAYANA BANYUWANGI;;Banyuwangi;0888;Jl. Adi Sucipto 50 X;;;Wholesale;0120;;CS
+SSZ6;SS RAMAYANA SEASON CITY;;Jakarta Barat;0888;Jl. Latumenten No. 33;;;Wholesale;0120;;CS
+SSZ8;SS RAMAYANA CIPUTAT;;Jakarta Selatan;0888;Jl. Dewi Sartika No. 1;;;Wholesale;0120;;CS
+EC19;ECCO SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0110;;CS
+EC20;ECCO LIPPO KUTA ICON;;Bali;0888;Jl. Kartika Plaza Lingkar Sega;;;Wholesale;0110;;CS
+SSZ9;SS LOTUS GRAND GALAXY BEKASI;;Bekasi;0888;Jl. Grand Galaxy Boulevard No.;;;Wholesale;0120;;CS
+SK21;SKECHERS MALUKU CITY MALL;;Ambon;0888;Jl. Sultan Hassanuddin-Tantui;;;Wholesale;0110;;CS
+DM01;DOC MARTEN GRAND INDONESIA;;Jakarta Pusat;0510;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+SS0A;SS MATAHARI PURI DAAN MOGOT;;Jakarta Barat;0888;Jl. Daan Mogot Raya Km. 16;;;Wholesale;0110;;CS
+SS0B;SS MALL TIMIKA;;Timika;0888;Jl. Hassanudin No. 1;;;Wholesale;0110;;CS
+SK15;SKECHERS PLUIT VILLAGE;;Jakarta Utara;0888;Jl. Pluit Indah Raya;;;Wholesale;0110;;CS
+PY50;PAYLESS LIPPO KUTA ICON;;Bali;0190;Jl. Kartika Plaza Lingkar Sega;;;Wholesale;0110;;CS
+PS63;PS LIPPO KUTA ICON;;Bali;0888;Jl. Kartika Plaza Lingkar Sega;;;Wholesale;0110;;CS
+SA13;STACCATO LOTTE SHOPPING AVENUE;;Jakarta Selatan;0510;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+PY51;PY JAVA SUPERMALL;;Semarang;0190;Jl. MT. Haryono 992-994;;;Wholesale;0110;;CS
+PY52;PY CITRAGRAND CIBUBUR;;Bekasi;0190;Jl. Alternatif Cibubur, Cileun;;;Wholesale;0110;;CS
+PY53;PY FESTIVAL CITY LINK BANDUNG;;Bandung;0190;Jl. Peta No. 241;;;Wholesale;0110;;CS
+CP05;CAMPER LOTTE SHOPPING AVENUE;;Jakarta Selatan;0510;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+EC21;ECCO LDS SOGO CENTRAL PARK;;Jakarta Barat;0888;Jl. LetJend S. Parman Kav. 28;;;Wholesale;0120;;CS
+LV09;LEVI'S DEBENHAMS KEMANG VILLAG;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0120;;CS
+LV10;LEVI'S SEIBU GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0120;;CS
+LV11;LEVI'S CENTRO GRAND METROPOLIT;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0120;;CS
+SA15;STACCATO ALAM SUTERA;;Tangerang;0510;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+SS1C;SS GRAGE MALL 2;;Cirebon;0888;Jl. Pengeran Drajat Penggambir;;;Wholesale;0110;;CS
+ZI01;BZR CAMPER SENAYAN CITY (18-21;;Jakarta Pusat;0510;Jl Asia Afrika Lot 19;;;Wholesale;0110;;CS
+SS1D;SS KUALA NAMU AIRPORT MEDAN;;Medan;0888;Bandara Kuala Namu, kabupaten;;;Wholesale;0110;;CS
+PY58;PY BINTARO LIFESTYLE MALL;;Tangerang;0190;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0110;;CS
+SS1E;SS BINTARO LIFESTYLE MALL;;Tangerang;0888;Jl. Bintaro Utama, Bintaro Jay;;;Wholesale;0110;;CS
+SS1F;SS FX SUDIRMAN JAKARTA;;Jakarta Pusat;0888;Jl. Jend. Sudirman Pintu 1 Sen;;;Wholesale;0110;;CS
+SK23;SKECHERS GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+DC17;PT. Agility International;;Jakarta Timur;0510;Jl. Raya Protokol Halim Perdan;;;Wholesale;0100;;CS
+BY02;BZR PAYLESS GM BEKASI (18/7-31;;Bekasi;0190;Jl. KH. Noer Ali;;;Wholesale;0110;;CS
+KS34;KS ISTANA PLAZA BDG;;Bandung;0888;Jl.Pasir Kaliki No 121-123;;;Wholesale;0110;;CS
+SS0C;SS RAMAYANA PEKALONGAN;;Pekalongan;0888;Jl. Dr. Sutomo, Kel Noyontaan;;;Wholesale;0120;;CS
+SS0D;SS RAMAYANA AMBON;;Ambon;0888;Jl. Sultan Hassanuddin-Tantui;0911-314111;;Wholesale;0120;;CS
+SS0F;SS RAMAYANA BOGOR;;Bogor;0888;Jl. Bogor Baru, Kel. Kedaung J;0251-8400056;;Wholesale;0120;;CS
+KR90;KR LOTUS GRAND GALAXY;;Bekasi;0888;Jl. Grand Galaxy Boulevard No.;;;Wholesale;0120;;CS
+PY54;PY BAYWALK PLUIT;;Jakarta Utara;0190;Jl. Pluit Karang Ayu Blok B1 U;;;Wholesale;0110;;CS
+KSA7;KS MANADO TOWN SQUARE;;Manado;0888;Jl. Pierre Tendean Boulevard M;;;Wholesale;0110;;CS
+KSA8;KS BAYWALK PLUIT;;Jakarta Utara;0888;Jl. Pluit Karang Ayu Blok B1 U;;;Wholesale;0110;;CS
+SK16;SKECHERS PASARAYA GRANDE;;Jakarta Selatan;0888;Jl. Iskandarsyah II/2;;;Wholesale;0110;;CS
+LN11;LINEA GALERIES LAFAYETTE;;Jakarta Selatan;0510;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+SA14;STACCATO GALERIES LAFAYETTE;;Jakarta Selatan;0510;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+GP41;GP DRIVING RANGE PDK INDAH;;Jakarta Selatan;0888;Jl. Metro Pondok Indah Kav. 1;;;Wholesale;0120;;CS
+FG26;FOOTGEAR MEN'S SOGO ALAM SUTER;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0120;;CS
+PY57;PAYLESS Q MALL BANJARBARU;;Banjarbaru;0190;Jl. Ahmad Yani Km 36,8;;;Wholesale;0110;;CS
+CI07;CLAIRE'S ALAM SUTERA;;Tangerang;0888;Jl. Jalur Sutera Barat Kav. 16;;;Wholesale;0110;;CS
+CI08;CLAIRE'S BANDUNG SUPERMALL;;Bandung;0888;Jl. Gatot Subroto No. 258;;;Wholesale;0110;;CS
+BZ09;BZR Plaza The Central PKBR (27;;Pekanbaru;0888;Jl. Ahmad Yani No. 43;;;Wholesale;0110;;CS
+SS0H;SS Q MALL BANJARBARU;;Banjarbaru;0888;Jl. Ahmad Yani Km 36,8;;;Wholesale;0110;;CS
+PY55;PY MANADO TOWN SQUARE;;Manado;0190;Jl. Pierre Tendean Boulevard M;;;Wholesale;0110;;CS
+SS0I;SS CITRAGRAND CIBUBUR;;Bekasi;0888;Jl. Alternatif Cibubur, Cileun;021-29377444;;Wholesale;0110;;CS
+CV30;CONVERSE SUMMARECON BEKASI;;Bekasi;0888;Jl. Boulevard A. Yani Blok M;;;Wholesale;0110;;CS
+SK17;SKECHERSTHAMRIN PLAZA MEDAN;;Medan;0888;Jl Thamrin no 75R;;;Wholesale;0110;;CS
+SK18;SKECHERS TRANS STUDIO MAKASSAR;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0110;;CS
+EC22;ECCO MEN'S SOGO PLAZA SENAYAN;;Jakarta Pusat;0888;Jl. Asia Afrika No. 8;;;Wholesale;0120;;CS
+EC23;ECCO MEN'S SOGO KELAPA GADING;;Jakarta Utara;0888;Jl. Boulevard Raya kelapa Gadi;;;Wholesale;0120;;CS
+SS0J;SS GAJAH MADA JAKARTA;;Jakarta Pusat;0888;Jl. Gajah Mada No. 19-26;;;Wholesale;0110;;CS
+SS0L;SS GRAMEDIA CINERE;;Jakarta Selatan;0888;Jl. Raya Cinere, Limo;;;Wholesale;0120;;CS
+SS0M;SS GRAMEDIA CIJANTUNG;;Jakarta Timur;0888;Jl. Pendidikan I, Cijantung Pa;;;Wholesale;0120;;CS
+FG13;FOOT GEAR-Men CDS P.SEMANGGI;;Jakarta Selatan;0888;Jl. Jend.Sudirman;021 25539846;jakssa4@map.co.id;Wholesale;0120;;CS
+GP23;GOLFPROSHOP  IMPERIAL KARAWACI;;Tangerang;0888;JL. Pulau Golf;;;Wholesale;0110;;CS
+KS35;KS DISCOVERY MAL BALI;;Bali;0888;"Jl. Kartika Plaza, Kuta";0361 769538 7...;harry.cahyono@map.co.id & liesa.puspasari@map.co.id;Wholesale;0110;;CS
+KS36;KS CITRALAND JKT;;Jakarta Barat;0888;Jl. S. Parman;021 5606550;eddy.gunawan@map.co.id/endriyati@map.co.id;Wholesale;0110;;CS
+SS0N;SS GRAMEDIA GORONTALO;;Gorontalo;0888;Jl. HOS. Cokroaminoto No. 1;;;Wholesale;0120;;CS
+CV31;CONVERSE GRAND INDONESIA;;Jakarta Pusat;0888;Jl. MH Thamrin No.1;;;Wholesale;0110;;CS
+SS0O;SS GRAMEDIA MATRAMAN;;Jakarta Pusat;0888;Jl. Matraman Raya 46-48;;;Wholesale;0120;;CS
+SS0P;SS GRAMEDIA CENTRAL PARK;;Jakarta Barat;0888;Jl. LetJend S. Parman Kav. 28;;;Wholesale;0120;;CS
+SS0Q;SS GRAMEDIA EMPORIUM PLUIT;;Jakarta Utara;0888;Jl. Pluit Selatan Raya No. 10;;;Wholesale;0120;;CS
+SS0R;SS GRAMEDIA PONDOK GEDE;;Jakarta Timur;0888;Jl. Raya Pondok Gede;;;Wholesale;0120;;CS
+LV07;LEVI'S METRO PARK SOLO;;Solo;0888;Jl. Raya Solo Baru Permai;;;Wholesale;0120;;CS
+SS0S;SS GRAMEDIA AMBASSADOR;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio;;;Wholesale;0120;;CS
+PY56;PY MEDAN FAIR;;Medan;0190;Jl. Jend. Gatot Subroto No. 30;;;Wholesale;0110;;CS
+GP22;GOLF PROSHOP KELAPA GADING;;Jakarta Utara;0888;KELAPA GADING GOLF PRO.;45851173;map106@centrin.net.id;Wholesale;0110;;CS
+SS96;SPORTS STATION MDS PASAR BESAR;;Malang;0888;Jl. Kyai Tamin Lt. 2, Pasar Ba;0341 331311;Irawati.Setio@map.co.id;Wholesale;0120;;CS
+OB25;OSHKOSH B'GOSH MALIOBORO MAL Y;;Yogyakarta;0888;"JL.Malioboro 52-58,";0274 589832;V.MATRIA@MAP.CO.ID;Wholesale;0110;;CS
+GH16;GOLF HOUSE GED. PLAZA BALIKPAP;;Balikpapan;0888;JL Jend Sudirman No 1;;elvina@map.co.id / mustadir@map.co.id;Wholesale;0110;;CS
+RO04;ROCKPORT PLAZA SENAYAN;;Jakarta Pusat;0888;"Jl.Asia Afrika No 228c,";021 5725352;;Wholesale;0110;;CS
+SS98;SPORTS STATION MDS MEDAN FAIR;;Medan;0888;Jl. Gatot Subroto;061 7362935;Arlia@mdn.centrin.net.id;Wholesale;0120;;CS
+AF30;ATHLETES FOOT RUKO KUTA SQ;;Bali;0888;"Jl Bakung Sari, kuta";0361 754912;bliaf30@map.co.id( pic : Siti Nur'aini & Gst. Ngurah Bija Astawa );Wholesale;0110;;CS
+SSA2;SPORTS STATION DIAMOND PALEMBA;;Palembang;0888;Jl. R.Sukamto No. 8;;;Wholesale;0120;;CS
+SSA3;SPORTS STATION CHANDRA SUPERST;;Lampung;0888;Jl. Pemuda Hayam Wuruk No.1 Tj;;;Wholesale;0120;;CS
+EC25;ECCO LDS DEBENHAMS KV;;Jakarta Selatan;0888;Jl. Pangeran Antasari No. 36;;;Wholesale;0120;;CS
+SS0T;SS CENTRO GRAND METROPOLITAN B;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0120;;CS
+SS0U;SS GRAMEDIA LOMBOK;;Lombok;0888;Jl. Pejanggik 43 Panjang Barat;;;Wholesale;0120;;CS
+KR91;KR METRO PACIFIC PLACE;;Jakarta Selatan;0888;Jl. Jend.Sudirman Kav 52-53;;;Wholesale;0120;;CS
+KR92;TOYS CITY SUMMARECON BEKASI;;Bekasi;0888;Jl. Boulevard A. Yani Blok M;;;Wholesale;0120;;CS
+KR93;TOYS CITY LOTTE MART;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+KR94;KR BARBIE STORE;;Jakarta Utara;0888;Jl. Boulevard Kelapa Gading;;;Wholesale;0120;;CS
+GP42;GP PADIVALLEY MAKASSAR;;Makassar;0888;Jl. Patalassang Samata Gowa,Su;;;Wholesale;0110;;CS
+GH43;GH LOTTE WORLD JAKARTA;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+PS64;PS LOTTE WORLD JAKARTA;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+RK02;ROOKIE LOTTE WORLD JAKARTA;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+SS0V;SS GRAMEDIA AMARIS SEMARANG;;Semarang;0888;Jl. Pemuda 138;;;Wholesale;0120;;CS
+SS0W;SS GRAMEDIA BATAM;;Batam;0888;Komp. Penuin Centre Blok R No.;;;Wholesale;0120;;CS
+SS0X;SS GRAMEDIA MALL PEKANBARU;;Pekanbaru;0888;Jl. Jend Sudirman No. 123;;;Wholesale;0120;;CS
+KS32;KS SUPERMALL PAKUWON;;Surabaya;0888;Jl. Puncak Bukit Lontar 2;;;Wholesale;0110;;CS
+OB21;OSHKOSH B'GOSH ISTANA PLZ BDG;;Bandung;0888;Jl. Pasir Kaliki no.121-123;022-6006642;bih@bdg.centrin.net.id;Wholesale;0110;;CS
+PS18;PLANET SPORTS KLP GADING MAL 3;;Jakarta Utara;0888;Jl.Kelapa Gading Boulevard;45853704;;Wholesale;0110;;CS
+SS83;SPORT STATION PLAZA SEMANGGI;;Jakarta Selatan;0888;Jl Jend.Sudirman;;;Wholesale;0110;;CS
+SS84;SPORTS STATION MDS PONTIANAK;;Pontianak;0888;Jl. Jend.Urip Sumoharjo;;;Wholesale;0120;;CS
+SSA4;SS CENTRO PLZ SEMANGGI;;Jakarta Selatan;0888;Jl. Jend. Sudirman;021 25539846;jakssa4@map.co.id;Wholesale;0120;;CS
+GH18;GOLF HOUSE SENAYAN PLAZA;;Jakarta Pusat;0888;Jl Asia Afrika no 8;021 5725269;;Wholesale;0110;;CS
+SSA5;SPORTS STATION RAMAYANA JAMBI;;Jambi;0888;Jl. Sultan Thaha;0741 26773;;Wholesale;0120;;CS
+HS16;OFFICE - FOOTBAL FEDERATION;;Jakarta Pusat;0888;Jl. Jend Sudirman Kav 86;021 5746019;;Wholesale;0110;;CS
+SSA7;SPORTS STATION PLAZA MEDAN FAI;;Medan;0888;Jl Gatot Subroto no 30;061 4140559;mdnssa7@map.co.id;Wholesale;0110;;CS
+SSA8;SPORTS STATION GRAND MAL SOLO;;Solo;0888;JL.Slamet Riyadi 273;0271 733656;;Wholesale;0110;;CS
+SSA9;SPORTS STATION WILLTOP TRADE C;;Jambi;0888;Jl Sultan Thaha;0741-7837025;;Wholesale;0110;;CS
+SSB0;SPORTS STAT. AYANI MEGAMAL PON;;Pontianak;0888;Jl.Jendral Achmad Yani;0561 761327;PtkSSB0@map.co.id;Wholesale;0110;;CS
+SSB1;SPORTS STATION MEGAMAL BATAM C;;Batam;0888;Jl.Engku Putri;0778 470230;btmssb1@map.co.id;Wholesale;0110;;CS
+OB28;OSHKOSH B'GOSH CITRALAND SEMAR;;Semarang;0888;Jl.Simpang Lima No.1;024 8416694;;Wholesale;0110;;CS
+KS38;KIDZ STATION MEGA MAL BATAM;;Batam;0888;Jl.Engku Putri;0778 470232;;Wholesale;0110;;CS
+SSB2;SS MALL SKA PEKANBARU;;Pekanbaru;0888;Jl Sukarno Hatta No.34a;0761-864120;;Wholesale;0110;;CS
+SSB3;SPORTS STATION CIPUTRA SERAYA;;Pekanbaru;0888;Jl. Riau #58 Kp.Baru Senapelan;0761 868679;pkussb3@map.co.id;Wholesale;0110;;CS
+SSB4;SPORTS STATION MDS CENTRAL PLZ;;Lampung;0888;Jl Kartini No 21;0721-242518;Lpgssb4@map.co.id;Wholesale;0120;;CS
+D723;GAC Gunung Putri;;Bogor;0510;;;;Wholesale;0100;;CS
+SS0Y;SS GRAMEDIA TERNATE;;Ternate;0888;Jl. Boulevard-Kawasan Jatiland;;;Wholesale;0120;;CS
+SS85;SPORTS STATION MDS SUPERMAL PA;;Surabaya;0888;Jl. Puncak Bukit Lontar 2;;;Wholesale;0120;;CS
+SS86;SPORTS STATION SUPERMAL PAKUWO;;Surabaya;0888;Jl.Puncak Bukit Lontar 2;031-7390217;;Wholesale;0110;;CS
+EC17;ECCO LOTTE SHOPPING AVENUE;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+RO32;ROCKPORT LOTTE SHOPPING AVENUE;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0120;;CS
+SSZ0;SS PLUIT VILLAGE;;Jakarta Utara;0888;Jl. Pluit Indah Raya;;;Wholesale;0110;;CS
+SSZ1;SS TANGCITY MALL;;Tangerang;0888;Jl. Jend. Sudirman No. 1;;;Wholesale;0110;;CS
+HG03;A & P GOLF;;Jakarta Pusat;0888;Jl. Jend Sudirman kav.86;021 5745808 E...;;Wholesale;0110;;CS
+OB30;OSHKOSH B'GOSH  METROPOLITAN B;;Bekasi;0888;JL.Raya Ujung Kalimalang 135;;;Wholesale;0110;;CS
+SSB5;SPORTS STATION MDS MEGAMAL BTM;;Batam;0888;Jl.Engku Putri (dpn term ferry;0778 430997 (...;btmssb5@map.co.id;Wholesale;0120;;CS
+SSB6;SPORTS STATION PIM 2 JAKARTA;;Jakarta Selatan;0888;Jl Metro Pndok Indah;021 7592-0543;jakssb6@map.co.id;Wholesale;0110;;CS
+PU02;PUMA PIM 2 JAKARTA;;Jakarta Selatan;0888;Jl Metro Pondok Indah;021 75920544;;Wholesale;0110;;CS
+SSB7;SPORTS STATION METROPOLITAN MA;;Bekasi;0888;JL.Raya Ujung Kalimalang 135;021 88861805;;Wholesale;0110;;CS
+SSB8;SPORTS STATION THAMRIN PLAZA M;;Medan;0888;Jl Thamrin no 75R;061 7362935;mdnssb8@map.co.id;Wholesale;0110;;CS
+PS60;PS SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0110;;CS
+SS0Z;SS GRAMEDIA TRANSKALLA MAKASSA;;Makassar;0888;Jl. HM. Dg. Patomo;;;Wholesale;0120;;CS
+OB31;OSHKOSH B'GOSH CIPUTRA SERAYA;;Pekanbaru;0888;Jl Jend Sudirman no 71;;;Wholesale;0110;;CS
+KS39;KIDZ STATION SOGO PD. INDAH MA;;Jakarta Selatan;0888;Jl. Metro Pondok Indah;;;Wholesale;0120;;CS
+SSB9;SPORTS STATION MDS MAL SKA PKN;;Pekanbaru;0888;Jl Soekarno-Hatta;0761 864042;;Wholesale;0120;;CS
+SSC0;SPORTS ST. CHANDRA S.STORE TLK;;Lampung;0888;Jl. Ikan Hiu No 1;0721 483934;;Wholesale;0120;;CS
+SSC1;SPORTS STATION MDS KUDUS;;Kudus;0888;Jl Lukmono Hadi no 1;0291 424 5101;Kdsssc1@map.co.id;Wholesale;0120;;CS
+DC37;DC Payless;;;0190;;;;Wholesale;0100;;CS
+BCK9;BZR KIDS EVENT CARS LOTTE (11-;;Jakarta Selatan;0888;Jl. Prof. Dr. Satrio Kav 3 & 5;;;Wholesale;0110;;CS
+SSY4;SS PLAZA MADIUN;;Madiun;0888;Jl. Pahlawan No 38-40, Pangong;;;Wholesale;0110;;CS
+SA11;STACCATO GALAXY MALL SURABAYA;;Surabaya;0510;Jl. Dharmahusada Indah Timur 3;;;Wholesale;0110;;CS
+E101;Planet Sports.net - eShop;;Jakarta Timur;0888;Jl. Cililitan besar No. 454;;;Wholesale;0110;;CS
+AD31;Adidas;;Jakarta Utara;0888;Jl Boulevard Klp Gading;;;Wholesale;0110;;CS
+XX45;Name1 43;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0110;;CS
+PYB6;PAYLESS AT AGILITY;;Jakarta Timur;0190;Jl. Raya Bekasi Km. 28 blok F;;;Wholesale;0110;;CS
+FO01;FOOT LOCKER SENAYAN CITY;;Jakarta Pusat;0888;Jl. Asia Afrika Lot 19;;;Wholesale;0120;;CS
+SA1A;FOOT LOCKER SENAYAN CITY (RETA;;Jakarta Pusat;0510;Jl. Asia Afrika Lot 19;;;Wholesale;0110;;CS
+DC86;Distribution Center MAA - Foot;;Bekasi;0888;Komp Pergudangan Metrofeed No.;;;Wholesale;0100;;CS
+FX02;FOOTLOCKER PIM 3;;Jakarta Selatan;0510;Jl. Metro Pondok Indah;;;Wholesale;0120;;CS
+XX09;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX32;;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;;;Wholesale;0120;;CS
+XX18;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX27;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX28;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+SK37;SKECHERS LIPPO MALL PURI;;Jakarta Barat;0888;Jl. Puri Indah Boulevard Kav I;;;Wholesale;0110;;CS
+SK38;SKECHERS GRAND METROPOLITAN BE;;Bekasi;0888;Jl. KH. Noer Ali;;;Wholesale;0120;;CS
+XX16;test16;;;0888;JKT;;;Wholesale;0120;;CS
+XX34;test34;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+XX35;test35;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;08111111;apaja@map.co.id;Wholesale;0120;;CS
+XX15;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX24;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+ZF09;BZR FF DEFECT BIDAKARA (16/11-;;Jakarta Selatan;0888;Jl. Jend Gatot Subroto Kav.71-;;;Wholesale;0110;;CS
+DC70;DC Asics;;;0888;;;;Wholesale;0100;;CS
+XX08;test store1;;;0888;jakarta;;;Wholesale;0120;;CS
+XX13;test storeheri;;;0888;jakarta;;;Wholesale;0120;;CS
+XX19;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX29;test store 13;;;0888;jakarta;;;Wholesale;0120;;CS
+XX30;Test store 30;;Jakarta Pusat;0888;Jl. Jend. Sudirman No.Kav. 86;;;Wholesale;0120;;CS
+ZI50;BZR MGI DEFECT BIDAKARA (16/11;;Jakarta Selatan;0510;Jl. Jend Gatot Subroto Kav.71-;;;Wholesale;0110;;CS
+HC12;HEAD OFFICE - SMIGGLE;;Jakarta Pusat;0888;Jl. Jend Sudirman kav. 86;;;Wholesale;0130;;CS
+D768;DC Virtual TRU - MAA;;;0888;;;;Wholesale;0100;;CS

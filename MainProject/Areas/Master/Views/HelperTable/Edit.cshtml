@@ -1,0 +1,116 @@
+﻿@model ViewModel.ViewModels.HelperTableVM
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">HelperTable</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new vendor form -->
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row center" style="float: none; margin: 0 auto;">
+                    <div class="col-md-12">
+                        <div class="card card-warning">
+                            <div class="card-header">
+                                <h3 class="card-title">Edit</h3>
+                            </div>
+                            <div class="card-body row">
+
+
+                                @Html.HiddenFor(model => model.ID)
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">ID</label>
+                                        <input type="text" asp-for="ID" class="form-control" />
+                                        <span asp-validation-for="ID" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Code</label>
+                                        <input type="text" asp-for="Code" class="form-control" readonly />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Name</label>
+                                        <input type="text" asp-for="Name" class="form-control" />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Value</label>
+                                        <input type="text" asp-for="Value" class="form-control" />
+                                        <span asp-validation-for="Value" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Description</label>
+                                        @Html.TextAreaFor(model => model.Description, new { @class = "form-control col-md-12" })
+                                        <span asp-validation-for="Description" class="text-danger"></span>
+                                    </div>
+                                    <div class="row ml-1">
+                                        <div class="ml-auto mr-3">
+                                            <i class="text-sm">
+                                                Last modified by <a href="#">@Model.LastModifiedBy</a> at <a href="#">@Model.LastModifiedTime</a>
+                                            </i>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+
+                            </div>
+                            <div class="card-footer row">
+
+                                <input type="submit" value="Submit" class="btn btn-success" />
+                                &nbsp;
+                                <a asp-action="Index" class="btn btn-danger">Cancel</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- new vendor form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("form").submit(function () {
+
+                ShowLoading();
+
+            });
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+        });
+
+
+    </script>
+
+}

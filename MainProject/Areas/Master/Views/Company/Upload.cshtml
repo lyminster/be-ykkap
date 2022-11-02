@@ -1,0 +1,128 @@
+﻿@model ViewModel.ViewModels.IndexCompanyVM
+
+@{
+    ViewData["Title"] = "Upload";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Company</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new vendor form -->
+            
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-3">
+                        <div class="card card-warning">
+                            <div class="card-header">
+                                <h3 class="card-title">Import Company Data</h3>
+                                @*<a style="float:right;" asp-action="Index">Back to List</a>*@
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label>1. Download template</label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="alert alert-default-secondary">
+                                            <div class="row ">
+                                                <label class="control-label col-sm-6 col-xs-6">
+                                                    Gunakan template file XLSX ini untuk input data
+                                                </label>
+                                                <div class="col-sm-6 col-xs-6 text">
+                                                    <a class="btn btn-block btn-success" asp-action="DownloadExcelTemplate">
+                                                        Download Template (.xlsx)
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <form asp-action="Upload" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label>2. Pilih file XLSX yang sudah Anda input</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            @Html.TextBox("Upload", "", new { type = "file", required = "required", @accept = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group text-center col-md-12">
+                                        <button type="submit" id="upload" class="btn btn-primary">Upload</button>
+                                    </div>
+
+                                </form>
+
+
+                                @if (Model.UrlFileLog != null)
+                                {
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="alert alert-default-info">
+                                                <div class="row ">
+                                                    <label class="control-label col-sm-6 col-xs-6">
+                                                        Sukses upload file. Silahkan
+                                                        <a asp-controller="FileLog" asp-action="ExportFileLogDetail" asp-route-formID="@Model.UrlFileLog">Download Log</a>
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                @*<h2> @ViewBag.Message </h2>*@
+
+                            </div>
+                            <div class="card-footer row">
+                                <div class="form-group col-md-12">
+                                    <a asp-action="Index" class="btn btn-default">Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            <!-- new vendor form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("form").submit(function () {
+
+                ShowLoading();
+
+            });
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+
+        });
+
+    </script>
+
+}

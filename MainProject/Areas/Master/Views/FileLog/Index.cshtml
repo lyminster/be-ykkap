@@ -1,0 +1,156 @@
+﻿@model ViewModel.ViewModels.IndexFileLogVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">File Logs</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new District form -->
+            <div class="row center" style="float: none; margin: 0 auto;">
+                <div class="col-md-12">
+                    <div class="card card-info">
+                         
+
+                        <div class="card-body">
+
+                            <a href="#" class="btn btn-sm btn-outline-info">
+                                File Logs
+                            </a>
+                            &nbsp;
+                            <a asp-action="IndexTransporter" asp-controller="FileLog" class="btn btn-sm btn-info">
+                                Transporter Job Logs
+                            </a>
+                            
+                            <hr />
+
+
+                            <table id="demoGrid" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Menu</th>
+                                        <th>File Name</th>
+                                        <th>Status</th>
+                                        <th>Remarks</th>
+                                        <th>Imported By</th>
+                                        <th>Imported Time</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new District form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+                $("#example1").DataTable({
+                    "responsive": true,
+                    "autoWidth": false,
+                    "searching": true,
+                });
+        });
+
+        function FilterData() {
+            $('#demoGrid').DataTable().ajax.reload(null, false)
+        }
+
+
+        $(document).ready(function () {
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+
+
+            $('#demoGrid').DataTable({
+                "processing": true, // for show progress bar
+                "serverSide": true, // for process server side
+                "filter": true,
+                "pageLength": 20,
+                "responsive": true,
+                "autoWidth": false,
+                "searching": true,
+
+                "ajax": {
+                    "url": "@Url.Action("LoadData", "FileLog", new { area ="Master" })",
+                    "type": "POST",
+                    "datatype": "json",
+                    "data": function (d) {
+                        d.tglDari = $('#FilterFromString').val();
+                        d.tglSampai = $('#FilterToString').val();
+                    },
+                },
+
+                //dom: 'Bfrtip',
+                //buttons: [
+                //    'copy', 'csv', 'excel', 'pdf', 'print'
+                //],
+
+                "columns": [
+                    { "data": "tableName", "name": "tableName", "width": "20px" },
+                    { "data": "fileName", "name": "fileName", "width": "20px" },
+                    {
+                        data: null, render: function (data, type, row) {
+                            if (row.status == 1) {
+                                return '<h5><span class="badge badge-success">Success</span></h5>';
+                            } else {
+                                return '<h5><span class="badge badge-danger">Failed</span></h5>';
+                            }
+
+                        }, "width": "10%", "sorting": "false"
+                    },
+
+                    { "data": "remarks", "name": "remarks", "width": "20px" },
+                    { "data": "createdBy", "name": "createdBy", "width": "20px" },
+                    {
+                        "data": "createdTime", "name": "createdTime", "width": "20px", "render": function (value) {
+                            if (value === null) return "";
+                            return moment(value).format('DD-MM-YYYY');
+                        }
+                    },
+                      {
+                        data: null, render: function (data, type, row) {
+                          
+                              return '<a class="btn btn-info btn-sm" href="@Url.Action("ExportFileLogDetail", "FileLog", new { Area = "Master" })?formID=' + row.id + '">Download Log</a>';
+
+                        }, "width": "13%", "sorting": "false"
+                    },
+
+                ]
+
+            });
+        });
+    </script>
+
+}

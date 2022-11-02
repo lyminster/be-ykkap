@@ -1,0 +1,187 @@
+﻿@model Database.ViewModels.ResetPass
+@{
+    ViewData["Title"] = "Register Page";
+    Layout = "~/Views/Shared/AdminLTE/_Layout2.cshtml";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>AdminLTE 3 | Starter</title>
+    <partial name="AdminLTE/_Styles" />
+</head>
+<body>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12 d-flex justify-content-center  align-items-center" style="padding-top:50px">
+
+                    <!-- jquery validation -->
+                    <div class="col-md-4 card card-primary  "  >
+
+                        <!-- /.card-header -->
+                        <!-- form start -->
+
+
+                        <form asp-action="LoginForm" method="post" asp-antiforgery="true">
+                            <div class="login-logo">
+                                <br />
+                                <img src="@Url.Content("~/img/maa.png")" alt="" height="70">
+                                <br />
+                                <a href="#"><b>TMS</b></a>
+                            </div>
+
+                            <p class="login-box-msg">Sign in to start your session</p>
+
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <div class="input-group mb-3">
+                                        <input type="email"required  name="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <span class="fas fa-envelope"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <div class="input-group mb-3">
+                                        <input type="password" required name="password" class="form-control" id="exampleInputPassword1"   placeholder="Password">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <span class="fas fa-lock"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="color:blue;margin-left:20px; cursor:pointer" onclick="showresetModal()">
+                                Forgot Password ?
+                            </p>
+
+                            @if (ViewBag.ErrorResult != null)
+                            {
+                                <div class="" style="text-align:center;padding-top:10px;">
+                                    <span class="text-danger" style="font-size:24px; font-weight:bold">@ViewBag.ErrorResult</span>
+                                </div>
+                            }
+
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <button type="submit" style="width:100%;" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+            <!-- /.row -->
+            <!-- Modal -->
+            <div class="modal fade" id="resetModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header bg-info">
+                            <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body message" style="text-align:center;">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Input your Email address to Reset Password</label>
+                                        <div class="input-group mb-3">
+                                            <input type="email" name="emailForm" class="form-control" required id="emailForm" placeholder="Enter email">
+                                            <div class="input-group-append">
+                                                <div class="input-group-text">
+                                                    <span class="fas fa-envelope"></span>
+                                                </div>
+                                            </div>
+                                            <span id="emailError" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                    <button onclick="sendReset()"   class="btn btn-block btn-success">Request New Password</button>
+                                </div>
+                        </div>
+                        @*<div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Reset Password</button>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+</body>
+
+
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>//reset
+
+        function showresetModal() {
+            $("#resetModal").modal('show');
+        }
+        function sendReset() {
+            var email = $("#emailForm").val();
+            $.ajax({
+
+                url: '/Login/ResetPass',
+
+                type: 'POST',
+
+                data: { email: email },
+
+                success: function (data) {
+
+                    if (data["errorCode"] == "00") {
+                        $("#resetModal").modal('hide');
+                        swal
+                            ({
+                                title: "Reset!",
+                                text: "User has been reset!",
+                                type: "success"
+                            },
+                                function () {
+                                    window.location.href = '/Login/LoginForm';
+                                });
+                    } else {
+                        swal
+                            ({
+                                title: "Error!",
+                                text: data["errorMsg"],
+                                type: "error"
+                            },
+                                function () {
+                                   
+                                });
+                    }
+                }
+
+            });
+        }
+        $(document).ready(function () {
+            $("form").submit(function () {
+
+                ShowLoading();
+
+            });
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+        });
+
+    </script>
+
+}
