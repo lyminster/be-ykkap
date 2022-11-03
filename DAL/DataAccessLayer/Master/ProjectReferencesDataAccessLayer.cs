@@ -81,8 +81,8 @@ namespace DAL.DataAccessLayer.Master
                     {
                         building = data.building,
                         detail = data.detail,
-                        finishTimestamp = data.finishTimestamp,
-                        startTimeStamp = data.startTimeStamp ,
+                        finishTimestamp = data.finishTimestamp.ToString(),
+                        startTimeStamp = data.startTimeStamp.ToString() ,
                         location = data.location ,
                         name = data.name ,
                         type = data.type ,

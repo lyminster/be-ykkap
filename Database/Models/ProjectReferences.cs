@@ -12,8 +12,8 @@ namespace Database.Models
         public string detail { get; set; }
         public string building { get; set; }
         public string type { get; set; }
-        public string startTimeStamp { get; set; }
-        public string finishTimestamp { get; set; }
+        public DateTime startTimeStamp { get; set; }
+        public DateTime finishTimestamp { get; set; }
         public string location { get; set; }
         public string urlYoutube { get; set; }
         public string listProductUsed { get; set; }

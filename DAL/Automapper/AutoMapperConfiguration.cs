@@ -41,7 +41,8 @@ namespace MainProject.Automapper
             CreateMap<SocialMedia, JsonSocialMediaVM>(MemberList.None);
             CreateMap<Showroom, JsonShowroomVM>(MemberList.None);
             CreateMap<JsonCatalogDetailVM, CatalogDetail>(MemberList.None);
-
+            CreateMap<ProjectType, JsonProjectTypeVM>(MemberList.None);
+            CreateMap<CatalogDetail, JsonCatalogDetailVM>(MemberList.None);
         }
     }
 }

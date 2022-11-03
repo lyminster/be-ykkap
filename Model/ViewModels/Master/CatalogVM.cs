@@ -16,7 +16,7 @@ namespace ViewModel.ViewModels.Master
         public string name { get; set; }
         public string description { get; set; }
         public string imgUrl { get; set; }
-        public List<JsonCatalogDetailVM> child { get; set; }
+        public List<JsonCatalogDetailVM>? child { get; set; }
     }
 
     public class JsonCatalogDetailVM

@@ -21,11 +21,10 @@ using ViewModel.ViewModels;
 using static DAL.Helper.GlobalHelpers;
 using static Database.Models.HelperFunction;
 using ViewModel.ViewModels.Master;
-using NPOI.SS.Formula.Functions;
 
 namespace DAL.DataAccessLayer.Master
 {
-    public class CatalogTypeDataAccessLayer
+    public class ProjectTypeDataAccessLayer
     {
         private readonly BusinessModelContext MasterEntities;
         private readonly IMapper _mapper;
@@ -34,7 +33,7 @@ namespace DAL.DataAccessLayer.Master
         private readonly IConfiguration configFile;
         private UnitOfWork UnitOfWork;
 
-        public CatalogTypeDataAccessLayer(BusinessModelContext _MasterEntities, IMapper mapper, IHostingEnvironment _hostenv, IConfiguration _configFile)
+        public ProjectTypeDataAccessLayer(BusinessModelContext _MasterEntities, IMapper mapper, IHostingEnvironment _hostenv, IConfiguration _configFile)
         {
             _mapper = mapper;
             hostenv = _hostenv;
@@ -44,28 +43,16 @@ namespace DAL.DataAccessLayer.Master
             DALFileLog = new FileLogDataAccessLayer(MasterEntities, _mapper, _hostenv, configFile);
         }
 
-        public CatalogTypeRepository _Repo;
-        public CatalogTypeRepository Repo
+        public ProjectTypeRepository _Repo;
+        public ProjectTypeRepository Repo
         {
             get
             {
                 if (_Repo == null)
                 {
-                    _Repo = new CatalogTypeRepository(MasterEntities);
+                    _Repo = new ProjectTypeRepository(MasterEntities);
                 }
                 return _Repo;
-            }
-        }
-        public CatalogDetailRepository _RepoDetail;
-        public CatalogDetailRepository RepoDetail
-        {
-            get
-            {
-                if (_RepoDetail == null)
-                {
-                    _RepoDetail = new CatalogDetailRepository(MasterEntities);
-                }
-                return _RepoDetail;
             }
         }
         public FileLogRepository _FileLogRepo;
@@ -82,38 +69,11 @@ namespace DAL.DataAccessLayer.Master
         }
 
 
-        public List<CatalogType> GetListCatalogTypeAsync()
+        public List<JsonProjectTypeVM> GetListProjectTypeAsync()
         {
             try
             {
-                return Repo.GetCatalogType();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public List<JsonCatalogVM> GetAllCatalogAsync()
-        {
-            try
-            {
-                List<JsonCatalogVM> dataCatalog = new List<JsonCatalogVM>();
-                List<CatalogType> dataCatalogType = Repo.GetCatalogType();
-                List < JsonCatalogDetailVM > asd = new List<JsonCatalogDetailVM> ();
-                foreach (CatalogType datacatalogType2 in dataCatalogType)
-                {
-                    asd = _mapper.Map<List<CatalogDetail>, List<JsonCatalogDetailVM>>(RepoDetail.GetCatalogDetailByType(datacatalogType2.ID));
-                    JsonCatalogVM dataJson = new JsonCatalogVM
-                    {
-                        name = datacatalogType2.name,
-                        description = datacatalogType2.description,
-                        imgUrl = datacatalogType2.imgUrl,
-                        child = asd
-                    };
-                    dataCatalog.Add(dataJson);
-                }
-                return dataCatalog;
+                return _mapper.Map<List<ProjectType>, List<JsonProjectTypeVM>>(Repo.GetListProjectType());
             }
             catch (Exception ex)
             {
