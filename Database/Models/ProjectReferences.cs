@@ -11,6 +11,7 @@ namespace Database.Models
         public string name { get; set; }
         public string detail { get; set; }
         public string building { get; set; }
+        public string urlImage { get; set; }
         public string type { get; set; }
         public DateTime startTimeStamp { get; set; }
         public DateTime finishTimestamp { get; set; }

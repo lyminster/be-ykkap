@@ -380,6 +380,7 @@ namespace Database.Models
                 entity.Property(e => e.name).IsUnicode(false);
                 entity.Property(e => e.detail).IsUnicode(false);
                 entity.Property(e => e.building).IsUnicode(false);
+                entity.Property(e => e.urlImage).IsUnicode(false);
                 entity.Property(e => e.type).IsUnicode(false);
                 entity.Property(e => e.location).IsUnicode(false);
                 entity.Property(e => e.urlYoutube).IsUnicode(false);

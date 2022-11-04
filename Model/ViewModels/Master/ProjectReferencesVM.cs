@@ -11,6 +11,7 @@ namespace ViewModel.ViewModels.Master
         public string name { get; set; }
         public string detail { get; set; }
         public string building { get; set; }
+        public string urlImage { get; set; }
         public string type { get; set; }
         public string startTimeStamp { get; set; }
         public string finishTimestamp { get; set; }
@@ -24,6 +25,7 @@ namespace ViewModel.ViewModels.Master
         public string name { get; set; }
         public string detail { get; set; }
         public string building { get; set; }
+        public string urlImage { get; set; }
         public string type { get; set; }
         public string startTimeStamp { get; set; }
         public string finishTimestamp { get; set; }
