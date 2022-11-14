@@ -80,5 +80,165 @@ namespace DAL.DataAccessLayer.Master
                 throw ex;
             }
         }
+
+        public List<JsonShowroomVM> FindAsync(JsonShowroomVM filter, ClaimsPrincipal claims)
+        {
+            List<JsonShowroomVM> listShowroom = new List<JsonShowroomVM>();
+            JsonReturn returnData = new JsonReturn(false);
+            try
+            {
+                returnData = new JsonReturn(true);
+                String IDClient = GlobalHelpers.GetClaimValueByType(EnumClaims.IDClient.ToString(), claims);
+                Expression<Func<Showroom, bool>> filterExp = c => true && c.Idclient == IDClient;
+                if (!String.IsNullOrEmpty(filter.Id)) filterExp = filterExp.And(x => x.ID == filter.Id);
+                if (!String.IsNullOrEmpty(filter.name))
+                {
+                    filterExp = filterExp.And(x => x.name != null);
+                    filterExp = filterExp.And(x => x.name.ToLower().Contains(filter.name.ToLower()));
+                }
+                if (!String.IsNullOrEmpty(filter.address))
+                {
+                    filterExp = filterExp.And(x => x.address != null);
+                    filterExp = filterExp.And(x => x.address.ToLower().Contains(filter.address.ToLower()));
+                }
+                if (!String.IsNullOrEmpty(filter.urlImage))
+                {
+                    filterExp = filterExp.And(x => x.urlImage != null);
+                    filterExp = filterExp.And(x => x.urlImage.ToLower().Contains(filter.urlImage.ToLower()));
+                }
+                if (!String.IsNullOrEmpty(filter.workingHour))
+                {
+                    filterExp = filterExp.And(x => x.workingHour != null);
+                    filterExp = filterExp.And(x => x.workingHour.ToLower().Contains(filter.workingHour.ToLower()));
+                }
+                if (!String.IsNullOrEmpty(filter.telephone))
+                {
+                    filterExp = filterExp.And(x => x.telephone != null);
+                    filterExp = filterExp.And(x => x.telephone.ToLower().Contains(filter.telephone.ToLower()));
+                }
+
+
+                listShowroom = _mapper.Map<IEnumerable<Showroom>, List<JsonShowroomVM>>(Repo.QueryShowrooms(filterExp, filter.Take, filter.Skip));
+                return listShowroom;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+        public JsonReturn SaveAsync(JsonShowroomVM Save, ClaimsPrincipal claims)
+        {
+            JsonReturn jsonReturn = new JsonReturn(false);
+            try
+            {
+                String Error = "";
+                if (String.IsNullOrEmpty(Save.Id))
+                {
+                    if (Repo.IsUniqueKeyCodeExist(Save.name, 
+                        Save.urlImage,
+                        Save.workingHour,
+                        Save.address,
+                        Save.telephone,
+                        GlobalHelpers.GetClaimValueByType(EnumClaims.IDClient.ToString(), claims))) Error = "Showroom ini sudah ada di Database";
+
+                    jsonReturn = new JsonReturn(false);
+                    jsonReturn.message = Error;
+
+                }
+                if (String.IsNullOrEmpty(Error))
+                {
+
+                    GlobalHelpers.ReGenerateThreadClaim(claims);
+                    Showroom NewData = new Showroom();
+                    if (String.IsNullOrEmpty(Save.Id))
+                    {
+                        NewData.ID = Guid.NewGuid().ToString("N").ToUpper();
+                        NewData.name = Save.name;
+                        NewData.urlImage = Save.urlImage;
+                        NewData.workingHour = Save.workingHour;
+                        NewData.address = Save.address;
+                        NewData.telephone = Save.telephone;
+                        NewData.ModelState = ObjectState.Added;
+
+                        UnitOfWork.InsertOrUpdate(NewData);
+                        UnitOfWork.Commit();
+                    }
+                    if (!String.IsNullOrEmpty(Save.Id))
+                    {
+                        NewData = Repo.GetShowroomByID(Save.Id);
+                        if (NewData == null)
+                        {
+                            jsonReturn = new JsonReturn(false);
+                            jsonReturn.message = "Data tidak ditemukan";
+                            return jsonReturn;
+                        }
+
+                        NewData.name = Save.name;
+                        NewData.urlImage = Save.urlImage;
+                        NewData.workingHour = Save.workingHour;
+                        NewData.address = Save.address;
+                        NewData.telephone = Save.telephone;
+                        NewData.ModelState = ObjectState.Modified;
+                        UnitOfWork.InsertOrUpdate(NewData);
+                        UnitOfWork.Commit();
+
+                    }
+                    NewData = Repo.GetShowroomByID(NewData.ID);
+
+                    jsonReturn = new JsonReturn(true);
+                    jsonReturn.message = "Data Sukses Di Simpan";
+                    jsonReturn.ObjectValue = NewData;
+
+                }
+
+                return jsonReturn;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+        }
+
+        public JsonReturn DeleteAsync(String ID, ClaimsPrincipal User)
+        {
+            try
+            {
+                JsonReturn ReturnJson = new JsonReturn(false);
+                GlobalHelpers.ReGenerateThreadClaim(User);
+
+                Showroom DelShowroom = Repo.GetShowroomByID(ID);
+                DelShowroom.ModelState = ObjectState.SoftDelete;
+                DelShowroom.SetRowStatus(RowStatus.Deleted);
+                UnitOfWork.InsertOrUpdate(DelShowroom);
+                UnitOfWork.Commit();
+                ReturnJson = new JsonReturn(true);
+                ReturnJson.message = "Sukses Delete Data";
+                return ReturnJson;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public JsonShowroomVM GetShowroomAsync(String ID)
+        {
+            try
+            {
+                return _mapper.Map<Showroom, JsonShowroomVM>(Repo.GetShowroomByID(ID));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

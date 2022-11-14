@@ -14,23 +14,23 @@ using ViewModel.ViewModels.Master;
 namespace TMS.Areas.Master.Controllers
 {
     [Area("Master")]
-    public class ShowroomController : Controller
+    public class CatalogTypeController : Controller
     {
         private readonly BusinessModelContext _context;
         private readonly IHostingEnvironment _hostenv;
         private readonly IMapper _mapper;
         HelperTableDataAccessLayer DALHelper;
-        ShowroomDataAccessLayer DALShowroom;
+        CatalogTypeDataAccessLayer DALCatalogType;
         FileLogDataAccessLayer DALFileLog;
 
 
-        public ShowroomController(BusinessModelContext context, IHostingEnvironment hostenv, IMapper mapper, IConfiguration configfile)
+        public CatalogTypeController(BusinessModelContext context, IHostingEnvironment hostenv, IMapper mapper, IConfiguration configfile)
         {
             _context = context;
             _hostenv = hostenv;
             _mapper = mapper;
             DALHelper = new HelperTableDataAccessLayer(_context, _mapper, _hostenv);
-            DALShowroom = new ShowroomDataAccessLayer(_context, _mapper, _hostenv, configfile);
+            DALCatalogType = new CatalogTypeDataAccessLayer(_context, _mapper, _hostenv, configfile);
             DALFileLog = new FileLogDataAccessLayer(_context, _mapper, _hostenv, configfile);
         }
 
@@ -41,8 +41,8 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            List<JsonShowroomVM> page1 = DALShowroom.FindAsync(new JsonShowroomVM { }, User);
-            IndexShowroomVM data = new IndexShowroomVM();
+            List<JsonCatalogTypeVM> page1 = DALCatalogType.FindAsync(new JsonCatalogTypeVM { }, User);
+            IndexCatalogTypeVM data = new IndexCatalogTypeVM();
             data.listIndex = page1;
 
             return View(data);
@@ -83,7 +83,7 @@ namespace TMS.Areas.Master.Controllers
                 //string convertTo = to != null ? to.Value.ToString("yyyy-MM-dd") : null;
 
 
-                var showroomData = DALShowroom.FindAsync(new JsonShowroomVM { }, User);
+                var catalogTypeData = DALCatalogType.FindAsync(new JsonCatalogTypeVM { }, User);
 
 
 
@@ -95,19 +95,17 @@ namespace TMS.Areas.Master.Controllers
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
-                    showroomData = showroomData.Where(m => 
+                    catalogTypeData = catalogTypeData.Where(m =>
                         m.CreatedBy.Contains(searchValue)
                         || m.name.Contains(searchValue)
-                        || m.address.Contains(searchValue)
-                        || m.telephone.Contains(searchValue)
-                        || m.workingHour.Contains(searchValue)
-                        || m.urlImage.Contains(searchValue)).ToList();
+                        || m.description.Contains(searchValue)
+                        || m.imgUrl.Contains(searchValue)).ToList();
                 }
 
                 //total number of rows counts   
-                recordsTotal = showroomData.Count();
+                recordsTotal = catalogTypeData.Count();
                 //Paging   
-                var data = showroomData.Skip(skip).Take(pageSize).ToList();
+                var data = catalogTypeData.Skip(skip).Take(pageSize).ToList();
                 //Returning Json Data  
                 return Json(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = data });
 
@@ -131,17 +129,17 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonShowroomVM data)
+        public IActionResult Create(JsonCatalogTypeVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALShowroom.SaveAsync(data, User);
+                var retrunSave = DALCatalogType.SaveAsync(data, User);
                 if (retrunSave.result == true)
                 {
-                    Alert("Success Create Showroom", NotificationType.success);
+                    Alert("Success Create Catalog Type", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
                 Alert(errMsg, NotificationType.error);
@@ -158,23 +156,23 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            var data = DALShowroom.GetShowroomAsync(ID);
+            var data = DALCatalogType.GetCatalogTypeBYIdAsync(ID);
             return View(data);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(ShowroomVM data)
+        public IActionResult Edit(CatalogTypeVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
-                var retrunSave = DALShowroom.SaveAsync(upddata, User);
+                var upddata = _mapper.Map<CatalogTypeVM, JsonCatalogTypeVM>(data);
+                var retrunSave = DALCatalogType.SaveAsync(upddata, User);
                 if (retrunSave.result == true)
                 {
-                    Alert("Success Update Showroom", NotificationType.success);
+                    Alert("Success Update Catalog Type", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
                 Alert(errMsg, NotificationType.error);
@@ -188,7 +186,7 @@ namespace TMS.Areas.Master.Controllers
         {
             try
             {
-                var returns = DALShowroom.DeleteAsync(id, User);
+                var returns = DALCatalogType.DeleteAsync(id, User);
                 if (returns.result == true)
                 {
                     return Json("Success");

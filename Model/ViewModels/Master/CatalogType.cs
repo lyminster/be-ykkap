@@ -1,16 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ViewModel.ViewModels
 {
-    public class IndexCompanyProfileVM
+    public class IndexCatalogTypeVM
     {
-        public List<JsonCompanyProfileVM> listIndex { get; set; }
+        public List<JsonCatalogTypeVM> listIndex { get; set; }
     }
-    public class CompanyProfileVM
+    public class CatalogTypeVM
     {
         public string Idclient { get; set; }
         public string Id { get; set; }
@@ -23,13 +23,13 @@ namespace ViewModel.ViewModels
         public int RowStatus { get; }
         public int Take { get; set; }
         public int Skip { get; set; }
-        public string about { get; set; }
-        public string visionMission { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
         public string imgUrl { get; set; }
-        public string youtubeId { get; set; }
     }
-    public class JsonCompanyProfileVM : JsonModelBase
+    public class JsonCatalogTypeVM : JsonModelBase
     {
+
         public string Idclient { get; set; }
         public string Id { get; set; }
         public string CreatedBy { get; set; }
@@ -41,11 +41,9 @@ namespace ViewModel.ViewModels
         public int RowStatus { get; }
         public int Take { get; set; }
         public int Skip { get; set; }
-
-        public string about { get; set; }
-        public string visionMission { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
         public string imgUrl { get; set; }
-        public string youtubeId { get; set; }
 
     }
 }

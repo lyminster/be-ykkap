@@ -370,7 +370,7 @@ namespace Database.Models
 
             modelBuilder.Entity<ProjectReferences>(entity =>
             {
-                entity.ToTable("ProjectReferences");
+                entity.ToTable("ProjectReferences2");
 
                 entity.Property(e => e.ID)
                     .HasMaxLength(50)
@@ -385,8 +385,7 @@ namespace Database.Models
                 entity.Property(e => e.location).IsUnicode(false);
                 entity.Property(e => e.urlYoutube).IsUnicode(false);
                 entity.Property(e => e.listProductUsed).IsUnicode(false);
-                entity.Property(e => e.startTimeStamp).HasColumnType("datetime");
-                entity.Property(e => e.finishTimestamp).HasColumnType("datetime");
+                entity.Property(e => e.projectYear).IsUnicode(false);
 
                 entity.Property(e => e.CreatedByEmployeeID)
                     .HasMaxLength(50)

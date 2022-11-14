@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ViewModel.ViewModels.Master
+namespace ViewModel.ViewModels
 {
     public class IndexProductVM
     {

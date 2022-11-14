@@ -37,6 +37,54 @@ namespace Database.Repositories
 
         }
 
+        public List<SocialMedia> QuerySocialmedias(Expression<Func<SocialMedia, bool>> expression, int take = 0, int skip = 0)
+        {
+
+            try
+            {
+                if (take < 1)
+                {
+                    return _q_QueryData.Where(x => x.RowStatus == 0).Where(expression).ToList();
+                }
+                else
+                {
+                    return _q_QueryData.Where(x => x.RowStatus == 0).Where(expression).Skip(skip).Take(take).ToList(); ;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public SocialMedia GetSocialmediaByID(string ID)
+        {
+            try
+            {
+                return _q_QueryData.FirstOrDefault(x => x.ID == ID);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
+        public bool IsUniqueKeyCodeExist(string urlfb, string urlig, string urlyt, string urlweb, String idclient)
+        {
+            return _q_QueryData.Where(x => x.RowStatus == 0).FirstOrDefault(x =>
+            x.urlFb == urlfb
+            && x.urlIg == urlig
+            && x.urlYt == urlyt
+            && x.urlWeb == urlweb
+            && x.Idclient == idclient
+            ) != null ? true : false;
+        }
+
         #endregion
     }
 }

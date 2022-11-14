@@ -14,23 +14,23 @@ using ViewModel.ViewModels.Master;
 namespace TMS.Areas.Master.Controllers
 {
     [Area("Master")]
-    public class ShowroomController : Controller
+    public class ProjectTypeController : Controller
     {
         private readonly BusinessModelContext _context;
         private readonly IHostingEnvironment _hostenv;
         private readonly IMapper _mapper;
         HelperTableDataAccessLayer DALHelper;
-        ShowroomDataAccessLayer DALShowroom;
+        ProjectTypeDataAccessLayer DALProjectType;
         FileLogDataAccessLayer DALFileLog;
 
 
-        public ShowroomController(BusinessModelContext context, IHostingEnvironment hostenv, IMapper mapper, IConfiguration configfile)
+        public ProjectTypeController(BusinessModelContext context, IHostingEnvironment hostenv, IMapper mapper, IConfiguration configfile)
         {
             _context = context;
             _hostenv = hostenv;
             _mapper = mapper;
             DALHelper = new HelperTableDataAccessLayer(_context, _mapper, _hostenv);
-            DALShowroom = new ShowroomDataAccessLayer(_context, _mapper, _hostenv, configfile);
+            DALProjectType = new ProjectTypeDataAccessLayer(_context, _mapper, _hostenv, configfile);
             DALFileLog = new FileLogDataAccessLayer(_context, _mapper, _hostenv, configfile);
         }
 
@@ -41,8 +41,8 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            List<JsonShowroomVM> page1 = DALShowroom.FindAsync(new JsonShowroomVM { }, User);
-            IndexShowroomVM data = new IndexShowroomVM();
+            List<JsonProjectTypeVM> page1 = DALProjectType.FindAsync(new JsonProjectTypeVM { }, User);
+            IndexProjectTypeVM data = new IndexProjectTypeVM();
             data.listIndex = page1;
 
             return View(data);
@@ -83,7 +83,7 @@ namespace TMS.Areas.Master.Controllers
                 //string convertTo = to != null ? to.Value.ToString("yyyy-MM-dd") : null;
 
 
-                var showroomData = DALShowroom.FindAsync(new JsonShowroomVM { }, User);
+                var projectTypeData = DALProjectType.FindAsync(new JsonProjectTypeVM { }, User);
 
 
 
@@ -95,19 +95,15 @@ namespace TMS.Areas.Master.Controllers
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
-                    showroomData = showroomData.Where(m => 
+                    projectTypeData = projectTypeData.Where(m =>
                         m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)
-                        || m.address.Contains(searchValue)
-                        || m.telephone.Contains(searchValue)
-                        || m.workingHour.Contains(searchValue)
-                        || m.urlImage.Contains(searchValue)).ToList();
+                        || m.name.Contains(searchValue)).ToList();
                 }
 
                 //total number of rows counts   
-                recordsTotal = showroomData.Count();
+                recordsTotal = projectTypeData.Count();
                 //Paging   
-                var data = showroomData.Skip(skip).Take(pageSize).ToList();
+                var data = projectTypeData.Skip(skip).Take(pageSize).ToList();
                 //Returning Json Data  
                 return Json(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = data });
 
@@ -131,17 +127,17 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonShowroomVM data)
+        public IActionResult Create(JsonProjectTypeVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALShowroom.SaveAsync(data, User);
+                var retrunSave = DALProjectType.SaveAsync(data, User);
                 if (retrunSave.result == true)
                 {
-                    Alert("Success Create Showroom", NotificationType.success);
+                    Alert("Success Create Project Type", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
                 Alert(errMsg, NotificationType.error);
@@ -158,23 +154,23 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            var data = DALShowroom.GetShowroomAsync(ID);
+            var data = DALProjectType.GetProjectTypeBYIdAsync(ID);
             return View(data);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(ShowroomVM data)
+        public IActionResult Edit(ProjectTypeVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
-                var retrunSave = DALShowroom.SaveAsync(upddata, User);
+                var upddata = _mapper.Map<ProjectTypeVM, JsonProjectTypeVM>(data);
+                var retrunSave = DALProjectType.SaveAsync(upddata, User);
                 if (retrunSave.result == true)
                 {
-                    Alert("Success Update Showroom", NotificationType.success);
+                    Alert("Success Update Project Type", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
                 Alert(errMsg, NotificationType.error);
@@ -188,7 +184,7 @@ namespace TMS.Areas.Master.Controllers
         {
             try
             {
-                var returns = DALShowroom.DeleteAsync(id, User);
+                var returns = DALProjectType.DeleteAsync(id, User);
                 if (returns.result == true)
                 {
                     return Json("Success");

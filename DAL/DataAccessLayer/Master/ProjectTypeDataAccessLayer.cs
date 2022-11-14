@@ -80,5 +80,133 @@ namespace DAL.DataAccessLayer.Master
                 throw ex;
             }
         }
+
+        public List<JsonProjectTypeVM> FindAsync(JsonProjectTypeVM filter, ClaimsPrincipal claims)
+        {
+            List<JsonProjectTypeVM> listProjectType = new List<JsonProjectTypeVM>();
+            JsonReturn returnData = new JsonReturn(false);
+            try
+            {
+                returnData = new JsonReturn(true);
+                String IDClient = GlobalHelpers.GetClaimValueByType(EnumClaims.IDClient.ToString(), claims);
+                Expression<Func<ProjectType, bool>> filterExp = c => true && c.Idclient == IDClient;
+                if (!String.IsNullOrEmpty(filter.Id)) filterExp = filterExp.And(x => x.ID == filter.Id);
+                if (!String.IsNullOrEmpty(filter.name))
+                {
+                    filterExp = filterExp.And(x => x.name != null);
+                    filterExp = filterExp.And(x => x.name.ToLower().Contains(filter.name.ToLower()));
+                }
+
+
+                listProjectType = _mapper.Map<IEnumerable<ProjectType>, List<JsonProjectTypeVM>>(Repo.QueryProjectTypes(filterExp, filter.Take, filter.Skip));
+                return listProjectType;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+        public JsonReturn SaveAsync(JsonProjectTypeVM Save, ClaimsPrincipal claims)
+        {
+            JsonReturn jsonReturn = new JsonReturn(false);
+            try
+            {
+                String Error = "";
+                if (String.IsNullOrEmpty(Save.Id))
+                {
+                    if (Repo.IsUniqueKeyCodeExist(Save.name,
+                        GlobalHelpers.GetClaimValueByType(EnumClaims.IDClient.ToString(), claims))) Error = "Project Type ini sudah ada di Database";
+
+                    jsonReturn = new JsonReturn(false);
+                    jsonReturn.message = Error;
+
+                }
+                if (String.IsNullOrEmpty(Error))
+                {
+
+                    GlobalHelpers.ReGenerateThreadClaim(claims);
+                    ProjectType NewData = new ProjectType();
+                    if (String.IsNullOrEmpty(Save.Id))
+                    {
+                        NewData.ID = Guid.NewGuid().ToString("N").ToUpper();
+                        NewData.name = Save.name;
+                        NewData.ModelState = ObjectState.Added;
+
+                        UnitOfWork.InsertOrUpdate(NewData);
+                        UnitOfWork.Commit();
+                    }
+                    if (!String.IsNullOrEmpty(Save.Id))
+                    {
+                        NewData = Repo.GetProjectTypeByID(Save.Id);
+                        if (NewData == null)
+                        {
+                            jsonReturn = new JsonReturn(false);
+                            jsonReturn.message = "Data tidak ditemukan";
+                            return jsonReturn;
+                        }
+
+                        NewData.name = Save.name;
+                        NewData.ModelState = ObjectState.Modified;
+                        UnitOfWork.InsertOrUpdate(NewData);
+                        UnitOfWork.Commit();
+
+                    }
+                    NewData = Repo.GetProjectTypeByID(NewData.ID);
+
+                    jsonReturn = new JsonReturn(true);
+                    jsonReturn.message = "Data Sukses Di Simpan";
+                    jsonReturn.ObjectValue = NewData;
+
+                }
+
+                return jsonReturn;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+        }
+
+        public JsonReturn DeleteAsync(String ID, ClaimsPrincipal User)
+        {
+            try
+            {
+                JsonReturn ReturnJson = new JsonReturn(false);
+                GlobalHelpers.ReGenerateThreadClaim(User);
+
+                ProjectType DelProjectType = Repo.GetProjectTypeByID(ID);
+                DelProjectType.ModelState = ObjectState.SoftDelete;
+                DelProjectType.SetRowStatus(RowStatus.Deleted);
+                UnitOfWork.InsertOrUpdate(DelProjectType);
+                UnitOfWork.Commit();
+                ReturnJson = new JsonReturn(true);
+                ReturnJson.message = "Sukses Delete Data";
+                return ReturnJson;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public JsonProjectTypeVM GetProjectTypeBYIdAsync(String ID)
+        {
+            try
+            {
+                return _mapper.Map<ProjectType, JsonProjectTypeVM>(Repo.GetProjectTypeByID(ID));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

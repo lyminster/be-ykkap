@@ -13,8 +13,7 @@ namespace Database.Models
         public string building { get; set; }
         public string urlImage { get; set; }
         public string type { get; set; }
-        public DateTime startTimeStamp { get; set; }
-        public DateTime finishTimestamp { get; set; }
+        public string projectYear { get; set; }
         public string location { get; set; }
         public string urlYoutube { get; set; }
         public string listProductUsed { get; set; }

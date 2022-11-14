@@ -79,5 +79,158 @@ namespace DAL.DataAccessLayer.Master
                 throw ex;
             }
         }
+
+        public List<JsonCompanyProfileVM> FindAsync(JsonCompanyProfileVM filter, ClaimsPrincipal claims)
+        {
+            List<JsonCompanyProfileVM> listCompanyProfile = new List<JsonCompanyProfileVM>();
+            JsonReturn returnData = new JsonReturn(false);
+            try
+            {
+                returnData = new JsonReturn(true);
+                String IDClient = GlobalHelpers.GetClaimValueByType(EnumClaims.IDClient.ToString(), claims);
+                Expression<Func<CompanyProfile, bool>> filterExp = c => true && c.Idclient == IDClient;
+                if (!String.IsNullOrEmpty(filter.Id)) filterExp = filterExp.And(x => x.ID == filter.Id);
+                if (!String.IsNullOrEmpty(filter.about))
+                {
+                    filterExp = filterExp.And(x => x.about != null);
+                    filterExp = filterExp.And(x => x.about.ToLower().Contains(filter.about.ToLower()));
+                }
+                if (!String.IsNullOrEmpty(filter.visionMission))
+                {
+                    filterExp = filterExp.And(x => x.visionMission != null);
+                    filterExp = filterExp.And(x => x.visionMission.ToLower().Contains(filter.visionMission.ToLower()));
+                }
+                if (!String.IsNullOrEmpty(filter.imgUrl))
+                {
+                    filterExp = filterExp.And(x => x.imgUrl != null);
+                    filterExp = filterExp.And(x => x.imgUrl.ToLower().Contains(filter.imgUrl.ToLower()));
+                }
+                if (!String.IsNullOrEmpty(filter.youtubeId))
+                {
+                    filterExp = filterExp.And(x => x.youtubeId != null);
+                    filterExp = filterExp.And(x => x.youtubeId.ToLower().Contains(filter.youtubeId.ToLower()));
+                }
+
+
+                listCompanyProfile = _mapper.Map<IEnumerable<CompanyProfile>, List<JsonCompanyProfileVM>>(Repo.QueryCompanyProfiles(filterExp, filter.Take, filter.Skip));
+                return listCompanyProfile;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
+
+        public JsonReturn SaveAsync(JsonCompanyProfileVM Save, ClaimsPrincipal claims)
+        {
+            JsonReturn jsonReturn = new JsonReturn(false);
+            try
+            {
+                String Error = "";
+                if (String.IsNullOrEmpty(Save.Id))
+                {
+                    if (Repo.IsUniqueKeyCodeExist(
+                        Save.about,
+                        Save.visionMission,
+                        Save.imgUrl,
+                        Save.youtubeId,
+                        GlobalHelpers.GetClaimValueByType(EnumClaims.IDClient.ToString(), claims))) Error = "Company Profile ini sudah ada di Database";
+
+                    jsonReturn = new JsonReturn(false);
+                    jsonReturn.message = Error;
+
+                }
+                if (String.IsNullOrEmpty(Error))
+                {
+
+                    GlobalHelpers.ReGenerateThreadClaim(claims);
+                    CompanyProfile NewData = new CompanyProfile();
+                    if (String.IsNullOrEmpty(Save.Id))
+                    {
+                        NewData.ID = Guid.NewGuid().ToString("N").ToUpper();
+                        NewData.about = Save.about;
+                        NewData.visionMission = Save.visionMission;
+                        NewData.imgUrl = Save.imgUrl;
+                        NewData.youtubeId = Save.youtubeId;
+                        NewData.ModelState = ObjectState.Added;
+
+                        UnitOfWork.InsertOrUpdate(NewData);
+                        UnitOfWork.Commit();
+                    }
+                    if (!String.IsNullOrEmpty(Save.Id))
+                    {
+                        NewData = Repo.GetCompanyProfileByID(Save.Id);
+                        if (NewData == null)
+                        {
+                            jsonReturn = new JsonReturn(false);
+                            jsonReturn.message = "Data tidak ditemukan";
+                            return jsonReturn;
+                        }
+
+                        NewData.about = Save.about;
+                        NewData.visionMission = Save.visionMission;
+                        NewData.imgUrl = Save.imgUrl;
+                        NewData.youtubeId = Save.youtubeId;
+                        NewData.ModelState = ObjectState.Modified;
+                        UnitOfWork.InsertOrUpdate(NewData);
+                        UnitOfWork.Commit();
+
+                    }
+                    NewData = Repo.GetCompanyProfileByID(NewData.ID);
+
+                    jsonReturn = new JsonReturn(true);
+                    jsonReturn.message = "Data Sukses Di Simpan";
+                    jsonReturn.ObjectValue = NewData;
+
+                }
+
+                return jsonReturn;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+        }
+
+        public JsonReturn DeleteAsync(String ID, ClaimsPrincipal User)
+        {
+            try
+            {
+                JsonReturn ReturnJson = new JsonReturn(false);
+                GlobalHelpers.ReGenerateThreadClaim(User);
+
+                CompanyProfile DelCompanyProfile = Repo.GetCompanyProfileByID(ID);
+                DelCompanyProfile.ModelState = ObjectState.SoftDelete;
+                DelCompanyProfile.SetRowStatus(RowStatus.Deleted);
+                UnitOfWork.InsertOrUpdate(DelCompanyProfile);
+                UnitOfWork.Commit();
+                ReturnJson = new JsonReturn(true);
+                ReturnJson.message = "Sukses Delete Data";
+                return ReturnJson;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public JsonCompanyProfileVM GetCompanyProfileAsync(String ID)
+        {
+            try
+            {
+                return _mapper.Map<CompanyProfile, JsonCompanyProfileVM>(Repo.GetCompanyProfileByID(ID));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

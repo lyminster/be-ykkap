@@ -1,4 +1,4 @@
-﻿@model ViewModel.ViewModels.IndexCompanyProfileVM
+﻿@model ViewModel.ViewModels.IndexCatalogTypeVM
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Company Profile </h1>
+                    <h1 class="m-0 text-dark">Catalog Type </h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -31,18 +31,17 @@
                             <h3 class="card-title">Index</h3>
                         </div>
                         <div class="card-body">
-                            @*<a asp-action="Create" class="btn btn-sm btn-warning"> Create New Data</a>
-                            <br /><br />*@
+                            <a asp-action="Create" class="btn btn-sm btn-warning"> Create New Data</a>
+                            <br /><br />
 
 
 
                             <table id="demoGrid" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
-                                        <th>About</th>
-                                        <th>Vision Mission</th>
+                                        <th>Name</th>
+                                        <th>Description</th>
                                         <th>Url Image</th>
-                                        <th>Url Youtube</th>
                                     </tr>
                                 </thead>
 
@@ -92,14 +91,14 @@
                             if (isConfirm) {
                                 $.ajax({
 
-                                    url: '/Master/CompanyProfile/DeleteData',
+                                    url: '/Master/CatalogType/DeleteData',
                                     type: 'POST',
                                     data: { "id": itemid },
                                     success: function (data) {
                                         swal
                                             ({
                                                 title: "Deleted!",
-                                                    text: "Company Profile has been deleted!",
+                                                text: "Catalog Type has been deleted!",
                                                 type: "success"
                                             },
                                                 function () {
@@ -131,7 +130,7 @@
                             "searching": true,
 
                             "ajax": {
-                                "url": "@Url.Action("LoadData", "CompanyProfile", new { area ="Master" })",
+                                "url": "@Url.Action("LoadData", "CatalogType", new { area ="Master" })",
                                 "type": "POST",
                                 "datatype": "json",
                                 "data": function (d) {
@@ -146,15 +145,14 @@
                             //],
 
                             "columns": [
-                                    { "data": "about", "name": "About", "width": "240px" },
-                                    { "data": "visionMission", "name": "Vision Mission", "width": "240px" },
+                                    { "data": "name", "name": "Name", "width": "120px" },
+                                    { "data": "description", "name": "Description", "width": "240px" },
                                     { "data": "imgUrl", "name": "Url Image", "width": "120px" },
-                                    { "data": "youtubeId", "name": "Url Youtube", "width": "120px" },
 
                                   {
                                     data: null, render: function (data, type, row) {
 
-                                              return '<a class="btn btn-info btn-sm" href="@Url.Action("Edit", "CompanyProfile", new { Area = "Master" })?ID=' + row.id + '">Edit</a>';
+                                          return '<a class="btn btn-info btn-sm" href="@Url.Action("Edit", "CatalogType", new { Area = "Master" })?ID=' + row.id + '">Edit</a>  ' + '<a class="btn btn-danger btn-sm" href="#" onclick=DeleteData("'+row.id+'")>Delete</a>';
 
                                     }, "width": "13%", "sorting": "false"
                                 },
