@@ -1,4 +1,4 @@
-﻿@model ViewModel.ViewModels.ShowroomVM
+﻿@model ViewModel.ViewModels.JsonShowroomVM
 
 @{
     ViewData["Title"] = "Edit";
@@ -22,7 +22,7 @@
     <section class="content">
         <div class="container-fluid">
             <!-- new vendor form -->
-            <form asp-action="Create">
+            <form asp-action="Create" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="row center" style="float: none; margin: 0 auto;">
                     <div class="col-md-12">
@@ -39,8 +39,15 @@
                                         <span asp-validation-for="name" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Url Image</label>
-                                        <input type="text" asp-for="urlImage" class="form-control" />
+                                        <label class="control-label">Showroom Image</label>
+                                        <br/>
+                                        @*<input type="text" asp-for="urlImage" class="form-control" />*@
+                                        @Html.TextBox("Upload", "", new
+                                           {
+                                               type = "file",
+                                               required = "required",
+                                               @accept = "image/*"
+                                           })
                                         <span asp-validation-for="urlImage" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">

@@ -17,5 +17,7 @@ namespace Database.Models
         public string location { get; set; }
         public string urlYoutube { get; set; }
         public string listProductUsed { get; set; }
+        public virtual ProjectType typeNavigation { get; set; }
+
     }
 }

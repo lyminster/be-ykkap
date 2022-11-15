@@ -35,6 +35,7 @@ namespace Database.Models
         public virtual DbSet<CatalogType> CatalogType { get; set; }
         public virtual DbSet<CatalogDetail> CatalogDetail { get; set; }
         public virtual DbSet<ProjectType> ProjectType { get; set; }
+        public virtual DbSet<Visitors> Visitors { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -386,6 +387,12 @@ namespace Database.Models
                 entity.Property(e => e.urlYoutube).IsUnicode(false);
                 entity.Property(e => e.listProductUsed).IsUnicode(false);
                 entity.Property(e => e.projectYear).IsUnicode(false);
+
+
+                entity.HasOne(e => e.typeNavigation)
+                    .WithMany(p => p.ProjectReferences)
+                    .HasForeignKey(d => d.type)
+                    .HasConstraintName("FK_ProjectReferences2_ProjectType");
 
                 entity.Property(e => e.CreatedByEmployeeID)
                     .HasMaxLength(50)
@@ -793,6 +800,9 @@ namespace Database.Models
                             .IsRequired()
                             .IsRowVersion()
                             .IsConcurrencyToken();
+
+
+
             });
 
             OnModelCreatingPartial(modelBuilder);

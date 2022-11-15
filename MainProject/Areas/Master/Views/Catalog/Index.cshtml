@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Catalog Detail </h1>
+                    <h1 class="m-0 text-dark">Catalog</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -42,9 +42,10 @@
                                         <th>Name</th>
                                         <th>Catalog Type</th>
                                         <th>Description</th>
-                                        <th>Url Image</th>
+                                        @*<th>Url Image</th>
                                         <th>Url English Pdf</th>
-                                        <th>Url Indonesia Pdf</th>
+                                        <th>Url Indonesia Pdf</th>*@
+                                        <th></th>
                                     </tr>
                                 </thead>
 
@@ -152,9 +153,9 @@
                                         { "data": "name", "name": "Name", "width": "120px" },
                                         { "data": "catalogType", "name": "Catalog Type", "width": "120px" },
                                         { "data": "description", "name": "Description", "width": "240px" },
-                                        { "data": "imgUrl", "name": "Url Image", "width": "120px" },
-                                        { "data": "enPdfUrl", "name": "Url English Pdf", "width": "120px" },
-                                        { "data": "idPdfUrl", "name": "Url Indonesia Pdf", "width": "120px" },
+                                        //{ "data": "imgUrl", "name": "Url Image", "width": "120px" },
+                                        //{ "data": "enPdfUrl", "name": "Url English Pdf", "width": "120px" },
+                                        //{ "data": "idPdfUrl", "name": "Url Indonesia Pdf", "width": "120px" },
 
                                       {
                                         data: null, render: function (data, type, row) {

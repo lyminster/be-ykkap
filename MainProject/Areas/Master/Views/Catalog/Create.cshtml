@@ -12,7 +12,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Catalog Type</h1>
+                    <h1 class="m-0 text-dark">Catalog</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -22,7 +22,7 @@
     <section class="content">
         <div class="container-fluid">
             <!-- new vendor form -->
-            <form asp-action="Create">
+            <form asp-action="Create" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="row center" style="float: none; margin: 0 auto;">
                     <div class="col-md-12">

@@ -74,6 +74,22 @@ namespace Database.Repositories
         }
 
 
+
+        public SocialMedia GetSocialmediaFirst()
+        {
+            try
+            {
+                return _q_QueryData.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
+
         public bool IsUniqueKeyCodeExist(string urlfb, string urlig, string urlyt, string urlweb, String idclient)
         {
             return _q_QueryData.Where(x => x.RowStatus == 0).FirstOrDefault(x =>

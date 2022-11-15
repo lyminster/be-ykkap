@@ -34,6 +34,12 @@ namespace MainProject.Automapper
             CreateMap<JsonCompanyVM, Company>(MemberList.None);
             CreateMap<JsonCompanyVM, CompanyVM>(MemberList.None);
             CreateMap<Company, CompanyVM>().ForMember(vm => vm.Code_Name, mp => mp.MapFrom(d => d.Code + "-" + d.Name));
+            CreateMap<ProjectReferences, ProjectReferencesVM>()
+                .ForMember(vm => vm.ProjectType, mp => mp.MapFrom(d => d.typeNavigation.name));
+
+            CreateMap<ProjectReferences, JsonProjectReferencesVM>()
+                .ForMember(vm => vm.ProjectType, mp => mp.MapFrom(d => d.typeNavigation.name));
+
             CreateMap<CompanyVM, Company>(MemberList.None);
             CreateMap<FileLogDetail, FileLogDetailVM>(MemberList.None);
 
@@ -50,9 +56,7 @@ namespace MainProject.Automapper
 
             CreateMap<ProjectType, JsonProjectTypeVM>(MemberList.None);
             CreateMap<ProjectTypeVM, JsonProjectTypeVM>(MemberList.None);
-
-            CreateMap<ProjectReferences, JsonProjectReferencesVM>(MemberList.None);
-            CreateMap<ProjectReferencesVM, JsonProjectReferencesVM>(MemberList.None);
+             
             
             CreateMap<CatalogType, JsonCatalogTypeVM>(MemberList.None);
             CreateMap<CatalogTypeVM, JsonCatalogTypeVM>(MemberList.None);

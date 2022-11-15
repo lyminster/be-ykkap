@@ -268,7 +268,7 @@ namespace TMS.Areas.Master.Controllers
                 if (file.Upload.FileName != null)
                 {
                     //upload
-                    var filename = GlobalHelpers.CopyFile(file.Upload, _hostenv);
+                    var filename = GlobalHelpers.CopyFile(file.Upload, _hostenv, "img/dashboard/");
                     var _path = Path.Combine(_hostenv.WebRootPath, "Upload/" + filename);
 
 

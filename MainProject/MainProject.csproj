@@ -65,7 +65,6 @@
     <Folder Include="Areas\Transaction\Data\" />
     <Folder Include="Areas\Transaction\Models\" />
     <Folder Include="Areas\Transaction\Views\" />
-    <Folder Include="Areas\Master\Views\Visitors\" />
     <Folder Include="ReportViewer\" />
     <Folder Include="Views\Shared\adminLte\" />
     <Folder Include="wwwroot\documents\" />

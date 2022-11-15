@@ -1101,12 +1101,12 @@ namespace DAL.Helper
 
 
 
-        public static string CopyFile(IFormFile fileInput, IHostingEnvironment _hostenv)
+        public static string CopyFile(IFormFile fileInput, IHostingEnvironment _hostenv, String folder)
         {
 
             var fileName2 = System.IO.Path.GetFileName(Guid.NewGuid().ToString().Substring(0, 7) + "-" + fileInput.FileName);
             // Create new local file and copy contents of uploaded file
-            using (var localFile = System.IO.File.OpenWrite(Path.Combine(_hostenv.WebRootPath, "Upload/") + fileName2))
+            using (var localFile = System.IO.File.OpenWrite(Path.Combine(_hostenv.WebRootPath, folder) + fileName2))
             using (var uploadedFile = fileInput.OpenReadStream())
             {
                 uploadedFile.CopyTo(localFile);
@@ -1129,6 +1129,7 @@ namespace DAL.Helper
 
             return fileName2;
         }
+         
 
 
         public enum ClaimIdentity

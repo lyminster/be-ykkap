@@ -430,7 +430,7 @@ namespace DAL.DataAccessLayer.Master
             {
                 string newPass = GeneratePass();
                 SendEmail objSendEmail = new SendEmail();
-                objSendEmail.IDClient = "TMS";
+                objSendEmail.IDClient = "YKKAP YES Catalog";
                 objSendEmail.Email = Email;
                 objSendEmail.Password = newPass;
                 objSendEmail.Name = name;

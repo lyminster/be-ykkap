@@ -43,6 +43,7 @@
                                         <th>Url Instagram</th>
                                         <th>Url Youtube</th>
                                         <th>Url Web</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
 
@@ -154,9 +155,9 @@
                               {
                                 data: null, render: function (data, type, row) {
 
-                                      return '<a class="btn btn-info btn-sm" href="@Url.Action("Edit", "SocialMedia", new { Area = "Master" })?ID=' + row.id + '">Edit</a>';
+                                      return '<a class="btn btn-info btn-sm" href="@Url.Action("EditNew", "SocialMedia", new { Area = "Master" })?ID=' + row.id + '">Edit</a>';
 
-                                }, "width": "13%", "sorting": "false"
+                                  }, "width": "120px", "sorting": "false"
                             },
 
                         ]

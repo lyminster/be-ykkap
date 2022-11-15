@@ -20,6 +20,7 @@ namespace TMS.Areas.Master.Controllers
         private readonly IHostingEnvironment _hostenv;
         private readonly IMapper _mapper;
         HelperTableDataAccessLayer DALHelper;
+        private IConfiguration _config;
         CatalogTypeDataAccessLayer DALCatalogType;
         FileLogDataAccessLayer DALFileLog;
 
@@ -29,6 +30,7 @@ namespace TMS.Areas.Master.Controllers
             _context = context;
             _hostenv = hostenv;
             _mapper = mapper;
+            _config = configfile;
             DALHelper = new HelperTableDataAccessLayer(_context, _mapper, _hostenv);
             DALCatalogType = new CatalogTypeDataAccessLayer(_context, _mapper, _hostenv, configfile);
             DALFileLog = new FileLogDataAccessLayer(_context, _mapper, _hostenv, configfile);
@@ -133,7 +135,16 @@ namespace TMS.Areas.Master.Controllers
         {
             if (ModelState.IsValid)
             {
+                var filename = "";
                 string errMsg = "";
+
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlCatalogImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                }
+
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var retrunSave = DALCatalogType.SaveAsync(data, User);
@@ -166,7 +177,16 @@ namespace TMS.Areas.Master.Controllers
         {
             if (ModelState.IsValid)
             {
+                var filename = "";
                 string errMsg = "";
+
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlCatalogImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                }
+
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var upddata = _mapper.Map<CatalogTypeVM, JsonCatalogTypeVM>(data);
                 var retrunSave = DALCatalogType.SaveAsync(upddata, User);

@@ -19,6 +19,7 @@ namespace TMS.Areas.Master.Controllers
         private readonly BusinessModelContext _context;
         private readonly IHostingEnvironment _hostenv;
         private readonly IMapper _mapper;
+        private IConfiguration _config;
         HelperTableDataAccessLayer DALHelper;
         ShowroomDataAccessLayer DALShowroom;
         FileLogDataAccessLayer DALFileLog;
@@ -29,6 +30,7 @@ namespace TMS.Areas.Master.Controllers
             _context = context;
             _hostenv = hostenv;
             _mapper = mapper;
+            _config = configfile;
             DALHelper = new HelperTableDataAccessLayer(_context, _mapper, _hostenv);
             DALShowroom = new ShowroomDataAccessLayer(_context, _mapper, _hostenv, configfile);
             DALFileLog = new FileLogDataAccessLayer(_context, _mapper, _hostenv, configfile);
@@ -135,9 +137,23 @@ namespace TMS.Areas.Master.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (data.Upload == null)
+                {
+                    ModelState.AddModelError("FileURL", "Please upload file");
+                    return View();
+                }
+                var filename = "";
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlShowroomImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                }
+
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
+                data.urlImage = filename;
                 var retrunSave = DALShowroom.SaveAsync(data, User);
                 if (retrunSave.result == true)
                 {
@@ -164,14 +180,28 @@ namespace TMS.Areas.Master.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(ShowroomVM data)
+        public IActionResult Edit(JsonShowroomVM data)
         {
             if (ModelState.IsValid)
             {
+                if (data.Upload == null)
+                {
+                    ModelState.AddModelError("FileURL", "Please upload file");
+                    return View();
+                }
+                var filename = "";
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlShowroomImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                }
+
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
-                var retrunSave = DALShowroom.SaveAsync(upddata, User);
+                data.urlImage = filename;
+                //var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
+                var retrunSave = DALShowroom.SaveAsync(data, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Update Showroom", NotificationType.success);

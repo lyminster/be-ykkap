@@ -18,10 +18,12 @@ namespace TMS.Areas.Master.Controllers
     {
         private readonly BusinessModelContext _context;
         private readonly IHostingEnvironment _hostenv;
+        private IConfiguration _config;
         private readonly IMapper _mapper;
         HelperTableDataAccessLayer DALHelper;
         ProjectReferencesDataAccessLayer DALProject;
         FileLogDataAccessLayer DALFileLog;
+        ProjectTypeDataAccessLayer DALProjectType;
 
 
         public ProjectController(BusinessModelContext context, IHostingEnvironment hostenv, IMapper mapper, IConfiguration configfile)
@@ -29,8 +31,10 @@ namespace TMS.Areas.Master.Controllers
             _context = context;
             _hostenv = hostenv;
             _mapper = mapper;
+            _config = configfile;
             DALHelper = new HelperTableDataAccessLayer(_context, _mapper, _hostenv);
             DALProject = new ProjectReferencesDataAccessLayer(_context, _mapper, _hostenv, configfile);
+            DALProjectType = new ProjectTypeDataAccessLayer(_context, _mapper, _hostenv, configfile);
             DALFileLog = new FileLogDataAccessLayer(_context, _mapper, _hostenv, configfile);
         }
 
@@ -131,7 +135,9 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            return View();
+            ProjectReferencesVM data = new ProjectReferencesVM();
+            data.ListProjectType = DALProjectType.GetListProjectTypeAsync();
+            return View(data);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -140,6 +146,13 @@ namespace TMS.Areas.Master.Controllers
             if (ModelState.IsValid)
             {
                 string errMsg = "";
+                var filename = "";
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlProjectImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                }
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var retrunSave = DALProject.SaveAsync(data, User);
@@ -148,6 +161,7 @@ namespace TMS.Areas.Master.Controllers
                     Alert("Success Create Project References", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
+                data.ListProjectType = DALProjectType.GetListProjectTypeAsync();
                 Alert(errMsg, NotificationType.error);
                 return View(data);
             }
@@ -163,6 +177,7 @@ namespace TMS.Areas.Master.Controllers
                 return RedirectToAction("LoginForm", "Login");
             }
             var data = DALProject.GetProjectEditByIdAsync(ID);
+            data.ListProjectType = DALProjectType.GetListProjectTypeAsync();
             return View(data);
         }
 
@@ -173,6 +188,14 @@ namespace TMS.Areas.Master.Controllers
             if (ModelState.IsValid)
             {
                 string errMsg = "";
+                var filename = "";
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlProjectImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                }
+
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var upddata = _mapper.Map<ProjectReferencesVM, JsonProjectReferencesVM>(data);
                 var retrunSave = DALProject.SaveAsync(upddata, User);
@@ -181,6 +204,7 @@ namespace TMS.Areas.Master.Controllers
                     Alert("Success Update Project References", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
+                data.ListProjectType = DALProjectType.GetListProjectTypeAsync();
                 Alert(errMsg, NotificationType.error);
                 return View(data);
             }
