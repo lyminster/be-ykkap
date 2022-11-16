@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Database.Models
 {
-    public partial class Visitors : Entity<string>
+    public partial class Visitor : Entity<string>
     {
         public string Email { get; set; }
         public string Name { get; set; }

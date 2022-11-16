@@ -14,5 +14,6 @@ namespace Database.Models
         public string imgUrl { get; set; }
         public string enPdfUrl { get; set; }
         public string idPdfUrl { get; set; }
+        public virtual CatalogType catalogTypeNavigation { get; set; }
     }
 }

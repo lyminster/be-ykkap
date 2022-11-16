@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,9 @@ namespace ViewModel.ViewModels
         public string imgUrl { get; set; }
         public string enPdfUrl { get; set; }
         public string idPdfUrl { get; set; }
+        public string CatalogTypeName { get; set; }
+        public IFormFile Upload { get; set; }
+        public List<JsonCatalogTypeVM> ListCatalogType { get; set; }
     }
 
     public class JsonCatalogVM : JsonModelBase
@@ -58,5 +62,8 @@ namespace ViewModel.ViewModels
         public string imgUrl { get; set; }
         public string enPdfUrl { get; set; }
         public string idPdfUrl { get; set; }
+        public string CatalogTypeName { get; set; }
+        public IFormFile Upload { get; set; }
+        public List<JsonCatalogTypeVM> ListCatalogType { get; set; }
     }
 }

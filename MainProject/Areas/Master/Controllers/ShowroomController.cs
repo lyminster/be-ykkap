@@ -43,11 +43,8 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            List<JsonShowroomVM> page1 = DALShowroom.FindAsync(new JsonShowroomVM { }, User);
-            IndexShowroomVM data = new IndexShowroomVM();
-            data.listIndex = page1;
-
-            return View(data);
+           
+            return View();
         }
 
         public ActionResult LoadData(FilterTgl filters)
@@ -195,11 +192,12 @@ namespace TMS.Areas.Master.Controllers
                 {
                     String folder = _config.GetConnectionString("UrlShowroomImage");
                     filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    data.urlImage = filename;
                 }
 
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                data.urlImage = filename;
+                
                 //var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
                 var retrunSave = DALShowroom.SaveAsync(data, User);
                 if (retrunSave.result == true)

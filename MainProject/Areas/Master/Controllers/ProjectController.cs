@@ -153,6 +153,7 @@ namespace TMS.Areas.Master.Controllers
                     String folder = _config.GetConnectionString("UrlProjectImage");
                     filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
                 }
+                data.urlImage = filename;
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var retrunSave = DALProject.SaveAsync(data, User);
@@ -194,6 +195,7 @@ namespace TMS.Areas.Master.Controllers
                 {
                     String folder = _config.GetConnectionString("UrlProjectImage");
                     filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    data.urlImage = filename;
                 }
 
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);

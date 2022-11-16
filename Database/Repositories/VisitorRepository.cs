@@ -1,5 +1,4 @@
 ﻿using Database.Models;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,36 +8,22 @@ using System.Threading.Tasks;
 
 namespace Database.Repositories
 {
-    public class CatalogDetailRepository
+    public class VisitorRepository
     {
         private readonly BusinessModelContext _dbContext;
 
-        private readonly IQueryable<CatalogDetail> _q_QueryData;
-        public CatalogDetailRepository(BusinessModelContext expenseManagementContext)
+        private readonly IQueryable<Visitor> _q_QueryData;
+        public VisitorRepository(BusinessModelContext expenseManagementContext)
         {
             _dbContext = expenseManagementContext;
 
-            _q_QueryData = _dbContext.CatalogDetail.Include(x => x.catalogTypeNavigation);
+            _q_QueryData = _dbContext.Visitor;
 
         }
 
         #region query
 
-        public List<CatalogDetail> GetCatalogDetailByType(string Id)
-        {
-
-            try
-            {
-                return _q_QueryData.Where(x => x.CatalogType == Id).ToList();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-        }
-
-        public List<CatalogDetail> GetAll()
+        public List<Visitor> GetListVisitor()
         {
 
             try
@@ -52,7 +37,7 @@ namespace Database.Repositories
 
         }
 
-        public List<CatalogDetail> QueryCatalogDetails(Expression<Func<CatalogDetail, bool>> expression, int take = 0, int skip = 0)
+        public List<Visitor> QueryVisitors(Expression<Func<Visitor, bool>> expression, int take = 0, int skip = 0)
         {
 
             try
@@ -75,7 +60,7 @@ namespace Database.Repositories
 
         }
 
-        public CatalogDetail GetCatalogDetailByID(string ID)
+        public Visitor GetVisitorByID(string ID)
         {
             try
             {
@@ -89,16 +74,13 @@ namespace Database.Repositories
         }
 
 
-        public bool IsUniqueKeyCodeExist(string name, string CatalogType, string description, string imgUrl, string enPdfUrl, string idPdfUrl, String idclient)
+        public bool IsUniqueKeyCodeExist(string name, string PhoneNumber, string Email, string AccessFrom)
         {
             return _q_QueryData.Where(x => x.RowStatus == 0).FirstOrDefault(x =>
-            x.name == name
-            && x.CatalogType == CatalogType
-            && x.description == description
-            && x.imgUrl == imgUrl
-            && x.enPdfUrl == enPdfUrl
-            && x.idPdfUrl == idPdfUrl
-            && x.Idclient == idclient
+            x.Name == name
+            && x.PhoneNumber == PhoneNumber
+            && x.Email == Email
+            && x.AccessFrom == AccessFrom 
             ) != null ? true : false;
         }
 
