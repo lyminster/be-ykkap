@@ -85,7 +85,7 @@ namespace DAL.DataAccessLayer.Master
                         projectYear = data.projectYear,
                         location = data.location ,
                         name = data.name ,
-                        type = data.type ,
+                        type = data.typeNavigation.name,
                         urlYoutube = data.urlYoutube ,
                         listProductUsed = data.listProductUsed
                     };
