@@ -42,17 +42,20 @@ namespace TMS.Controllers.Master
             try
             {
                 JsonReturn ResultData = new JsonReturn(true);
-
+                System.Security.Claims.ClaimsPrincipal users;
                 if (_SystemConfig.StaticKey == "true")
                 {
-                    var ValidStaticKey = await GlobalHelpers.GetAPIKeyValidationAndGenerateCookiesAsync(filter.ApiKey, _businessModelContext, this.HttpContext).ConfigureAwait(false);
+                 
+                    var ValidStaticKey = GlobalHelpers.GetApiKeyValidation(filter.ApiKey, _businessModelContext, this.HttpContext, out users);
+                    System.Threading.Thread.CurrentPrincipal = new System.Security.Claims.ClaimsPrincipal(users);
                     if (!ValidStaticKey)
                     {
                         return BadRequest("invalid api key");
                     }
+                    _VisitorDataAccessLayer.SaveAsync(filter, users);
                 }
+               
 
-                _VisitorDataAccessLayer.SaveAsync(filter, User);
                 return Ok();
             }
             catch (Exception ex)

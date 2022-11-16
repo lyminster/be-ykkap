@@ -84,7 +84,10 @@ namespace MainProject
             //services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
 
 
-
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            });
             services.AddSingleton<IJwtAuthManager, JwtAuthManager>();
             services.AddAuthentication(options =>
             {
