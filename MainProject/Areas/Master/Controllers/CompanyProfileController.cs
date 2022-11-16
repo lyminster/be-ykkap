@@ -129,14 +129,15 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonCompanyProfileVM data)
+        public IActionResult Create(CompanyProfileVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALCompanyProfile.SaveAsync(data, User);
+                var SaveData = _mapper.Map<CompanyProfileVM, JsonCompanyProfileVM>(data);
+                var retrunSave = DALCompanyProfile.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Company Profile", NotificationType.success);

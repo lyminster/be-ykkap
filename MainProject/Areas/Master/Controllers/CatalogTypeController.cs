@@ -131,23 +131,28 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonCatalogTypeVM data)
+        public IActionResult Create(CatalogTypeVM data)
         {
+          
             if (ModelState.IsValid)
             {
                 var filename = "";
                 string errMsg = "";
 
 
+
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlCatalogImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.imgUrl = filename;
                 }
+
 
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALCatalogType.SaveAsync(data, User);
+                var SaveData = _mapper.Map<CatalogTypeVM, JsonCatalogTypeVM>(data);
+                var retrunSave = DALCatalogType.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Catalog Type", NotificationType.success);
@@ -181,11 +186,15 @@ namespace TMS.Areas.Master.Controllers
                 string errMsg = "";
 
 
+
+
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlCatalogImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.imgUrl = filename;
                 }
+
 
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var upddata = _mapper.Map<CatalogTypeVM, JsonCatalogTypeVM>(data);

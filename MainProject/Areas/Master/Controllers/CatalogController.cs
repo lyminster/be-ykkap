@@ -139,22 +139,26 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonCatalogDetailVM data)
+        public IActionResult Create(CatalogDetailVM data)
         {
             if (ModelState.IsValid)
             {
                 var filename = "";
 
+
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlCatalogImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.imgUrl = filename;
                 }
+
                 data.imgUrl = filename;
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALCatalogDetail.SaveAsync(data, User);
+                var SaveData = _mapper.Map<CatalogDetailVM, JsonCatalogDetailVM>(data);
+                var retrunSave = DALCatalogDetail.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Catalog Detail", NotificationType.success);
@@ -196,7 +200,7 @@ namespace TMS.Areas.Master.Controllers
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlCatalogImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
                     data.imgUrl = filename;
                 }
 

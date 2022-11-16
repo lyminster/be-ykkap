@@ -37,8 +37,8 @@ namespace TMS.Controllers.Master
         }
 
         [HttpPost]
-        [Route("post/GetCompanyProfile")]
-        public async Task<IActionResult> GetCompanyProfileAsync([FromBody] JsonShowroomVM filter)
+        [Route("post/GetListShowroom")]
+        public async Task<IActionResult> GetListShowroom([FromBody] JsonShowroomVM filter)
         {
             List<JsonShowroomVM> showRoom = new List<JsonShowroomVM>();
 

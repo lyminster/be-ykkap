@@ -133,14 +133,16 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonCompanyVM data)
+        public IActionResult Create(CompanyVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALCompany.SaveAsync(data, User);
+
+                var SaveData = _mapper.Map<CompanyVM, JsonCompanyVM>(data);
+                var retrunSave = DALCompany.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Company", NotificationType.success);
@@ -268,7 +270,7 @@ namespace TMS.Areas.Master.Controllers
                 if (file.Upload.FileName != null)
                 {
                     //upload
-                    var filename = GlobalHelpers.CopyFile(file.Upload, _hostenv, "img/dashboard/");
+                    var filename = GlobalHelpers.CopyFileForUpload(file.Upload, _hostenv, "img/dashboard/");
                     var _path = Path.Combine(_hostenv.WebRootPath, "Upload/" + filename);
 
 

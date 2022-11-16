@@ -141,7 +141,7 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonProjectReferencesVM data)
+        public IActionResult Create(ProjectReferencesVM data)
         {
             if (ModelState.IsValid)
             {
@@ -151,12 +151,14 @@ namespace TMS.Areas.Master.Controllers
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlProjectImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.urlImage = filename;
                 }
-                data.urlImage = filename;
+             
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALProject.SaveAsync(data, User);
+                var SaveData = _mapper.Map<ProjectReferencesVM, JsonProjectReferencesVM>(data);
+                var retrunSave = DALProject.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Project References", NotificationType.success);
@@ -194,9 +196,10 @@ namespace TMS.Areas.Master.Controllers
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlProjectImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
                     data.urlImage = filename;
                 }
+
 
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var upddata = _mapper.Map<ProjectReferencesVM, JsonProjectReferencesVM>(data);

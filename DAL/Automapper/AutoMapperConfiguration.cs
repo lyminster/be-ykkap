@@ -72,7 +72,18 @@ namespace MainProject.Automapper
              
             CreateMap<CatalogDetailVM, JsonCatalogDetailVM>(MemberList.None);
             CreateMap<CatalogTypeVM, JsonCatalogTypeVM>(MemberList.None);
-             
+
+
+
+
+
+
+            CreateMap<CompanyProfileVM, JsonCompanyProfileVM>(MemberList.None);
+            CreateMap<CatalogTypeVM, JsonCatalogTypeVM>(MemberList.None);
+            CreateMap<CatalogDetailVM, JsonCatalogDetailVM>(MemberList.None);
+            CreateMap<ShowroomVM, JsonShowroomVM>(MemberList.None);
+            CreateMap<ProjectReferencesVM, JsonProjectReferencesVM>(MemberList.None);
+            CreateMap<ProjectTypeVM, JsonProjectTypeVM>(MemberList.None); 
         }
     }
 }

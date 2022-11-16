@@ -43,7 +43,7 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-           
+
             return View();
         }
 
@@ -94,7 +94,7 @@ namespace TMS.Areas.Master.Controllers
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
-                    showroomData = showroomData.Where(m => 
+                    showroomData = showroomData.Where(m =>
                         m.CreatedBy.Contains(searchValue)
                         || m.name.Contains(searchValue)
                         || m.address.Contains(searchValue)
@@ -130,7 +130,7 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonShowroomVM data)
+        public IActionResult Create(ShowroomVM data)
         {
             if (ModelState.IsValid)
             {
@@ -141,17 +141,23 @@ namespace TMS.Areas.Master.Controllers
                 }
                 var filename = "";
 
+
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlShowroomImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.urlImage = filename;
                 }
+
+
+
 
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                data.urlImage = filename;
-                var retrunSave = DALShowroom.SaveAsync(data, User);
+
+                var SaveData = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
+                var retrunSave = DALShowroom.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Showroom", NotificationType.success);
@@ -177,7 +183,7 @@ namespace TMS.Areas.Master.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(JsonShowroomVM data)
+        public IActionResult Edit(ShowroomVM data)
         {
             if (ModelState.IsValid)
             {
@@ -191,15 +197,17 @@ namespace TMS.Areas.Master.Controllers
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlShowroomImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
                     data.urlImage = filename;
                 }
 
+
+
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                
-                //var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
-                var retrunSave = DALShowroom.SaveAsync(data, User);
+
+                var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
+                var retrunSave = DALShowroom.SaveAsync(upddata, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Update Showroom", NotificationType.success);

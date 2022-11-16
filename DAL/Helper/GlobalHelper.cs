@@ -1098,11 +1098,9 @@ namespace DAL.Helper
 
             return checktime.IsMatch(thetime);
         }
-
-
-
-        public static string CopyFile(IFormFile fileInput, IHostingEnvironment _hostenv, String folder)
+        public static string CopyFileForUpload(IFormFile fileInput, IHostingEnvironment _hostenv, String folder)
         {
+
 
             var fileName2 = System.IO.Path.GetFileName(Guid.NewGuid().ToString().Substring(0, 7) + "-" + fileInput.FileName);
             // Create new local file and copy contents of uploaded file
@@ -1113,6 +1111,24 @@ namespace DAL.Helper
             }
 
             return fileName2;
+        }
+
+
+        public static string CopyFile(IFormFile fileInput, IHostingEnvironment _hostenv, String folder, HttpRequest HttpRequest)
+        {
+            var baseUrl = $"{HttpRequest.Scheme}://{HttpRequest.Host.Value.ToString()}{HttpRequest.PathBase.Value.ToString()}";
+
+
+
+            var fileName2 = System.IO.Path.GetFileName(Guid.NewGuid().ToString().Substring(0, 7) + "-" + fileInput.FileName);
+            // Create new local file and copy contents of uploaded file
+            using (var localFile = System.IO.File.OpenWrite(Path.Combine(_hostenv.WebRootPath, folder) + fileName2))
+            using (var uploadedFile = fileInput.OpenReadStream())
+            {
+                uploadedFile.CopyTo(localFile);
+            }
+
+            return baseUrl + "/" + folder + fileName2;
         }
 
         public static string CopyImportantFile(IFormFile fileInput, IHostingEnvironment _hostenv, string path)
@@ -1129,7 +1145,7 @@ namespace DAL.Helper
 
             return fileName2;
         }
-         
+
 
 
         public enum ClaimIdentity
@@ -1174,8 +1190,8 @@ namespace DAL.Helper
                 if (Userx != null)
                 {
                     //di clear dl logout dl
-                  await HttpContext.SignOutAsync(
-   CookieAuthenticationDefaults.AuthenticationScheme);
+                    await HttpContext.SignOutAsync(
+     CookieAuthenticationDefaults.AuthenticationScheme);
 
 
 

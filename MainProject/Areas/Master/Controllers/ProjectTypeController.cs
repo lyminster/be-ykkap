@@ -127,14 +127,15 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonProjectTypeVM data)
+        public IActionResult Create(ProjectTypeVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALProjectType.SaveAsync(data, User);
+                var SaveData = _mapper.Map<ProjectTypeVM, JsonProjectTypeVM>(data);
+                var retrunSave = DALProjectType.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Project Type", NotificationType.success);
