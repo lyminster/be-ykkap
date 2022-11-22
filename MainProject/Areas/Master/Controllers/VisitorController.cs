@@ -145,11 +145,11 @@ namespace TMS.Areas.Master.Controllers
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     visitorData = visitorData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.Name.Contains(searchValue)
-                        || m.PhoneNumber.Contains(searchValue)
-                        || m.Email.Contains(searchValue)
-                        || m.AccessFrom.Contains(searchValue)).ToList();
+                        m.CreatedBy.ToLower().Contains(searchValue.ToLower())
+                        || m.Name.ToLower().Contains(searchValue.ToLower())
+                        || m.PhoneNumber.ToLower().Contains(searchValue.ToLower())
+                        || m.Email.ToLower().Contains(searchValue.ToLower())
+                        || m.AccessFrom.ToLower().Contains(searchValue.ToLower())).ToList();
                 }
 
                 //total number of rows counts   

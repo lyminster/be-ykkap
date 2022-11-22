@@ -129,13 +129,11 @@ namespace TMS.Areas.Master.Controllers
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     catalogDetailData = catalogDetailData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)
-                        || m.description.Contains(searchValue)
-                        || m.CatalogType.Contains(searchValue)
-                        || m.enPdfUrl.Contains(searchValue)
-                        || m.imgUrl.Contains(searchValue)
-                        || m.idPdfUrl.Contains(searchValue)).ToList();
+                        m.CreatedBy.ToLower().Contains(searchValue.ToLower())
+                        || m.name.ToLower().Contains(searchValue.ToLower())
+                        || m.description.ToLower().Contains(searchValue.ToLower())
+                        || m.CatalogTypeName.ToLower().Contains(searchValue.ToLower())
+                        || Convert.ToString(m.OrderNo).Contains(searchValue)).ToList();
                 }
 
                 //total number of rows counts   
@@ -182,7 +180,6 @@ namespace TMS.Areas.Master.Controllers
                     data.imgUrl = filename;
                 }
 
-                data.imgUrl = filename;
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
@@ -219,11 +216,7 @@ namespace TMS.Areas.Master.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (data.Upload == null)
-                {
-                    ModelState.AddModelError("FileURL", "Please upload file");
-                    return View();
-                }
+               
                 var filename = "";
 
                 if (data.Upload != null && data.Upload.FileName != null)

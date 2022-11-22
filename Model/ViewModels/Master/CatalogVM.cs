@@ -41,7 +41,7 @@ namespace ViewModel.ViewModels
         public string name { get; set; }
         public string description { get; set; }
         public string imgUrl { get; set; }
-        public int OrderNo { get; set; }
+        public int? OrderNo { get; set; }
         public List<JsonCatalogDetailVM>? child { get; set; }
     }
 
@@ -64,7 +64,7 @@ namespace ViewModel.ViewModels
         public string imgUrl { get; set; }
         public string enPdfUrl { get; set; }
         public string idPdfUrl { get; set; }
-        public int OrderNo { get; set; }
+        public int? OrderNo { get; set; }
         public string CatalogTypeName { get; set; }
         public IFormFile Upload { get; set; }
         public List<JsonCatalogTypeVM> ListCatalogType { get; set; }

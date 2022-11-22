@@ -133,10 +133,10 @@ namespace TMS.Areas.Master.Controllers
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     showroomData = showroomData.Where(m =>
-                        m.name.Contains(searchValue)
-                        || m.address.Contains(searchValue)
-                        || m.telephone.Contains(searchValue)
-                        || m.workingHour.Contains(searchValue) ).ToList();
+                        m.name.ToLower().Contains(searchValue.ToLower())
+                        || m.address.ToLower().Contains(searchValue.ToLower())
+                        || m.telephone.ToLower().Contains(searchValue.ToLower())
+                        || m.workingHour.ToLower().Contains(searchValue.ToLower()) ).ToList();
                 }
 
                 //total number of rows counts   
@@ -223,11 +223,7 @@ namespace TMS.Areas.Master.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (data.Upload == null)
-                {
-                    ModelState.AddModelError("FileURL", "Please upload file");
-                    return View();
-                }
+                
                 var filename = "";
 
                 if (data.Upload != null && data.Upload.FileName != null)

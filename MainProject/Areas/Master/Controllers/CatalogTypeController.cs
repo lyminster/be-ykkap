@@ -119,8 +119,9 @@ namespace TMS.Areas.Master.Controllers
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     catalogTypeData = catalogTypeData.Where(m =>
-                        m.name.Contains(searchValue)
-                        || m.description.Contains(searchValue) ).ToList();
+                        m.name.ToLower().Contains(searchValue.ToLower())
+                        || m.description.ToLower().Contains(searchValue.ToLower())
+                        || Convert.ToString(m.OrderNo).Contains(searchValue)).ToList();
                 }
 
                 //total number of rows counts   

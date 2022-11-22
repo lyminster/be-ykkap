@@ -111,8 +111,8 @@ namespace TMS.Areas.Master.Controllers
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     projectTypeData = projectTypeData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)).ToList();
+                        m.CreatedBy.ToLower().Contains(searchValue.ToLower())
+                        || m.name.ToLower().Contains(searchValue.ToLower())).ToList();
                 }
 
                 //total number of rows counts   

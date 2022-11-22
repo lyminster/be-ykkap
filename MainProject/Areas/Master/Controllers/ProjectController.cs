@@ -161,16 +161,15 @@ namespace TMS.Areas.Master.Controllers
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     projectData = projectData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)
-                        || m.detail.Contains(searchValue)
-                        || m.building.Contains(searchValue)
-                        || m.urlImage.Contains(searchValue)
-                        || m.urlYoutube.Contains(searchValue)
-                        || m.location.Contains(searchValue)
-                        || m.listProductUsed.Contains(searchValue)
-                        || m.projectYear.Contains(searchValue)
-                        || m.type.Contains(searchValue)).ToList();
+                        m.CreatedBy.ToLower().Contains(searchValue.ToLower())
+                        || m.name.ToLower().Contains(searchValue.ToLower())
+                        || m.detail.ToLower().Contains(searchValue.ToLower())
+                        || m.building.ToLower().Contains(searchValue.ToLower())
+                      
+                        || m.location.ToLower().Contains(searchValue.ToLower())
+                        || m.listProductUsed.ToLower().Contains(searchValue.ToLower())
+                        || m.projectYear.ToLower().Contains(searchValue.ToLower())
+                        || m.type.ToLower().Contains(searchValue.ToLower())).ToList();
                 }
 
                 //total number of rows counts   
