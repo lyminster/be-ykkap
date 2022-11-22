@@ -132,6 +132,7 @@ namespace Database.Models
                 entity.Property(e => e.visionMission).IsUnicode(false);
 
                 entity.Property(e => e.imgUrl).IsUnicode(false);
+                entity.Property(e => e.pdfUrl).IsUnicode(false);
 
                 entity.Property(e => e.youtubeId).IsUnicode(false);
 
@@ -331,6 +332,7 @@ namespace Database.Models
                 entity.Property(e => e.description).IsUnicode(false);
 
                 entity.Property(e => e.imgUrl).IsUnicode(false);
+                entity.Property(e => e.OrderNo).IsUnicode(false);
 
                 entity.Property(e => e.CreatedByEmployeeID)
                     .HasMaxLength(50)
@@ -400,7 +402,7 @@ namespace Database.Models
                 entity.Property(e => e.imgUrl).IsUnicode(false);
                 entity.Property(e => e.enPdfUrl).IsUnicode(false);
                 entity.Property(e => e.idPdfUrl).IsUnicode(false);
-
+                entity.Property(e => e.OrderNo).IsUnicode(false);
                 entity.Property(e => e.CreatedByEmployeeID)
                     .HasMaxLength(50)
                     .IsUnicode(false)

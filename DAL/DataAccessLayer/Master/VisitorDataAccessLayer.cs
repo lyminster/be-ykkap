@@ -78,7 +78,7 @@ namespace DAL.DataAccessLayer.Master
             }
         }
 
-        public List<JsonVisitorVM> FindAsync(JsonVisitorVM filter, ClaimsPrincipal claims)
+        public List<JsonVisitorVM> FindAsync(JsonVisitorVM filter, ClaimsPrincipal claims, DateTime? tglFrom, DateTime? tglTo)
         {
             List<JsonVisitorVM> listVisitor = new List<JsonVisitorVM>();
             JsonReturn returnData = new JsonReturn(false);
@@ -108,6 +108,14 @@ namespace DAL.DataAccessLayer.Master
                     filterExp = filterExp.And(x => x.AccessFrom != null);
                     filterExp = filterExp.And(x => x.AccessFrom.ToLower().Contains(filter.AccessFrom.ToLower()));
                 }
+                if(tglFrom != null)
+                {
+                    filterExp = filterExp.And(x => x.CreatedTime >= tglFrom);
+                }
+                if (tglTo != null)
+                {
+                    filterExp = filterExp.And(x => x.CreatedTime <= tglTo);
+                }
 
                 var cek = Repo.QueryVisitors(filterExp, filter.Take, filter.Skip).ToList();
                 listVisitor = _mapper.Map<List<Visitor>, List<JsonVisitorVM>>(cek);
@@ -121,6 +129,29 @@ namespace DAL.DataAccessLayer.Master
             }
         }
 
+        public JsonReturn DeleteAsync(String ID, ClaimsPrincipal User)
+        {
+            try
+            {
+                JsonReturn ReturnJson = new JsonReturn(false);
+                GlobalHelpers.ReGenerateThreadClaim(User);
+
+                Visitor DelVisitor = Repo.GetVisitorByID(ID);
+                DelVisitor.ModelState = ObjectState.SoftDelete;
+                DelVisitor.SetRowStatus(RowStatus.Deleted);
+                UnitOfWork.InsertOrUpdate(DelVisitor);
+                UnitOfWork.Commit();
+                ReturnJson = new JsonReturn(true);
+                ReturnJson.message = "Sukses Delete Data";
+                return ReturnJson;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         public JsonReturn SaveAsync(JsonVisitorVM Save, ClaimsPrincipal claims)
         {
             JsonReturn jsonReturn = new JsonReturn(false);

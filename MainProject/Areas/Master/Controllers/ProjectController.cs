@@ -92,10 +92,71 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectData = projectData.OrderBy(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Detail")
+                        {
+                            projectData = projectData.OrderBy(x => x.detail).ToList();
+                        }
+                        else if (sortColumn == "Building")
+                        {
+                            projectData = projectData.OrderBy(x => x.building).ToList();
+                        }
+                        else if (sortColumn == "Project Type")
+                        {
+                            projectData = projectData.OrderBy(x => x.ProjectType).ToList();
+                        }
+                        else if (sortColumn == "Location")
+                        {
+                            projectData = projectData.OrderBy(x => x.location).ToList();
+                        }
+                        else if (sortColumn == "List Product Used")
+                        {
+                            projectData = projectData.OrderBy(x => x.listProductUsed).ToList();
+                        }
+                        else if (sortColumn == "Project Year")
+                        {
+                            projectData = projectData.OrderBy(x => x.projectYear).ToList();
+                        }
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Detail")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.detail).ToList();
+                        }
+                        else if (sortColumn == "Building")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.building).ToList();
+                        }
+                        else if (sortColumn == "Project Type")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.ProjectType).ToList();
+                        }
+                        else if (sortColumn == "Location")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.location).ToList();
+                        }
+                        else if (sortColumn == "List Product Used")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.listProductUsed).ToList();
+                        }
+                        else if (sortColumn == "Project Year")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.projectYear).ToList();
+                        }
+                    }
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
@@ -209,11 +270,13 @@ namespace TMS.Areas.Master.Controllers
                     Alert("Success Update Project References", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
-                data.ListProjectType = DALProjectType.GetListProjectTypeAsync();
+                upddata.ListProjectType = DALProjectType.GetListProjectTypeAsync();
                 Alert(errMsg, NotificationType.error);
-                return View(data);
+                return View(upddata);
             }
-            return View(data);
+            var upddata2 = _mapper.Map<ProjectReferencesVM, JsonProjectReferencesVM>(data);
+            upddata2.ListProjectType = DALProjectType.GetListProjectTypeAsync();
+            return View(upddata2);
         }
 
         [HttpPost]

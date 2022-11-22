@@ -90,18 +90,37 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            catalogTypeData = catalogTypeData.OrderBy(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Description")
+                        {
+                            catalogTypeData = catalogTypeData.OrderBy(x => x.description).ToList();
+                        } 
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            catalogTypeData = catalogTypeData.OrderByDescending(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Description")
+                        {
+                            catalogTypeData = catalogTypeData.OrderByDescending(x => x.description).ToList();
+                        }
+                    }
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     catalogTypeData = catalogTypeData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)
-                        || m.description.Contains(searchValue)
-                        || m.imgUrl.Contains(searchValue)).ToList();
+                        m.name.Contains(searchValue)
+                        || m.description.Contains(searchValue) ).ToList();
                 }
 
                 //total number of rows counts   
@@ -184,10 +203,7 @@ namespace TMS.Areas.Master.Controllers
             {
                 var filename = "";
                 string errMsg = "";
-
-
-
-
+                 
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlCatalogImage");
@@ -205,9 +221,10 @@ namespace TMS.Areas.Master.Controllers
                     return RedirectToAction(nameof(Index));
                 }
                 Alert(errMsg, NotificationType.error);
-                return View(data);
+                return View(upddata);
             }
-            return View(data);
+            var upddata2 = _mapper.Map<CatalogTypeVM, JsonCatalogTypeVM>(data);
+            return View(upddata2);
         }
 
         [HttpPost]

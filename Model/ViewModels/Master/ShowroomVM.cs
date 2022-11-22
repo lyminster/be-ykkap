@@ -31,11 +31,11 @@ namespace ViewModel.ViewModels
         public string name { get; set; }
         
         public string urlImage { get; set; }
-        [Required(ErrorMessage = "Mandatory")]
+         
         public string workingHour { get; set; }
-        [Required(ErrorMessage = "Mandatory")]
+         
         public string address { get; set; }
-        [Required(ErrorMessage = "Mandatory")]
+        
         public string telephone { get; set; }
     }
     public class JsonShowroomVM : JsonModelBase

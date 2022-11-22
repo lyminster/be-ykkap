@@ -57,7 +57,6 @@
                                         @Html.TextBox("Upload", "", new
                                           {
                                               type = "file",
-                                              required = "required",
                                               @accept = "image/*"
                                           })
                                         <span asp-validation-for="urlImage" class="text-danger"></span>
@@ -126,23 +125,23 @@
 </div>
 
 @section myScripts{
-            <script src="~/plugins/jquery/jquery.min.js"></script>
-            <script>
-                $(document).ready(function () {
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-                    $("form").submit(function () {
+        $("form").submit(function () {
 
-                        ShowLoading();
+            ShowLoading();
 
-                    });
+        });
 
         @if (TempData["notification"] != null)
         {
             @Html.Raw(TempData["notification"])
         }
-                });
+    });
 
 
-            </script>
+</script>
 
 }

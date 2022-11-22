@@ -92,10 +92,39 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            catalogDetailData = catalogDetailData.OrderBy(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Catalog Type")
+                        {
+                            catalogDetailData = catalogDetailData.OrderBy(x => x.CatalogTypeName).ToList();
+                        }
+                        else if (sortColumn == "Description")
+                        {
+                            catalogDetailData = catalogDetailData.OrderBy(x => x.description).ToList();
+                        }
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            catalogDetailData = catalogDetailData.OrderByDescending(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Catalog Type")
+                        {
+                            catalogDetailData = catalogDetailData.OrderByDescending(x => x.CatalogTypeName).ToList();
+                        }
+                        else if (sortColumn == "Description")
+                        {
+                            catalogDetailData = catalogDetailData.OrderByDescending(x => x.description).ToList();
+                        }
+                    }
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
@@ -214,11 +243,14 @@ namespace TMS.Areas.Master.Controllers
                     Alert("Success Update Catalog Detail", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
-                data.ListCatalogType = _mapper.Map<List<CatalogType>, List<JsonCatalogTypeVM>>(DALCatalogType.GetListCatalogTypeAsync());
+                upddata.ListCatalogType = _mapper.Map<List<CatalogType>, List<JsonCatalogTypeVM>>(DALCatalogType.GetListCatalogTypeAsync());
                 Alert(errMsg, NotificationType.error);
-                return View(data);
+                return View(upddata);
             }
-            return View(data);
+            
+            var upddata2 = _mapper.Map<CatalogDetailVM, JsonCatalogDetailVM>(data);
+            upddata2.ListCatalogType = _mapper.Map<List<CatalogType>, List<JsonCatalogTypeVM>>(DALCatalogType.GetListCatalogTypeAsync());
+            return View(upddata2);
         }
 
         [HttpPost]

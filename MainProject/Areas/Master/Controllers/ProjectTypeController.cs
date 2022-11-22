@@ -88,10 +88,25 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectTypeData = projectTypeData.OrderBy(x => x.name).ToList();
+                        }
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectTypeData = projectTypeData.OrderByDescending(x => x.name).ToList();
+                        }
+                    }
+                    
+                     
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
@@ -177,7 +192,8 @@ namespace TMS.Areas.Master.Controllers
                 Alert(errMsg, NotificationType.error);
                 return View(data);
             }
-            return View(data);
+            var upddata2 = _mapper.Map<ProjectTypeVM, JsonProjectTypeVM>(data);
+            return View(upddata2);
         }
 
         [HttpPost]

@@ -6,6 +6,40 @@
 }
 
 
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script> 
+    <script>
+        $(document).ready(function () {
+
+            $("form").submit(function () {
+
+                ShowLoading();
+
+            });
+
+            @if (TempData["notification"] != null)
+            {
+                @Html.Raw(TempData["notification"])
+            }
+
+
+            tinymce.init({
+                selector: 'textarea#tiny'
+            plugins: [
+                    'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'export',
+                    'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
+                    'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'media', 'table', 'help', 'wordcount'
+                ],
+                toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify |' +
+                    'bullist numlist checklist outdent indent | removeformat | code table help'
+            });
+
+        });
+
+    </script>
+
+}
+
 <div class="text-sm">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -38,18 +72,26 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">About Company</label>
-                                        <input type="text" asp-for="about" class="form-control" />
+                                        <br />
+                                        @*<input type="text" asp-for="about" class="form-control" />*@
+                                        <textarea rows="5" cols="150" id="tiny" asp-for="about">@Model.about</textarea>
                                         <span asp-validation-for="about" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Vision Mission</label>
-                                        <input type="text" asp-for="visionMission" class="form-control" />
+                                        @*<input type="text" asp-for="visionMission" class="form-control" />*@
+                                        <textarea rows="5" cols="150" id="visionMission" asp-for="visionMission">@Model.visionMission</textarea>
                                         <span asp-validation-for="visionMission" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Url Image</label>
                                         <input type="text" asp-for="imgUrl" class="form-control" />
                                         <span asp-validation-for="imgUrl" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Url Catalog Compro</label>
+                                        <input type="text" asp-for="pdfUrl" class="form-control" />
+                                        <span asp-validation-for="pdfUrl" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Url Youtube</label>
@@ -74,8 +116,7 @@
                             <div class="card-footer row">
 
                                 <input type="submit" value="Submit" class="btn btn-success" />
-                                &nbsp;
-                                <a asp-action="Index" class="btn btn-danger">Cancel</a>
+
 
                             </div>
                         </div>
@@ -88,25 +129,3 @@
     </section>
     <!-- /.content -->
 </div>
-
-@section myScripts{
-                <script src="~/plugins/jquery/jquery.min.js"></script>
-                <script>
-                    $(document).ready(function () {
-
-                        $("form").submit(function () {
-
-                            ShowLoading();
-
-                        });
-
-        @if (TempData["notification"] != null)
-        {
-            @Html.Raw(TempData["notification"])
-        }
-                    });
-
-
-                </script>
-
-}

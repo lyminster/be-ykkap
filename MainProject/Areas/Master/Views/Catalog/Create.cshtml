@@ -49,13 +49,18 @@
                                         <span asp-validation-for="CatalogType" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
+                                        <label class="control-label">Order Position</label>
+                                        <input type="number" asp-for="OrderNo" class="form-control" />
+                                        <span asp-validation-for="OrderNo" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
                                         <label class="control-label">Description</label>
                                         <input type="text" asp-for="description" class="form-control" />
                                         <span asp-validation-for="description" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Url Image</label>
-                                        <br/>
+                                        <br />
                                         @Html.TextBox("Upload", "", new
                                          {
                                              type = "file",
@@ -99,23 +104,23 @@
 </div>
 
 @section myScripts{
-                    <script src="~/plugins/jquery/jquery.min.js"></script>
-                    <script>
-                        $(document).ready(function () {
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-                            $("form").submit(function () {
+        $("form").submit(function () {
 
-                                ShowLoading();
+            ShowLoading();
 
-                            });
+        });
 
         @if (TempData["notification"] != null)
         {
             @Html.Raw(TempData["notification"])
         }
-                        });
+    });
 
 
-                    </script>
+</script>
 
 }

@@ -11,6 +11,7 @@ namespace Database.Models
         public string about { get; set; }
         public string visionMission { get; set; }
         public string imgUrl { get; set; }
+        public string pdfUrl { get; set; }
         public string youtubeId { get; set; }
     }
 }

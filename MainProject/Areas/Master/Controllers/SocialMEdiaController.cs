@@ -186,7 +186,8 @@ namespace TMS.Areas.Master.Controllers
                 }
                 
             }
-            return View(data);
+            var upddata2 = _mapper.Map<SocialMediaVM, JsonSocialMediaVM>(data);
+            return View(upddata2);
         }
 
 

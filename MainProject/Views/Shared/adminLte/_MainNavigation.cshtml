@@ -4,7 +4,7 @@
     <a href="~/Login/Home" class="brand-link">
         <img src="~/img/newlogo.jpg" alt="AdminLTE Logo" class="brand-image"
              style="opacity: .8">
-        <span class="brand-text font-weight-light">YKKAP YES Catalog</span>
+        <span class="brand-text font-weight-light">YKKAP YES Admin</span>
     </a>
     <!-- Sidebar -->
     <div class="sidebar">
@@ -29,7 +29,7 @@
                                 <li class="nav-header">MOBILE APPS MENU</li>
 
                                 <li class="nav-item">
-                                    <a asp-area="Master" asp-controller="CompanyProfile" asp-action="Index" class="nav-link">
+                                    <a asp-area="Master" asp-controller="CompanyProfile" asp-action="Edit" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Company Profile</p>
                                     </a>
@@ -75,6 +75,14 @@
                                     <a asp-area="Master" asp-controller="Visitor" asp-action="Index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Visitor</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-header">ACCOUNT MENU</li>
+                                <li class="nav-item">
+                                    <a asp-area="Master" asp-controller="User" asp-action="ChangePass" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Change Password</p>
                                     </a>
                                 </li>
                             }

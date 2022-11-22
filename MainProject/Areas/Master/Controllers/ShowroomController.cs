@@ -87,20 +87,56 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Working Hour")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.workingHour).ToList();
+                        }
+                        else if (sortColumn == "Address")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.address).ToList();
+                        }
+                        else if (sortColumn == "Telepohone Number")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.telephone).ToList();
+                        }
+                      
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Working Hour")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.workingHour).ToList();
+                        }
+                        else if (sortColumn == "Address")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.address).ToList();
+                        }
+                        else if (sortColumn == "Telepohone Number")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.telephone).ToList();
+                        }
+                    }
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     showroomData = showroomData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)
+                        m.name.Contains(searchValue)
                         || m.address.Contains(searchValue)
                         || m.telephone.Contains(searchValue)
-                        || m.workingHour.Contains(searchValue)
-                        || m.urlImage.Contains(searchValue)).ToList();
+                        || m.workingHour.Contains(searchValue) ).ToList();
                 }
 
                 //total number of rows counts   
@@ -201,8 +237,6 @@ namespace TMS.Areas.Master.Controllers
                     data.urlImage = filename;
                 }
 
-
-
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
 
@@ -214,9 +248,10 @@ namespace TMS.Areas.Master.Controllers
                     return RedirectToAction(nameof(Index));
                 }
                 Alert(errMsg, NotificationType.error);
-                return View(data);
+                return View(upddata);
             }
-            return View(data);
+            var upddataErr = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
+            return View(upddataErr);
         }
 
         [HttpPost]
