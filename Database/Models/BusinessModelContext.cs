@@ -52,7 +52,7 @@ namespace Database.Models
 
             modelBuilder.Entity<Company>(entity =>
             {
-                entity.ToTable("Company");
+                entity.ToTable("MsCompany");
 
                 entity.Property(e => e.ID)
                     .HasMaxLength(50)
