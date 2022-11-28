@@ -29,7 +29,7 @@ namespace Database.Repositories
 
             try
             {
-                return _q_QueryData.Where(x => x.CatalogType == Id).ToList();
+                return _q_QueryData.Where(x => x.CatalogType == Id).OrderBy(x=>x.OrderNo).ToList();
             }
             catch (Exception ex)
             {

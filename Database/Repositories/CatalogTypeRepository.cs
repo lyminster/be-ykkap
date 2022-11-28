@@ -28,7 +28,7 @@ namespace Database.Repositories
 
             try
             {
-                return _q_QueryData.ToList();
+                return _q_QueryData.OrderBy(x => x.OrderNo).ToList();
             }
             catch (Exception ex)
             {

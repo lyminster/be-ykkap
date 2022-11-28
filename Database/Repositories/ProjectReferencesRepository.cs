@@ -27,7 +27,7 @@ namespace Database.Repositories
 
             try
             {
-                return _q_QueryData.ToList();
+                return _q_QueryData.OrderByDescending(x=> x.projectYear).ThenBy(x=>x.name).ToList();
             }
             catch (Exception ex)
             {
