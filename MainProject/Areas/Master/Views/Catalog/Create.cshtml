@@ -12,7 +12,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Catalog Type</h1>
+                    <h1 class="m-0 text-dark">Catalog</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -22,7 +22,7 @@
     <section class="content">
         <div class="container-fluid">
             <!-- new vendor form -->
-            <form asp-action="Create">
+            <form asp-action="Create" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="row center" style="float: none; margin: 0 auto;">
                     <div class="col-md-12">
@@ -40,8 +40,18 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Catalog Type</label>
-                                        <input type="text" asp-for="CatalogType" class="form-control" />
+                                        <select asp-for="CatalogType" asp-items="@(new SelectList(Model.ListCatalogType,"Id","name"))" class="form-control select2">
+                                            @if (Model.CatalogType == null || Model.CatalogType == "")
+                                            {
+                                                <option disabled selected value=""> -- select an option -- </option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="CatalogType" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Order Position</label>
+                                        <input type="number" asp-for="OrderNo" class="form-control" />
+                                        <span asp-validation-for="OrderNo" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Description</label>
@@ -50,7 +60,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Url Image</label>
-                                        <input type="text" asp-for="imgUrl" class="form-control" />
+                                        <br />
+                                        @Html.TextBox("Upload", "", new
+                                         {
+                                             type = "file",
+                                             required = "required",
+                                             @accept = "image/*"
+                                         })
                                         <span asp-validation-for="imgUrl" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
@@ -88,23 +104,23 @@
 </div>
 
 @section myScripts{
-                    <script src="~/plugins/jquery/jquery.min.js"></script>
-                    <script>
-                        $(document).ready(function () {
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-                            $("form").submit(function () {
+        $("form").submit(function () {
 
-                                ShowLoading();
+            ShowLoading();
 
-                            });
+        });
 
         @if (TempData["notification"] != null)
         {
             @Html.Raw(TempData["notification"])
         }
-                        });
+    });
 
 
-                    </script>
+</script>
 
 }

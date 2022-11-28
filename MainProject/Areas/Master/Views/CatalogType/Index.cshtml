@@ -40,8 +40,10 @@
                                 <thead>
                                     <tr>
                                         <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Url Image</th>
+                                        <th>Ordering Number</th>
+                                        @*<th>Description</th>*@
+                                        @*<th>Url Image</th>*@
+                                        <th></th>
                                     </tr>
                                 </thead>
 
@@ -146,8 +148,8 @@
 
                             "columns": [
                                     { "data": "name", "name": "Name", "width": "120px" },
-                                    { "data": "description", "name": "Description", "width": "240px" },
-                                    { "data": "imgUrl", "name": "Url Image", "width": "120px" },
+                                    { "data": "orderNo", "name": "OrderNo", "width": "240px" },
+                                    /*{ "data": "imgUrl", "name": "Url Image", "width": "120px" },*/
 
                                   {
                                     data: null, render: function (data, type, row) {

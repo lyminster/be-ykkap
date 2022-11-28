@@ -18,6 +18,7 @@ using MainProject.Models;
 using ViewModel.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using TMS.Services;
+using System.Security.Claims;
 
 namespace TMS.Controllers.Master
 {
@@ -45,14 +46,17 @@ namespace TMS.Controllers.Master
             try
             {
                 JsonReturn ResultData = new JsonReturn(true);
-
+               
                 if (_SystemConfig.StaticKey == "true")
                 {
-                    var ValidStaticKey = await GlobalHelpers.GetAPIKeyValidationAndGenerateCookiesAsync(filter.ApiKey, _businessModelContext, this.HttpContext).ConfigureAwait(false);
+                    System.Security.Claims.ClaimsPrincipal users;
+                    var ValidStaticKey = GlobalHelpers.GetApiKeyValidation(filter.ApiKey, _businessModelContext, this.HttpContext, out users);
+                    System.Threading.Thread.CurrentPrincipal = new System.Security.Claims.ClaimsPrincipal(users);
                     if (!ValidStaticKey)
                     {
                         return BadRequest("invalid api key");
                     }
+
                 }
 
                 CompanyProfile = _companyProfileDataAccessLayer.GetCompanyProfileAsync();

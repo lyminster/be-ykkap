@@ -12,7 +12,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Showroom</h1>
+                    <h1 class="m-0 text-dark">Project References</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -22,7 +22,7 @@
     <section class="content">
         <div class="container-fluid">
             <!-- new vendor form -->
-            <form asp-action="Create">
+            <form asp-action="Create" enctype="multipart/form-data">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="row center" style="float: none; margin: 0 auto;">
                     <div class="col-md-12">
@@ -50,12 +50,27 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Url Image</label>
-                                        <input type="text" asp-for="urlImage" class="form-control" />
+                                        <br/>
+                                        @*<input type="text" asp-for="urlImage" class="form-control" />*@
+                                        @Html.TextBox("Upload", "", new
+                                          {
+                                              type = "file",
+                                              required = "required",
+                                              @accept = "image/*"
+                                          })
                                         <span asp-validation-for="urlImage" class="text-danger"></span>
                                     </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Project Type</label>
-                                        <input type="text" asp-for="type" class="form-control" />
+                                        <select asp-for="type" asp-items="@(new SelectList(Model.ListProjectType,"Id","name"))" class="form-control select2">
+                                            @if (Model.type == null || Model.type == "")
+                                            {
+                                                <option disabled selected value=""> -- select an option -- </option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="type" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
@@ -79,9 +94,6 @@
                                         <span asp-validation-for="projectYear" class="text-danger"></span>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-
-                                </div>
 
                             </div>
                             <div class="card-footer row">
@@ -103,23 +115,23 @@
 </div>
 
 @section myScripts{
-            <script src="~/plugins/jquery/jquery.min.js"></script>
-            <script>
-                $(document).ready(function () {
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-                    $("form").submit(function () {
+        $("form").submit(function () {
 
-                        ShowLoading();
+            ShowLoading();
 
-                    });
+        });
 
         @if (TempData["notification"] != null)
         {
             @Html.Raw(TempData["notification"])
         }
-                });
+    });
 
 
-            </script>
+</script>
 
 }

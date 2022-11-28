@@ -48,7 +48,9 @@ namespace TMS.Controllers.Master
 
                 if (_SystemConfig.StaticKey == "true")
                 {
-                    var ValidStaticKey = await GlobalHelpers.GetAPIKeyValidationAndGenerateCookiesAsync(filter.ApiKey, _businessModelContext, HttpContext).ConfigureAwait(false);
+                    System.Security.Claims.ClaimsPrincipal users;
+                    var ValidStaticKey = GlobalHelpers.GetApiKeyValidation(filter.ApiKey, _businessModelContext, this.HttpContext, out users);
+                    System.Threading.Thread.CurrentPrincipal = new System.Security.Claims.ClaimsPrincipal(users);
                     if (!ValidStaticKey)
                     {
                         return BadRequest("invalid api key");

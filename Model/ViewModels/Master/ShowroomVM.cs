@@ -22,19 +22,20 @@ namespace ViewModel.ViewModels
         public Nullable<DateTime> LastModifiedTime { get; set; }
 
         public byte[] TimeStatus { get; set; }
+        public IFormFile Upload { get; set; }
         public int RowStatus { get; }
         public int Take { get; set; }
         public int Skip { get; set; }
 
         [Required(ErrorMessage = "Mandatory")]
         public string name { get; set; }
-        [Required(ErrorMessage = "Mandatory")]
+        
         public string urlImage { get; set; }
-        [Required(ErrorMessage = "Mandatory")]
+         
         public string workingHour { get; set; }
-        [Required(ErrorMessage = "Mandatory")]
+         
         public string address { get; set; }
-        [Required(ErrorMessage = "Mandatory")]
+        
         public string telephone { get; set; }
     }
     public class JsonShowroomVM : JsonModelBase
@@ -45,15 +46,20 @@ namespace ViewModel.ViewModels
         public DateTime CreatedTime { get; set; }
         public string LastModifiedBy { get; set; }
         public Nullable<DateTime> LastModifiedTime { get; set; }
-
+        public IFormFile Upload { get; set; }
         public byte[] TimeStatus { get; set; }
         public int RowStatus { get; }
         public int Take { get; set; }
         public int Skip { get; set; }
+    
         public string name { get; set; }
+        
         public string urlImage { get; set; }
+ 
         public string workingHour { get; set; }
+    
         public string address { get; set; }
+        
         public string telephone { get; set; }
 
     }

@@ -231,5 +231,18 @@ namespace DAL.DataAccessLayer.Master
                 throw ex;
             }
         }
+
+
+        public JsonSocialMediaVM GetSocialMediaFirstAsync()
+        {
+            try
+            {
+                return _mapper.Map<SocialMedia, JsonSocialMediaVM>(Repo.GetSocialmediaFirst());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

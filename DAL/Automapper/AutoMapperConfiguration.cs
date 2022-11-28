@@ -34,6 +34,18 @@ namespace MainProject.Automapper
             CreateMap<JsonCompanyVM, Company>(MemberList.None);
             CreateMap<JsonCompanyVM, CompanyVM>(MemberList.None);
             CreateMap<Company, CompanyVM>().ForMember(vm => vm.Code_Name, mp => mp.MapFrom(d => d.Code + "-" + d.Name));
+
+            CreateMap<ProjectReferences, ProjectReferencesVM>()
+                .ForMember(vm => vm.ProjectType, mp => mp.MapFrom(d => d.typeNavigation.name));
+            CreateMap<ProjectReferences, JsonProjectReferencesVM>()
+                .ForMember(vm => vm.ProjectType, mp => mp.MapFrom(d => d.typeNavigation.name));
+
+
+            CreateMap<CatalogDetail, CatalogDetailVM>()
+                .ForMember(vm => vm.CatalogTypeName, mp => mp.MapFrom(d => d.catalogTypeNavigation.name));
+            CreateMap<CatalogDetail, JsonCatalogDetailVM>()
+                .ForMember(vm => vm.CatalogTypeName, mp => mp.MapFrom(d => d.catalogTypeNavigation.name));
+
             CreateMap<CompanyVM, Company>(MemberList.None);
             CreateMap<FileLogDetail, FileLogDetailVM>(MemberList.None);
 
@@ -46,22 +58,32 @@ namespace MainProject.Automapper
             CreateMap<Showroom, JsonShowroomVM>(MemberList.None);
             CreateMap<ShowroomVM, JsonShowroomVM>(MemberList.None);
 
+            CreateMap<Visitor, JsonVisitorVM>(MemberList.None);
+            CreateMap<Visitor, VisitorVM>(MemberList.None);
+
             CreateMap<JsonCatalogDetailVM, CatalogDetail>(MemberList.None);
 
             CreateMap<ProjectType, JsonProjectTypeVM>(MemberList.None);
             CreateMap<ProjectTypeVM, JsonProjectTypeVM>(MemberList.None);
-
-            CreateMap<ProjectReferences, JsonProjectReferencesVM>(MemberList.None);
-            CreateMap<ProjectReferencesVM, JsonProjectReferencesVM>(MemberList.None);
+             
             
             CreateMap<CatalogType, JsonCatalogTypeVM>(MemberList.None);
             CreateMap<CatalogTypeVM, JsonCatalogTypeVM>(MemberList.None);
-
-            CreateMap<CatalogDetail, JsonCatalogTypeVM>(MemberList.None);
+             
             CreateMap<CatalogDetailVM, JsonCatalogDetailVM>(MemberList.None);
             CreateMap<CatalogTypeVM, JsonCatalogTypeVM>(MemberList.None);
 
-            CreateMap<CatalogDetail, JsonCatalogDetailVM>(MemberList.None);
+
+
+
+
+
+            CreateMap<CompanyProfileVM, JsonCompanyProfileVM>(MemberList.None);
+            CreateMap<CatalogTypeVM, JsonCatalogTypeVM>(MemberList.None);
+            CreateMap<CatalogDetailVM, JsonCatalogDetailVM>(MemberList.None);
+            CreateMap<ShowroomVM, JsonShowroomVM>(MemberList.None);
+            CreateMap<ProjectReferencesVM, JsonProjectReferencesVM>(MemberList.None);
+            CreateMap<ProjectTypeVM, JsonProjectTypeVM>(MemberList.None); 
         }
     }
 }

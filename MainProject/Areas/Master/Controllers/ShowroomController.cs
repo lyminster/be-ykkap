@@ -19,6 +19,7 @@ namespace TMS.Areas.Master.Controllers
         private readonly BusinessModelContext _context;
         private readonly IHostingEnvironment _hostenv;
         private readonly IMapper _mapper;
+        private IConfiguration _config;
         HelperTableDataAccessLayer DALHelper;
         ShowroomDataAccessLayer DALShowroom;
         FileLogDataAccessLayer DALFileLog;
@@ -29,6 +30,7 @@ namespace TMS.Areas.Master.Controllers
             _context = context;
             _hostenv = hostenv;
             _mapper = mapper;
+            _config = configfile;
             DALHelper = new HelperTableDataAccessLayer(_context, _mapper, _hostenv);
             DALShowroom = new ShowroomDataAccessLayer(_context, _mapper, _hostenv, configfile);
             DALFileLog = new FileLogDataAccessLayer(_context, _mapper, _hostenv, configfile);
@@ -41,11 +43,8 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            List<JsonShowroomVM> page1 = DALShowroom.FindAsync(new JsonShowroomVM { }, User);
-            IndexShowroomVM data = new IndexShowroomVM();
-            data.listIndex = page1;
 
-            return View(data);
+            return View();
         }
 
         public ActionResult LoadData(FilterTgl filters)
@@ -88,20 +87,56 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Working Hour")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.workingHour).ToList();
+                        }
+                        else if (sortColumn == "Address")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.address).ToList();
+                        }
+                        else if (sortColumn == "Telepohone Number")
+                        {
+                            showroomData = showroomData.OrderBy(x => x.telephone).ToList();
+                        }
+                      
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Working Hour")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.workingHour).ToList();
+                        }
+                        else if (sortColumn == "Address")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.address).ToList();
+                        }
+                        else if (sortColumn == "Telepohone Number")
+                        {
+                            showroomData = showroomData.OrderByDescending(x => x.telephone).ToList();
+                        }
+                    }
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
-                    showroomData = showroomData.Where(m => 
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)
-                        || m.address.Contains(searchValue)
-                        || m.telephone.Contains(searchValue)
-                        || m.workingHour.Contains(searchValue)
-                        || m.urlImage.Contains(searchValue)).ToList();
+                    showroomData = showroomData.Where(m =>
+                        m.name.ToLower().Contains(searchValue.ToLower())
+                        || m.address.ToLower().Contains(searchValue.ToLower())
+                        || m.telephone.ToLower().Contains(searchValue.ToLower())
+                        || m.workingHour.ToLower().Contains(searchValue.ToLower()) ).ToList();
                 }
 
                 //total number of rows counts   
@@ -131,14 +166,34 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonShowroomVM data)
+        public IActionResult Create(ShowroomVM data)
         {
             if (ModelState.IsValid)
             {
+                if (data.Upload == null)
+                {
+                    ModelState.AddModelError("FileURL", "Please upload file");
+                    return View();
+                }
+                var filename = "";
+
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlShowroomImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.urlImage = filename;
+                }
+
+
+
+
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALShowroom.SaveAsync(data, User);
+
+                var SaveData = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
+                var retrunSave = DALShowroom.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Showroom", NotificationType.success);
@@ -168,8 +223,19 @@ namespace TMS.Areas.Master.Controllers
         {
             if (ModelState.IsValid)
             {
+                
+                var filename = "";
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlShowroomImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.urlImage = filename;
+                }
+
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
+
                 var upddata = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
                 var retrunSave = DALShowroom.SaveAsync(upddata, User);
                 if (retrunSave.result == true)
@@ -178,9 +244,10 @@ namespace TMS.Areas.Master.Controllers
                     return RedirectToAction(nameof(Index));
                 }
                 Alert(errMsg, NotificationType.error);
-                return View(data);
+                return View(upddata);
             }
-            return View(data);
+            var upddataErr = _mapper.Map<ShowroomVM, JsonShowroomVM>(data);
+            return View(upddataErr);
         }
 
         [HttpPost]

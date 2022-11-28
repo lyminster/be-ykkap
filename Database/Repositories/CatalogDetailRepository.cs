@@ -1,4 +1,5 @@
 ﻿using Database.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Database.Repositories
         {
             _dbContext = expenseManagementContext;
 
-            _q_QueryData = _dbContext.CatalogDetail;
+            _q_QueryData = _dbContext.CatalogDetail.Include(x => x.catalogTypeNavigation);
 
         }
 

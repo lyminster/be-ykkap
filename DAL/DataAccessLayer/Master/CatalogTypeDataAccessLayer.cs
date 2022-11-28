@@ -109,6 +109,7 @@ namespace DAL.DataAccessLayer.Master
                         name = datacatalogType2.name,
                         description = datacatalogType2.description,
                         imgUrl = datacatalogType2.imgUrl,
+                        OrderNo = datacatalogType2.OrderNo,
                         child = asd
                     };
                     dataCatalog.Add(dataJson);
@@ -185,6 +186,7 @@ namespace DAL.DataAccessLayer.Master
                         NewData.name = Save.name;
                         NewData.description = Save.description;
                         NewData.imgUrl = Save.imgUrl;
+                        NewData.OrderNo = Save.OrderNo;
                         NewData.ModelState = ObjectState.Added;
 
                         UnitOfWork.InsertOrUpdate(NewData);
@@ -203,6 +205,7 @@ namespace DAL.DataAccessLayer.Master
                         NewData.name = Save.name;
                         NewData.description = Save.description;
                         NewData.imgUrl = Save.imgUrl;
+                        NewData.OrderNo = Save.OrderNo;
                         NewData.ModelState = ObjectState.Modified;
                         UnitOfWork.InsertOrUpdate(NewData);
                         UnitOfWork.Commit();

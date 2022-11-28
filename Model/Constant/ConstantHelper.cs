@@ -13,7 +13,7 @@ namespace ViewModel.Constant
         public static readonly string Date_Y = "yyyy-MM-dd";
         public static readonly string Date_D = "dd-MM-yyyy";
         public static readonly string Date_Slash = "dd/MM/yyyy";
-        public static readonly string Date_SAP = "dd.MM.yyyy";
+        public static readonly string Date_SAP = "dd-MMM-yyyy HH:MM";
 
         public static readonly int StatusActive = 1;
         public static readonly int StatusNonActive = 0;

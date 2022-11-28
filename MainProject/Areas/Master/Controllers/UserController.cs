@@ -181,7 +181,7 @@ namespace IISHOSTV1.Areas.Master.Controllers
                 if (DALUser.changePass(change, GlobalHelpers.GetEmailFromIdentity(User)))
                 {
                     Alert("Success Change password!", NotificationType.success);
-                    return RedirectToAction("Home", "Login");
+                    return View(change);
                 }
                 Alert("Failed change password!", NotificationType.error);
                 return View(change);

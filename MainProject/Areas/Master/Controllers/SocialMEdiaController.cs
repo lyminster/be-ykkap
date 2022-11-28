@@ -130,14 +130,15 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonSocialMediaVM data)
+        public IActionResult Create(SocialMediaVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALSocialMedia.SaveAsync(data, User);
+                var saveData = _mapper.Map<SocialMediaVM, JsonSocialMediaVM>(data);
+                var retrunSave = DALSocialMedia.SaveAsync(saveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create SocialMedia", NotificationType.success);
@@ -149,6 +150,47 @@ namespace TMS.Areas.Master.Controllers
             return View(data);
         }
 
+        public IActionResult EditNew()
+        {
+
+            var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
+            if (cookiesEmail == null)
+            {
+                return RedirectToAction("LoginForm", "Login");
+            }
+
+            var data = DALSocialMedia.GetSocialMediaFirstAsync();
+            return View(data);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditNew(SocialMediaVM data)
+        {
+            if (ModelState.IsValid)
+            {
+                string errMsg = "";
+                data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
+                var upddata = _mapper.Map<SocialMediaVM, JsonSocialMediaVM>(data);
+                var retrunSave = DALSocialMedia.SaveAsync(upddata, User);
+                if (retrunSave.result == true)
+                {
+                    Alert("Success Update SocialMedia", NotificationType.success);
+                    return View(upddata);
+                }
+                else
+                {
+                    Alert(errMsg, NotificationType.error);
+                    return View(upddata);
+                }
+                
+            }
+            var upddata2 = _mapper.Map<SocialMediaVM, JsonSocialMediaVM>(data);
+            return View(upddata2);
+        }
+
+
         public IActionResult Edit(String ID)
         {
 
@@ -157,6 +199,7 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
+
             var data = DALSocialMedia.GetSocialMediaAsync(ID);
             return View(data);
         }

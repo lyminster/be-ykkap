@@ -168,6 +168,7 @@ namespace DAL.DataAccessLayer.Master
                         NewData.imgUrl = Save.imgUrl;
                         NewData.enPdfUrl = Save.enPdfUrl;
                         NewData.idPdfUrl = Save.idPdfUrl;
+                        NewData.OrderNo = Save.OrderNo;
                         NewData.ModelState = ObjectState.Added;
 
                         UnitOfWork.InsertOrUpdate(NewData);
@@ -190,6 +191,7 @@ namespace DAL.DataAccessLayer.Master
                         NewData.imgUrl = Save.imgUrl;
                         NewData.enPdfUrl = Save.enPdfUrl;
                         NewData.idPdfUrl = Save.idPdfUrl;
+                        NewData.OrderNo = Save.OrderNo;
                         NewData.ModelState = ObjectState.Modified;
                         UnitOfWork.InsertOrUpdate(NewData);
                         UnitOfWork.Commit();

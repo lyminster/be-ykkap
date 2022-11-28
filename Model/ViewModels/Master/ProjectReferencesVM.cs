@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,9 @@ namespace ViewModel.ViewModels
         public string location { get; set; }
         public string urlYoutube { get; set; }
         public string listProductUsed { get; set; }
+        public IFormFile Upload { get; set; }
+        public List<JsonProjectTypeVM> ListProjectType { get; set; }
+        public string ProjectType { get; set; }
     }
     public class JsonProjectReferencesVM : JsonModelBase
     {
@@ -55,6 +59,9 @@ namespace ViewModel.ViewModels
         public string location { get; set; }
         public string urlYoutube { get; set; }
         public string listProductUsed { get; set; }
+        public IFormFile Upload { get; set; }
+        public List<JsonProjectTypeVM> ListProjectType { get; set; }
+        public string ProjectType { get; set; }
 
     }
 }

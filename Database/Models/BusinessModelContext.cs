@@ -35,6 +35,7 @@ namespace Database.Models
         public virtual DbSet<CatalogType> CatalogType { get; set; }
         public virtual DbSet<CatalogDetail> CatalogDetail { get; set; }
         public virtual DbSet<ProjectType> ProjectType { get; set; }
+        public virtual DbSet<Visitor> Visitor { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -51,7 +52,7 @@ namespace Database.Models
 
             modelBuilder.Entity<Company>(entity =>
             {
-                entity.ToTable("Company");
+                entity.ToTable("MsCompany");
 
                 entity.Property(e => e.ID)
                     .HasMaxLength(50)
@@ -131,6 +132,7 @@ namespace Database.Models
                 entity.Property(e => e.visionMission).IsUnicode(false);
 
                 entity.Property(e => e.imgUrl).IsUnicode(false);
+                entity.Property(e => e.pdfUrl).IsUnicode(false);
 
                 entity.Property(e => e.youtubeId).IsUnicode(false);
 
@@ -241,6 +243,81 @@ namespace Database.Models
                     .IsConcurrencyToken();
             });
 
+
+            modelBuilder.Entity<Visitor>(entity =>
+            {
+                entity.ToTable("Visitor");
+
+                entity.Property(e => e.ID)
+                    .HasMaxLength(50)
+                    .HasColumnName("ID");
+
+                entity.Property(e => e.Email)
+                    .HasMaxLength(50)
+                    .HasColumnName("Email");
+
+                entity.Property(e => e.Name)
+                    .HasMaxLength(50)
+                    .HasColumnName("Name");
+
+                entity.Property(e => e.PhoneNumber)
+                    .HasMaxLength(50)
+                    .HasColumnName("PhoneNumber");
+
+                entity.Property(e => e.AccessFrom)
+                    .HasMaxLength(50)
+                    .HasColumnName("AccessFrom");
+
+                entity.Property(e => e.CreatedByEmployeeID)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("CreatedByEmployeeID");
+
+                entity.Property(e => e.CreatedByEmployeeNIK)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("CreatedByEmployeeNIK");
+
+                entity.Property(e => e.CreatedByName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Idclient)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("IDClient");
+
+                entity.Property(e => e.LastModifiedBy)
+                    .IsRequired()
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastModifiedByEmployeeID)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("LastModifiedByEmployeeID");
+
+                entity.Property(e => e.LastModifiedByEmployeeNIK)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("LastModifiedByEmployeeNIK");
+
+                entity.Property(e => e.LastModifiedByName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastModifiedTime).HasColumnType("datetime");
+
+                entity.Property(e => e.TimeStatus)
+                    .IsRequired()
+                    .IsRowVersion()
+                    .IsConcurrencyToken();
+            });
+
+
+
             modelBuilder.Entity<CatalogType>(entity =>
             {
                 entity.ToTable("CatalogType");
@@ -255,6 +332,7 @@ namespace Database.Models
                 entity.Property(e => e.description).IsUnicode(false);
 
                 entity.Property(e => e.imgUrl).IsUnicode(false);
+                entity.Property(e => e.OrderNo).IsUnicode(false);
 
                 entity.Property(e => e.CreatedByEmployeeID)
                     .HasMaxLength(50)
@@ -313,13 +391,18 @@ namespace Database.Models
                     .IsUnicode(false)
                     .HasColumnName("ID");
 
+                entity.HasOne(e => e.catalogTypeNavigation)
+                    .WithMany(p => p.CatalogDetails)
+                    .HasForeignKey(d => d.CatalogType)
+                    .HasConstraintName("FK_CatalogDetail_CatalogType");
+
                 entity.Property(e => e.name).IsUnicode(false);
                 entity.Property(e => e.CatalogType).IsUnicode(false);
                 entity.Property(e => e.description).IsUnicode(false);
                 entity.Property(e => e.imgUrl).IsUnicode(false);
                 entity.Property(e => e.enPdfUrl).IsUnicode(false);
                 entity.Property(e => e.idPdfUrl).IsUnicode(false);
-
+                entity.Property(e => e.OrderNo).IsUnicode(false);
                 entity.Property(e => e.CreatedByEmployeeID)
                     .HasMaxLength(50)
                     .IsUnicode(false)
@@ -386,6 +469,12 @@ namespace Database.Models
                 entity.Property(e => e.urlYoutube).IsUnicode(false);
                 entity.Property(e => e.listProductUsed).IsUnicode(false);
                 entity.Property(e => e.projectYear).IsUnicode(false);
+
+
+                entity.HasOne(e => e.typeNavigation)
+                    .WithMany(p => p.ProjectReferences)
+                    .HasForeignKey(d => d.type)
+                    .HasConstraintName("FK_ProjectReferences2_ProjectType");
 
                 entity.Property(e => e.CreatedByEmployeeID)
                     .HasMaxLength(50)
@@ -793,6 +882,9 @@ namespace Database.Models
                             .IsRequired()
                             .IsRowVersion()
                             .IsConcurrencyToken();
+
+
+
             });
 
             OnModelCreatingPartial(modelBuilder);
