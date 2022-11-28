@@ -18,6 +18,7 @@ namespace TMS.Areas.Master.Controllers
         private readonly BusinessModelContext _context;
         private readonly IHostingEnvironment _hostenv;
         private readonly IMapper _mapper;
+        private IConfiguration _config;
         HelperTableDataAccessLayer DALHelper;
         CompanyProfileDataAccessLayer DALCompanyProfile;
         FileLogDataAccessLayer DALFileLog;
@@ -28,6 +29,7 @@ namespace TMS.Areas.Master.Controllers
             _context = context;
             _hostenv = hostenv;
             _mapper = mapper;
+            _config = configfile;
             DALHelper = new HelperTableDataAccessLayer(_context, _mapper, _hostenv);
             DALCompanyProfile = new CompanyProfileDataAccessLayer(_context, _mapper, _hostenv, configfile);
             DALFileLog = new FileLogDataAccessLayer(_context, _mapper, _hostenv, configfile);
@@ -167,6 +169,15 @@ namespace TMS.Areas.Master.Controllers
         {
             if (ModelState.IsValid)
             {
+                var filename = "";
+
+                if (data.Upload != null && data.Upload.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlCompanyImage");
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.imgUrl = filename;
+                }
+
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var upddata = _mapper.Map<CompanyProfileVM, JsonCompanyProfileVM>(data);
