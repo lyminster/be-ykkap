@@ -88,16 +88,31 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectTypeData = projectTypeData.OrderBy(x => x.name).ToList();
+                        }
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectTypeData = projectTypeData.OrderByDescending(x => x.name).ToList();
+                        }
+                    }
+                    
+                     
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     projectTypeData = projectTypeData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)).ToList();
+                        m.CreatedBy.ToLower().Contains(searchValue.ToLower())
+                        || m.name.ToLower().Contains(searchValue.ToLower())).ToList();
                 }
 
                 //total number of rows counts   
@@ -127,14 +142,15 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonProjectTypeVM data)
+        public IActionResult Create(ProjectTypeVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALProjectType.SaveAsync(data, User);
+                var SaveData = _mapper.Map<ProjectTypeVM, JsonProjectTypeVM>(data);
+                var retrunSave = DALProjectType.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Project Type", NotificationType.success);
@@ -176,7 +192,8 @@ namespace TMS.Areas.Master.Controllers
                 Alert(errMsg, NotificationType.error);
                 return View(data);
             }
-            return View(data);
+            var upddata2 = _mapper.Map<ProjectTypeVM, JsonProjectTypeVM>(data);
+            return View(upddata2);
         }
 
         [HttpPost]

@@ -1,0 +1,217 @@
+﻿@model ViewModel.ViewModels.VisitorVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+}
+
+
+<div class="text-sm">
+
+
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Visitor </h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- new District form -->
+            <div class="row center" style="float: none; margin: 0 auto;">
+                <div class="col-md-12">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Index</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-md-12 row">
+
+                                <div class=" ">
+
+                                    <label class="control-label">Filter Access Date From - To</label>
+                                    <div class="input-group date col-md-12" data-date-format="DD-MMM-YYYY" id="reservationdate1" data-target-input="nearest">
+                                        <input type="text" asp-for="@Model.FilterFromString" class="form-control datetimepicker-input" data-target="#reservationdate1" />
+                                        <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" ">
+                                    <label class="control-label">&nbsp;</label>
+                                    <div class="input-group date" data-date-format="DD-MMM-YYYY" id="reservationdate2" data-target-input="nearest">
+                                        <input type="text" asp-for="@Model.FilterToString" class="form-control datetimepicker-input" data-target="#reservationdate2" />
+                                        <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                &nbsp;
+                                <div class="form-group">
+                                    <br/><br />
+                                    <a onclick="FilterData()" class="btn btn-warning"><i class="fa fa-search"></i> Filter Data</a>
+                                    &nbsp;
+                                    <a asp-action="DownloadExcelDocument" class="btn btn-success"> <i class="fa fa-file-excel"></i> Export to Excel</a>
+                                </div>
+                            </div>
+
+                           
+                            <table id="demoGrid" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone Number</th>
+                                        <th>Access From</th>
+                                        <th>Access Date</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new District form -->
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+@section myScripts{
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <script>
+             $(function () {
+
+                    $("#example1").DataTable({
+                        "responsive": true,
+                        "autoWidth": false,
+                        "searching": true,
+                    });
+            });
+
+            function FilterData() {
+                $('#demoGrid').DataTable().ajax.reload(null, false)
+            }
+
+
+            function DeleteData(itemid) {
+                swal({
+                    title: "Are sure want to delete data?",
+                    text: "",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Yes",
+                    closeOnConfirm: false
+
+                }, function (isConfirm) {
+                    if (isConfirm) {
+                        $.ajax({
+
+                            url: '/Master/Visitor/DeleteData',
+                            type: 'POST',
+                            data: { "id": itemid },
+                            success: function (data) {
+                                swal
+                                    ({
+                                        title: "Deleted!",
+                                        text: "Visitor has been deleted!",
+                                        type: "success"
+                                    },
+                                        function () {
+                                            location.reload();
+                                        });
+                            }
+
+                        });
+                    }
+                });
+
+            };
+
+            $(document).ready(function () {
+
+        @if (TempData["notification"] != null)
+        {
+            @Html.Raw(TempData["notification"])
+        }
+
+
+                $('#demoGrid').DataTable({
+                    "processing": true, // for show progress bar
+                    "serverSide": true, // for process server side
+                    "filter": true,
+                    "pageLength": 20,
+                    "responsive": true,
+                    "autoWidth": false,
+                    "searching": true,
+
+                    "ajax": {
+                        "url": "@Url.Action("LoadData", "Visitor", new { area ="Master" })",
+                        "type": "POST",
+                        "datatype": "json",
+                        "data": function (d) {
+                            d.tglDari = $('#FilterFromString').val();
+                            d.tglSampai = $('#FilterToString').val();
+                        },
+                    },
+
+                    //dom: 'Bfrtip',
+                    //buttons: [
+                    //    'copy', 'csv', 'excel', 'pdf', 'print'
+                    //],
+
+                    "columns": [
+                        { "data": "name", "name": "Name", "width": "120px" },
+                        { "data": "email", "name": "Email", "width": "120px" },
+                        { "data": "phoneNumber", "name": "Phone Number", "width": "120px" },
+                        {
+                            data: "accessFrom", "name": "Access From", render: function (data, type, row) {
+                                if (row.accessFrom) {
+                                    if (row.accessFrom.match(/showroom.*/)) {
+                                        return '<span class="card text-white bg-danger text-center">' + row.accessFrom + '</span>';
+                                    } else if (row.accessFrom.match(/others.*/)) {
+                                        return '<span class="card text-white bg-warning text-center">' + row.accessFrom + '</span>';
+                                    }
+
+                                } else {
+                                    return '<span class="card text-white bg-secondary text-center"></span>';
+                                }
+
+                            }, "width": "10%"
+                        },
+
+                        {
+                            "data": "createdTime", "name": "createdTime", "width": "20px", "render": function (value) {
+                                if (value === null) return "";
+                                return moment(value).format('DD-MMM-YYYY HH:MM');
+                                //return '<h5><span class="badge badge-info">' + moment(value).format('DD-MMM-YYYY') +'</span></h5>';;
+                            }
+                        },
+                        {
+                            data: null, render: function (data, type, row) {
+
+                                  return '<a class="btn btn-danger btn-sm" href="#" onclick=DeleteData("'+row.id+'")>Delete</a>';
+
+                            }, "width": "13%", "sorting": "false"
+                        },
+                    ]
+
+                });
+            });
+    </script>
+
+}

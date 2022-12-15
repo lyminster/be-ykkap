@@ -130,14 +130,15 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonSocialMediaVM data)
+        public IActionResult Create(SocialMediaVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALSocialMedia.SaveAsync(data, User);
+                var saveData = _mapper.Map<SocialMediaVM, JsonSocialMediaVM>(data);
+                var retrunSave = DALSocialMedia.SaveAsync(saveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create SocialMedia", NotificationType.success);
@@ -185,7 +186,8 @@ namespace TMS.Areas.Master.Controllers
                 }
                 
             }
-            return View(data);
+            var upddata2 = _mapper.Map<SocialMediaVM, JsonSocialMediaVM>(data);
+            return View(upddata2);
         }
 
 

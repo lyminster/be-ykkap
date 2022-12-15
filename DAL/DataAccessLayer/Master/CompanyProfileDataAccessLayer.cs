@@ -129,19 +129,7 @@ namespace DAL.DataAccessLayer.Master
             try
             {
                 String Error = "";
-                if (String.IsNullOrEmpty(Save.Id))
-                {
-                    if (Repo.IsUniqueKeyCodeExist(
-                        Save.about,
-                        Save.visionMission,
-                        Save.imgUrl,
-                        Save.youtubeId,
-                        GlobalHelpers.GetClaimValueByType(EnumClaims.IDClient.ToString(), claims))) Error = "Company Profile ini sudah ada di Database";
-
-                    jsonReturn = new JsonReturn(false);
-                    jsonReturn.message = Error;
-
-                }
+                 
                 if (String.IsNullOrEmpty(Error))
                 {
 
@@ -172,6 +160,7 @@ namespace DAL.DataAccessLayer.Master
                         NewData.about = Save.about;
                         NewData.visionMission = Save.visionMission;
                         NewData.imgUrl = Save.imgUrl;
+                        NewData.pdfUrl = Save.pdfUrl;
                         NewData.youtubeId = Save.youtubeId;
                         NewData.ModelState = ObjectState.Modified;
                         UnitOfWork.InsertOrUpdate(NewData);
@@ -226,6 +215,18 @@ namespace DAL.DataAccessLayer.Master
             try
             {
                 return _mapper.Map<CompanyProfile, JsonCompanyProfileVM>(Repo.GetCompanyProfileByID(ID));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public JsonCompanyProfileVM GetCompanyProfileFirstAsync()
+        {
+            try
+            {
+                return _mapper.Map<CompanyProfile, JsonCompanyProfileVM>(Repo.GetCompanyProfileFirst());
             }
             catch (Exception ex)
             {

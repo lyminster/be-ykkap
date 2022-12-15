@@ -92,24 +92,84 @@ namespace TMS.Areas.Master.Controllers
 
 
                 //Sorting  
-                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-                //{
-                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
-                //}
+                if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                {
+                    if (sortColumnDirection == "asc")
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectData = projectData.OrderBy(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Detail")
+                        {
+                            projectData = projectData.OrderBy(x => x.detail).ToList();
+                        }
+                        else if (sortColumn == "Building")
+                        {
+                            projectData = projectData.OrderBy(x => x.building).ToList();
+                        }
+                        else if (sortColumn == "Project Type")
+                        {
+                            projectData = projectData.OrderBy(x => x.ProjectType).ToList();
+                        }
+                        else if (sortColumn == "Location")
+                        {
+                            projectData = projectData.OrderBy(x => x.location).ToList();
+                        }
+                        else if (sortColumn == "List Product Used")
+                        {
+                            projectData = projectData.OrderBy(x => x.listProductUsed).ToList();
+                        }
+                        else if (sortColumn == "Project Year")
+                        {
+                            projectData = projectData.OrderBy(x => x.projectYear).ToList();
+                        }
+                    }
+                    else
+                    {
+                        if (sortColumn == "Name")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.name).ToList();
+                        }
+                        else if (sortColumn == "Detail")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.detail).ToList();
+                        }
+                        else if (sortColumn == "Building")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.building).ToList();
+                        }
+                        else if (sortColumn == "Project Type")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.ProjectType).ToList();
+                        }
+                        else if (sortColumn == "Location")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.location).ToList();
+                        }
+                        else if (sortColumn == "List Product Used")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.listProductUsed).ToList();
+                        }
+                        else if (sortColumn == "Project Year")
+                        {
+                            projectData = projectData.OrderByDescending(x => x.projectYear).ToList();
+                        }
+                    }
+                }
                 //Search  
                 if (!string.IsNullOrEmpty(searchValue))
                 {
                     projectData = projectData.Where(m =>
-                        m.CreatedBy.Contains(searchValue)
-                        || m.name.Contains(searchValue)
-                        || m.detail.Contains(searchValue)
-                        || m.building.Contains(searchValue)
-                        || m.urlImage.Contains(searchValue)
-                        || m.urlYoutube.Contains(searchValue)
-                        || m.location.Contains(searchValue)
-                        || m.listProductUsed.Contains(searchValue)
-                        || m.projectYear.Contains(searchValue)
-                        || m.type.Contains(searchValue)).ToList();
+                        m.CreatedBy.ToLower().Contains(searchValue.ToLower())
+                        || m.name.ToLower().Contains(searchValue.ToLower())
+                        || m.detail.ToLower().Contains(searchValue.ToLower())
+                        || m.building.ToLower().Contains(searchValue.ToLower())
+                      
+                        || m.location.ToLower().Contains(searchValue.ToLower())
+                        || m.listProductUsed.ToLower().Contains(searchValue.ToLower())
+                        || m.projectYear.ToLower().Contains(searchValue.ToLower())
+                        || m.type.ToLower().Contains(searchValue.ToLower())).ToList();
                 }
 
                 //total number of rows counts   
@@ -141,7 +201,7 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonProjectReferencesVM data)
+        public IActionResult Create(ProjectReferencesVM data)
         {
             if (ModelState.IsValid)
             {
@@ -151,11 +211,14 @@ namespace TMS.Areas.Master.Controllers
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlProjectImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.urlImage = filename;
                 }
+             
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALProject.SaveAsync(data, User);
+                var SaveData = _mapper.Map<ProjectReferencesVM, JsonProjectReferencesVM>(data);
+                var retrunSave = DALProject.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Project References", NotificationType.success);
@@ -193,8 +256,10 @@ namespace TMS.Areas.Master.Controllers
                 if (data.Upload != null && data.Upload.FileName != null)
                 {
                     String folder = _config.GetConnectionString("UrlProjectImage");
-                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder);
+                    filename = GlobalHelpers.CopyFile(data.Upload, _hostenv, folder, this.Request);
+                    data.urlImage = filename;
                 }
+
 
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var upddata = _mapper.Map<ProjectReferencesVM, JsonProjectReferencesVM>(data);
@@ -204,11 +269,13 @@ namespace TMS.Areas.Master.Controllers
                     Alert("Success Update Project References", NotificationType.success);
                     return RedirectToAction(nameof(Index));
                 }
-                data.ListProjectType = DALProjectType.GetListProjectTypeAsync();
+                upddata.ListProjectType = DALProjectType.GetListProjectTypeAsync();
                 Alert(errMsg, NotificationType.error);
-                return View(data);
+                return View(upddata);
             }
-            return View(data);
+            var upddata2 = _mapper.Map<ProjectReferencesVM, JsonProjectReferencesVM>(data);
+            upddata2.ListProjectType = DALProjectType.GetListProjectTypeAsync();
+            return View(upddata2);
         }
 
         [HttpPost]

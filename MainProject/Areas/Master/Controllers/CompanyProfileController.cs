@@ -129,14 +129,15 @@ namespace TMS.Areas.Master.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(JsonCompanyProfileVM data)
+        public IActionResult Create(CompanyProfileVM data)
         {
             if (ModelState.IsValid)
             {
                 string errMsg = "";
                 data.CreatedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
-                var retrunSave = DALCompanyProfile.SaveAsync(data, User);
+                var SaveData = _mapper.Map<CompanyProfileVM, JsonCompanyProfileVM>(data);
+                var retrunSave = DALCompanyProfile.SaveAsync(SaveData, User);
                 if (retrunSave.result == true)
                 {
                     Alert("Success Create Company Profile", NotificationType.success);
@@ -148,7 +149,7 @@ namespace TMS.Areas.Master.Controllers
             return View(data);
         }
 
-        public IActionResult Edit(String ID)
+        public IActionResult Edit()
         {
 
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
@@ -156,7 +157,7 @@ namespace TMS.Areas.Master.Controllers
             {
                 return RedirectToAction("LoginForm", "Login");
             }
-            var data = DALCompanyProfile.GetCompanyProfileAsync(ID);
+            var data = DALCompanyProfile.GetCompanyProfileFirstAsync();
             return View(data);
         }
 
@@ -173,12 +174,17 @@ namespace TMS.Areas.Master.Controllers
                 if (retrunSave.result == true)
                 {
                     Alert("Success Update Company Profile", NotificationType.success);
-                    return RedirectToAction(nameof(Index));
+                    return View(upddata);
                 }
-                Alert(errMsg, NotificationType.error);
-                return View(data);
+                else
+                {
+                    Alert(errMsg, NotificationType.error);
+                    return View(upddata);
+                }
+              
             }
-            return View(data);
+            var upddata2 = _mapper.Map<CompanyProfileVM, JsonCompanyProfileVM>(data);
+            return View(upddata2);
         }
 
         [HttpPost]

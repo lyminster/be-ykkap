@@ -1098,11 +1098,9 @@ namespace DAL.Helper
 
             return checktime.IsMatch(thetime);
         }
-
-
-
-        public static string CopyFile(IFormFile fileInput, IHostingEnvironment _hostenv, String folder)
+        public static string CopyFileForUpload(IFormFile fileInput, IHostingEnvironment _hostenv, String folder)
         {
+
 
             var fileName2 = System.IO.Path.GetFileName(Guid.NewGuid().ToString().Substring(0, 7) + "-" + fileInput.FileName);
             // Create new local file and copy contents of uploaded file
@@ -1113,6 +1111,36 @@ namespace DAL.Helper
             }
 
             return fileName2;
+        }
+
+        public static string RemoveSpecialCharacters(this string str)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (char c in str)
+            {
+                if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '.' || c == '_')
+                {
+                    sb.Append(c);
+                }
+            }
+            return sb.ToString();
+        }
+        public static string CopyFile(IFormFile fileInput, IHostingEnvironment _hostenv, String folder, HttpRequest HttpRequest)
+        {
+            var baseUrl = $"{HttpRequest.Scheme}://{HttpRequest.Host.Value.ToString()}{HttpRequest.PathBase.Value.ToString()}";
+
+
+
+            var fileName2 = System.IO.Path.GetFileName(Guid.NewGuid().ToString().Substring(0, 7) + "-" + fileInput.FileName);
+            fileName2 = RemoveSpecialCharacters(fileName2);
+            // Create new local file and copy contents of uploaded file
+            using (var localFile = System.IO.File.OpenWrite(Path.Combine(_hostenv.WebRootPath, folder) + fileName2))
+            using (var uploadedFile = fileInput.OpenReadStream())
+            {
+                uploadedFile.CopyTo(localFile);
+            }
+
+            return baseUrl + "/" + folder + fileName2;
         }
 
         public static string CopyImportantFile(IFormFile fileInput, IHostingEnvironment _hostenv, string path)
@@ -1129,7 +1157,7 @@ namespace DAL.Helper
 
             return fileName2;
         }
-         
+
 
 
         public enum ClaimIdentity
@@ -1164,18 +1192,18 @@ namespace DAL.Helper
 
 
 
-        public static async Task<bool> GetAPIKeyValidationAndGenerateCookiesAsync(String Username, BusinessModelContext DBContext, HttpContext HttpContext)
+        public static bool GetApiKeyValidation(String Username, BusinessModelContext DBContext, HttpContext HttpContext, out ClaimsPrincipal claimsPrincipal)
         {
+            claimsPrincipal = null;
             try
             {
+              
                 string encryptionKey = "EDS";
                 string dStr = Encryption.passwordDecrypt(Username, encryptionKey);
                 var Userx = DBContext.Users.FirstOrDefault(x => x.Email == dStr);
                 if (Userx != null)
                 {
                     //di clear dl logout dl
-                  await HttpContext.SignOutAsync(
-   CookieAuthenticationDefaults.AuthenticationScheme);
 
 
 
@@ -1201,7 +1229,7 @@ namespace DAL.Helper
         };
 
                     var claimsIdentity = new ClaimsIdentity(
-                        claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                  claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
                     var authProperties = new AuthenticationProperties
                     {
@@ -1227,12 +1255,18 @@ namespace DAL.Helper
                         // redirect response value.
                     };
 
-                    await HttpContext.SignInAsync(
+
+                    HttpContext.SignInAsync(
                       CookieAuthenticationDefaults.AuthenticationScheme,
                       new ClaimsPrincipal(claimsIdentity),
-                      authProperties);
+                      authProperties).ConfigureAwait(false).GetAwaiter().GetResult();
+
                     System.Threading.Thread.CurrentPrincipal = new ClaimsPrincipal(claimsIdentity);
 
+                   
+
+                    System.Threading.Thread.CurrentPrincipal = new ClaimsPrincipal(claimsIdentity);
+                    claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 
                     return true;
                 }

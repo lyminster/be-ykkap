@@ -43,11 +43,10 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Showroom Image</label>
-                                        <input type="text" asp-for="urlImage" disabled class="form-control" />
+                                        <input type="text" asp-for="urlImage" readonly class="form-control" />
                                         @Html.TextBox("Upload", "", new
                                            {
                                                type = "file",
-                                               required = "required",
                                                @accept = "image/*"
                                            })
                                         <span asp-validation-for="urlImage" class="text-danger"></span>
@@ -59,12 +58,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Address</label>
-                                        <input type="text" asp-for="address" class="form-control" />
+                                        @*<input type="text" asp-for="address" class="form-control" />*@
+                                        <textarea rows="5" cols="100" id="address" asp-for="address">@Model.address</textarea>
                                         <span asp-validation-for="address" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Telephone Number</label>
-                                        <input type="text" asp-for="telephone" class="form-control" />
+                                        @*<input type="text" asp-for="telephone" class="form-control" />*@
+                                        <textarea rows="5" cols="100" id="telephone" asp-for="telephone">@Model.telephone</textarea>
                                         <span asp-validation-for="telephone" class="text-danger"></span>
                                     </div>
                                     <div class="row ml-1">
@@ -101,23 +102,23 @@
 </div>
 
 @section myScripts{
-        <script src="~/plugins/jquery/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-                $("form").submit(function () {
+        $("form").submit(function () {
 
-                    ShowLoading();
+            ShowLoading();
 
-                });
+        });
 
         @if (TempData["notification"] != null)
         {
             @Html.Raw(TempData["notification"])
         }
-            });
+    });
 
 
-        </script>
+</script>
 
 }

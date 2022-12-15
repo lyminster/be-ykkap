@@ -37,8 +37,8 @@ namespace TMS.Controllers.Master
         }
 
         [HttpPost]
-        [Route("post/GetCompanyProfile")]
-        public async Task<IActionResult> GetCompanyProfileAsync([FromBody] JsonShowroomVM filter)
+        [Route("post/GetListShowroom")]
+        public async Task<IActionResult> GetListShowroom([FromBody] JsonShowroomVM filter)
         {
             List<JsonShowroomVM> showRoom = new List<JsonShowroomVM>();
 
@@ -48,7 +48,9 @@ namespace TMS.Controllers.Master
 
                 if (_SystemConfig.StaticKey == "true")
                 {
-                    var ValidStaticKey = await GlobalHelpers.GetAPIKeyValidationAndGenerateCookiesAsync(filter.ApiKey, _businessModelContext, this.HttpContext).ConfigureAwait(false);
+                    System.Security.Claims.ClaimsPrincipal users;
+                    var ValidStaticKey = GlobalHelpers.GetApiKeyValidation(filter.ApiKey, _businessModelContext, this.HttpContext, out users);
+                    System.Threading.Thread.CurrentPrincipal = new System.Security.Claims.ClaimsPrincipal(users);
                     if (!ValidStaticKey)
                     {
                         return BadRequest("invalid api key");

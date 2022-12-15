@@ -73,6 +73,19 @@ namespace Database.Repositories
             }
         }
 
+        public CompanyProfile GetCompanyProfileFirst()
+        {
+            try
+            {
+                return _q_QueryData.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
 
         public bool IsUniqueKeyCodeExist(string about, string visionMission, string imgUrl, string youtubeId, String idclient)
         {

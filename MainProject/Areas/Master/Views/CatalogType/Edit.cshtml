@@ -42,17 +42,21 @@
                                         <span asp-validation-for="name" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Description</label>
-                                        <input type="text" asp-for="description" class="form-control" />
-                                        <span asp-validation-for="description" class="text-danger"></span>
+                                        <label class="control-label">Order Position</label>
+                                        <input type="number" asp-for="OrderNo" class="form-control" />
+                                        <span asp-validation-for="OrderNo" class="text-danger"></span>
                                     </div>
+                                    @*<div class="form-group">
+            <label class="control-label">Description</label>
+            <input type="text" asp-for="description" class="form-control" />
+            <span asp-validation-for="description" class="text-danger"></span>
+        </div>*@
                                     <div class="form-group">
                                         <label class="control-label">Url Image</label>
-                                        <input type="text" asp-for="imgUrl" class="form-control" disabled />
+                                        <input type="text" asp-for="imgUrl" class="form-control" readonly />
                                         @Html.TextBox("Upload", "", new
                                           {
                                               type = "file",
-                                              required = "required",
                                               @accept = "image/*"
                                           })
                                         <span asp-validation-for="imgUrl" class="text-danger"></span>
@@ -91,23 +95,23 @@
 </div>
 
 @section myScripts{
-                <script src="~/plugins/jquery/jquery.min.js"></script>
-                <script>
-                    $(document).ready(function () {
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-                        $("form").submit(function () {
+        $("form").submit(function () {
 
-                            ShowLoading();
+            ShowLoading();
 
-                        });
+        });
 
         @if (TempData["notification"] != null)
         {
             @Html.Raw(TempData["notification"])
         }
-                    });
+    });
 
 
-                </script>
+</script>
 
 }
