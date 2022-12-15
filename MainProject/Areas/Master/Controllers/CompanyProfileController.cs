@@ -40,7 +40,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             List<JsonCompanyProfileVM> page1 = DALCompanyProfile.FindAsync(new JsonCompanyProfileVM { }, User);
             IndexCompanyProfileVM data = new IndexCompanyProfileVM();
@@ -125,7 +125,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             return View();
         }
@@ -157,7 +157,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             var data = DALCompanyProfile.GetCompanyProfileFirstAsync();
             return View(data);
@@ -214,7 +214,7 @@ namespace TMS.Areas.Master.Controllers
                 }
               
             }
-            return RedirectToAction("Home", "Login");
+            return RedirectToAction("Home", "Login", new { area = "" });
         }
 
         [HttpPost]

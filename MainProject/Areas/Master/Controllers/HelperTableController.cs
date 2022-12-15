@@ -40,7 +40,7 @@ namespace IISHOSTV1.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             List<HelperTableVM> page1 = DALHelper.FilterHelper(null);
             IndexHelperTableVM data = new IndexHelperTableVM();
@@ -54,7 +54,7 @@ namespace IISHOSTV1.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             return View();
         }
@@ -85,7 +85,7 @@ namespace IISHOSTV1.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             var data = DALHelper.GetHelperTable(formID);
             return View(data);

@@ -39,7 +39,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             List<JsonSocialMediaVM> page1 = DALSocialMedia.FindAsync(new JsonSocialMediaVM { }, User);
             IndexSocialMediaVM data = new IndexSocialMediaVM();
@@ -124,7 +124,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             return View();
         }
@@ -156,7 +156,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
 
             var data = DALSocialMedia.GetSocialMediaFirstAsync();
@@ -197,7 +197,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
 
             var data = DALSocialMedia.GetSocialMediaAsync(ID);

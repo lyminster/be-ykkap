@@ -46,7 +46,7 @@ namespace IISHOSTV1.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             //List<FileLogVM> page1 = DALFileLog.GetListFileLog(new FileLogVM { });
             IndexFileLogVM data = new IndexFileLogVM();
@@ -72,7 +72,7 @@ namespace IISHOSTV1.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             //List<FileLogVM> page1 = DALFileLog.GetListFileLog(new FileLogVM { });
             IndexFileLogVM data = new IndexFileLogVM();

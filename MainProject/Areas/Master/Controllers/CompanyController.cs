@@ -45,7 +45,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             List<JsonCompanyVM> page1 = DALCompany.FindAsync(new JsonCompanyVM { }, User);
             IndexCompanyVM data = new IndexCompanyVM();
@@ -127,7 +127,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             return View();
         }
@@ -160,7 +160,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             var data = DALCompany.GetCompanyAsync(formID);
             return View(data);
@@ -171,7 +171,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             var data = DALCompany.GetCompanyAsync(ID);
             return View(data);
@@ -218,7 +218,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             IndexCompanyVM data = new IndexCompanyVM();
             var idLog = TempData["idLog"];

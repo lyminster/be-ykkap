@@ -67,7 +67,7 @@ namespace MainProject.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail != null)
             {
-                return RedirectToAction("Home", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             return View();
         }
@@ -92,7 +92,7 @@ namespace MainProject.Controllers
                 if (DALUser.changePass(change, GlobalHelpers.GetEmailFromIdentity(User)))
                 {
                     Alert("Success Change password!", NotificationType.success);
-                    return RedirectToAction("Home", "Login");
+                    return RedirectToAction("Home", "Login", new { area = "" });
                 }
                 Alert("Failed change password!", NotificationType.error);
                 return View(change);
@@ -222,7 +222,7 @@ namespace MainProject.Controllers
                 //    Response.Cookies.Append("IDVendor", result.IDVendor.ToString());
                 //}
 
-                return RedirectToAction("Home", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             ViewBag.ErrorResult = "No User Found !";
             return View();

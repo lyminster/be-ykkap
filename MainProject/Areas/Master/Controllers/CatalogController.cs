@@ -43,7 +43,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             List<JsonCatalogDetailVM> page1 = DALCatalogDetail.FindAsync(new JsonCatalogDetailVM { }, User);
             IndexCatalogDetalVM data = new IndexCatalogDetalVM();
@@ -157,7 +157,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             CatalogDetailVM data = new CatalogDetailVM();
             
@@ -203,7 +203,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             var data = DALCatalogDetail.GetCatalogDetailbyId(ID);
             data.ListCatalogType = _mapper.Map<List<CatalogType>, List<JsonCatalogTypeVM>>(DALCatalogType.GetListCatalogTypeAsync());

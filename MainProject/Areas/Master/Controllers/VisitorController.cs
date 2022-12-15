@@ -43,7 +43,7 @@ namespace TMS.Areas.Master.Controllers
             var cookiesEmail = GlobalHelpers.GetEmailFromIdentity(User);
             if (cookiesEmail == null)
             {
-                return RedirectToAction("LoginForm", "Login");
+                return RedirectToAction("Home", "Login", new { area = "" });
             }
             //List<JsonVisitorVM> data = DALVisitor.FindAsync(new JsonVisitorVM { }, User);
             VisitorVM data = new VisitorVM();
