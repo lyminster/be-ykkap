@@ -141,6 +141,8 @@ namespace DAL.DataAccessLayer.Master
                         NewData.about = Save.about;
                         NewData.visionMission = Save.visionMission;
                         NewData.imgUrl = Save.imgUrl;
+                        NewData.imgUrlProjectReff = Save.imgUrlProjectReff;
+                        NewData.imgUrlShowroom = Save.imgUrlShowroom;
                         NewData.youtubeId = Save.youtubeId;
                         NewData.ModelState = ObjectState.Added;
 
@@ -160,6 +162,8 @@ namespace DAL.DataAccessLayer.Master
                         NewData.about = Save.about;
                         NewData.visionMission = Save.visionMission;
                         NewData.imgUrl = Save.imgUrl;
+                        NewData.imgUrlProjectReff = Save.imgUrlProjectReff;
+                        NewData.imgUrlShowroom = Save.imgUrlShowroom;
                         NewData.pdfUrl = Save.pdfUrl;
                         NewData.youtubeId = Save.youtubeId;
                         NewData.ModelState = ObjectState.Modified;

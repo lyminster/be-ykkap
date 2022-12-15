@@ -25,9 +25,13 @@ namespace ViewModel.ViewModels
         public int Skip { get; set; }
         public string about { get; set; }
         public string visionMission { get; set; }
+        public string imgUrlProjectReff { get; set; }
+        public string imgUrlShowroom { get; set; }
         public string imgUrl { get; set; }
         public string pdfUrl { get; set; }
         public IFormFile Upload { get; set; }
+        public IFormFile UploadShowroom { get; set; }
+        public IFormFile UploadProjectReff { get; set; }
         public string youtubeId { get; set; }
     }
     public class JsonCompanyProfileVM : JsonModelBase
@@ -44,10 +48,14 @@ namespace ViewModel.ViewModels
         public int Take { get; set; }
         public int Skip { get; set; }
 
+        public IFormFile Upload { get; set; }
         public string about { get; set; }
         public string visionMission { get; set; }
         public string imgUrl { get; set; }
         public string pdfUrl { get; set; }
+ 
+        public string imgUrlProjectReff { get; set; }
+        public string imgUrlShowroom { get; set; }
         public string youtubeId { get; set; }
 
     }

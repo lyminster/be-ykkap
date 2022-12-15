@@ -178,6 +178,26 @@ namespace TMS.Areas.Master.Controllers
                     data.imgUrl = filename;
                 }
 
+
+
+              
+
+                if (data.UploadProjectReff != null && data.UploadProjectReff.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlCompanyImage");
+                    filename = GlobalHelpers.CopyFile(data.UploadProjectReff, _hostenv, folder, this.Request);
+                    data.imgUrlProjectReff = filename;
+                }
+
+
+                if (data.UploadShowroom != null && data.UploadShowroom.FileName != null)
+                {
+                    String folder = _config.GetConnectionString("UrlCompanyImage");
+                    filename = GlobalHelpers.CopyFile(data.UploadShowroom, _hostenv, folder, this.Request);
+                    data.imgUrlShowroom = filename;
+                }
+
+
                 string errMsg = "";
                 data.LastModifiedBy = GlobalHelpers.GetEmailFromIdentity(User);
                 var upddata = _mapper.Map<CompanyProfileVM, JsonCompanyProfileVM>(data);
@@ -185,7 +205,7 @@ namespace TMS.Areas.Master.Controllers
                 if (retrunSave.result == true)
                 {
                     Alert("Success Update Company Profile", NotificationType.success);
-                    return View(upddata);
+                    return RedirectToAction("Home", "Login", new { area = "" });
                 }
                 else
                 {
@@ -194,8 +214,7 @@ namespace TMS.Areas.Master.Controllers
                 }
               
             }
-            var upddata2 = _mapper.Map<CompanyProfileVM, JsonCompanyProfileVM>(data);
-            return View(upddata2);
+            return RedirectToAction("Home", "Login");
         }
 
         [HttpPost]
