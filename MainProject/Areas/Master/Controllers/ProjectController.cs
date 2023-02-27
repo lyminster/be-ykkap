@@ -162,14 +162,15 @@ namespace TMS.Areas.Master.Controllers
                 {
                     projectData = projectData.Where(m =>
                         m.CreatedBy.ToLower().Contains(searchValue.ToLower())
-                        || m.name.ToLower().Contains(searchValue.ToLower())
-                        || m.detail.ToLower().Contains(searchValue.ToLower())
-                        || m.building.ToLower().Contains(searchValue.ToLower())
+                        || (m.listProductUsed != null && m.name.ToLower().Contains(searchValue.ToLower()))
+                        || (m.listProductUsed != null && m.detail.ToLower().Contains(searchValue.ToLower()))
+                        || (m.listProductUsed != null && m.building.ToLower().Contains(searchValue.ToLower()))
                       
-                        || m.location.ToLower().Contains(searchValue.ToLower())
-                        || m.listProductUsed.ToLower().Contains(searchValue.ToLower())
-                        || m.projectYear.ToLower().Contains(searchValue.ToLower())
-                        || m.type.ToLower().Contains(searchValue.ToLower())).ToList();
+                        || (m.listProductUsed != null && m.location.ToLower().Contains(searchValue.ToLower()))
+                        || (m.listProductUsed != null && m.listProductUsed.ToLower().Contains(searchValue.ToLower()))
+                        || (m.projectYear != null && m.projectYear.ToLower().Contains(searchValue.ToLower()))
+                        || (m.type != null && m.type.ToLower().Contains(searchValue.ToLower()))
+                        ).ToList();
                 }
 
                 //total number of rows counts   

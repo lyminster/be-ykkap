@@ -187,8 +187,8 @@ namespace TMS.Areas.Master.Controllers
                 throw ex;
             }
         }
-
-        public IActionResult DownloadExcelDocument()
+        [HttpPost]
+        public IActionResult DownloadExcelDocument(FilterTgl filters)
         {
             string contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             string fileName = "Visitor_Export.xlsx";
@@ -204,7 +204,15 @@ namespace TMS.Areas.Master.Controllers
                     worksheet.Cell(1, 4).Value = "Access From";
                     worksheet.Cell(1, 5).Value = "Access Date";
 
-                    var data = DALVisitor.FindAsync(new JsonVisitorVM { }, User, null, null);
+
+                    DateTime? from = !String.IsNullOrEmpty(filters.FilterFromString) ? Convert.ToDateTime(filters.FilterFromString) : null;
+                    string convertFrom = from != null ? from.Value.ToString("yyyy-MM-dd") : null;
+
+                    DateTime? to = !String.IsNullOrEmpty(filters.FilterToString) ? Convert.ToDateTime(filters.FilterToString) : null;
+                    string convertTo = to != null ? to.Value.ToString("yyyy-MM-dd") : null;
+
+
+                    var data = DALVisitor.FindAsync(new JsonVisitorVM { }, User, from, to);
 
                     for (int index = 1; index <= data.Count; index++)
                     {

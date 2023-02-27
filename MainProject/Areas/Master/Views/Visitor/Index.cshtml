@@ -31,52 +31,57 @@
                             <h3 class="card-title">Index</h3>
                         </div>
                         <div class="card-body">
-                            <div class="col-md-12 row">
+                            <form asp-controller="Visitor" asp-action="DownloadExcelDocument" id="formDelete" enctype="multipart/form-data">
 
-                                <div class=" ">
+                                <div class="col-md-12 row">
 
-                                    <label class="control-label">Filter Access Date From - To</label>
-                                    <div class="input-group date col-md-12" data-date-format="DD-MMM-YYYY" id="reservationdate1" data-target-input="nearest">
-                                        <input type="text" asp-for="@Model.FilterFromString" class="form-control datetimepicker-input" data-target="#reservationdate1" />
-                                        <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    <div class=" ">
+
+                                        <label class="control-label">Filter Access Date From - To</label>
+                                        <div class="input-group date col-md-12" data-date-format="DD-MMM-YYYY" id="reservationdate1" data-target-input="nearest">
+                                            <input type="text" asp-for="@Model.FilterFromString" class="form-control datetimepicker-input" data-target="#reservationdate1" />
+                                            <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class=" ">
-                                    <label class="control-label">&nbsp;</label>
-                                    <div class="input-group date" data-date-format="DD-MMM-YYYY" id="reservationdate2" data-target-input="nearest">
-                                        <input type="text" asp-for="@Model.FilterToString" class="form-control datetimepicker-input" data-target="#reservationdate2" />
-                                        <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    <div class=" ">
+                                        <label class="control-label">&nbsp;</label>
+                                        <div class="input-group date" data-date-format="DD-MMM-YYYY" id="reservationdate2" data-target-input="nearest">
+                                            <input type="text" asp-for="@Model.FilterToString" class="form-control datetimepicker-input" data-target="#reservationdate2" />
+                                            <div class="input-group-append" data-target="#reservationdate2" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                &nbsp;
-                                <div class="form-group">
-                                    <br/><br />
-                                    <a onclick="FilterData()" class="btn btn-warning"><i class="fa fa-search"></i> Filter Data</a>
                                     &nbsp;
-                                    <a asp-action="DownloadExcelDocument" class="btn btn-success"> <i class="fa fa-file-excel"></i> Export to Excel</a>
+                                    <div class="form-group">
+                                        <br /><br />
+                                        <a onclick="FilterData()" class="btn btn-warning"><i class="fa fa-search"></i> Filter Data</a>
+                                        &nbsp;
+                                        @*<a asp-action="DownloadExcelDocument" class="btn btn-success"> <i class="fa fa-file-excel"></i> Export to Excel</a>*@
+                                        <button type="submit" value="DownloadIndexTable" class="btn btn-success" name="submit">
+                                            <i class="fa fa-print"></i> Export to Excel
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
 
-                           
-                            <table id="demoGrid" class="table table-bordered table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Phone Number</th>
-                                        <th>Access From</th>
-                                        <th>Access Date</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
+                                <table id="demoGrid" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Access From</th>
+                                            <th>Access Date</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
 
 
-                            </table>
+                                </table>
                         </div>
                     </div>
                 </div>
@@ -182,7 +187,7 @@
                             data: "accessFrom", "name": "Access From", render: function (data, type, row) {
                                 if (row.accessFrom) {
                                     if (row.accessFrom.match(/showroom.*/)) {
-                                        return '<span class="card text-white bg-danger text-center">' + row.accessFrom + '</span>';
+                                        return '<span class="card text-white bg-info text-center">' + row.accessFrom + '</span>';
                                     } else if (row.accessFrom.match(/others.*/)) {
                                         return '<span class="card text-white bg-warning text-center">' + row.accessFrom + '</span>';
                                     }

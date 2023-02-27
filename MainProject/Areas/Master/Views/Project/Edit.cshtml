@@ -38,17 +38,17 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Project Name</label>
-                                        <input type="text" asp-for="name" class="form-control" />
+                                        <input type="text" asp-for="name" class="form-control" required/>
                                         <span asp-validation-for="name" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Project Detail</label>
-                                        <input type="text" asp-for="detail" class="form-control" />
+                                        <input type="text" asp-for="detail" class="form-control" required/>
                                         <span asp-validation-for="detail" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Building</label>
-                                        <input type="text" asp-for="building" class="form-control" />
+                                        <input type="text" asp-for="building" class="form-control" required/>
                                         <span asp-validation-for="building" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Location</label>
-                                        <input type="text" asp-for="location" class="form-control" />
+                                        <input type="text" asp-for="location" class="form-control" required/>
                                         <span asp-validation-for="location" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
@@ -87,12 +87,12 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">List Product Used</label>
-                                        <input type="text" asp-for="listProductUsed" class="form-control" />
+                                        <input type="text" asp-for="listProductUsed" class="form-control" required/>
                                         <span asp-validation-for="listProductUsed" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Project Year</label>
-                                        <input type="text" asp-for="projectYear" class="form-control" />
+                                        <input type="text" asp-for="projectYear" class="form-control" required/>
                                         <span asp-validation-for="projectYear" class="text-danger"></span>
                                     </div>
                                 </div>

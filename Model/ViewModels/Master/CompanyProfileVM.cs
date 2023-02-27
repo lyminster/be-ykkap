@@ -49,6 +49,8 @@ namespace ViewModel.ViewModels
         public int Skip { get; set; }
 
         public IFormFile Upload { get; set; }
+        public IFormFile UploadShowroom { get; set; }
+        public IFormFile UploadProjectReff { get; set; }
         public string about { get; set; }
         public string visionMission { get; set; }
         public string imgUrl { get; set; }
